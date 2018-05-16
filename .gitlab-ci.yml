@@ -62,6 +62,7 @@ updatexml:
   tags:
     - docker
   before_script:
+    - source /util/opt/lmod/lmod/init/profile
     - module use $CI_PROJECT_DIR/Common
     - eval $(ssh-agent -s) > /dev/null
     - mkdir -p ~/.ssh

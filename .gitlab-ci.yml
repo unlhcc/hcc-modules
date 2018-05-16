@@ -1,0 +1,149 @@
+variables:
+  WORK: "/tmp"
+  LMOD_REDIRECT: "yes"
+  XML_FILE: "hcc_modules.xml"
+  MODULES_DIR: "/util/opt/hcc-modules"
+
+stages:
+  - test
+  - updatexml
+  - deploy
+
+test-modules:
+  stage: test
+  image: unlhcc/crane-build-el6
+  except:
+    - master
+  tags:
+    - docker
+  before_script:
+    - source /util/opt/lmod/lmod/init/profile
+  script:
+    - module use $CI_PROJECT_DIR/Common
+    - module av > /dev/null
+    - module spider > /dev/null
+
+test-crane-paths:
+  stage: test
+  image: unlhcc/crane-build-el6
+  except:
+    - master
+  tags:
+    - crane-test
+  script:
+    - scripts/test_changed_modules.sh
+
+test-tusker-paths:
+  stage: test
+  image: unlhcc/crane-build-el6
+  except:
+    - master
+  tags:
+    - tusker-test
+  script:
+    - scripts/test_changed_modules.sh
+
+test-sandhills-paths:
+  stage: test
+  image: unlhcc/crane-build-el6
+  except:
+    - master
+  tags:
+    - sandhills-test
+  script:
+    - scripts/test_changed_modules.sh
+
+updatexml:
+  stage: updatexml
+  image: unlhcc/crane-build-el6
+  allow_failure: yes
+  only:
+    - master
+  tags:
+    - docker
+  before_script:
+    - module use $CI_PROJECT_DIR/Common
+    - eval $(ssh-agent -s) > /dev/null
+    - mkdir -p ~/.ssh
+    - chown 700 ~/.ssh
+    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
+    - git config user.name "HCC Gitlab CI"
+    - git config user.email "hcc-support@unl.edu"
+    - git remote add origin-push git@git.unl.edu:${CI_PROJECT_PATH}.git
+    - git checkout $CI_COMMIT_REF_NAME
+  script:
+    - /util/opt/lmod/lmod/libexec/spider -o xmlSoftwarePage $MODULES_DIR/Common > $XML_FILE
+    - git add $XML_FILE
+    - git commit -m "Automated XML update [skip ci]"
+    - git push origin-push $CI_COMMIT_REF_NAME || true
+
+deploy-crane:
+  stage: deploy
+  environment:
+    name: crane_production
+    url: https://crane.unl.edu
+  image: unlhcc/crane-build-el6
+  only:
+    - master
+  tags:
+    - crane
+  before_script:
+    - eval $(ssh-agent -s) > /dev/null
+    - mkdir -p ~/.ssh
+    - chown 700 ~/.ssh
+    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
+  script:
+    - cd $MODULES_DIR
+    - git checkout master
+    - git fetch
+    - git checkout $CI_COMMIT_SHA
+
+deploy-tusker:
+  stage: deploy
+  environment:
+    name: tusker_production
+    url: https://tusker.unl.edu
+  image: unlhcc/crane-build-el6
+  only:
+    - master
+  tags:
+    - tusker
+  before_script:
+    - eval $(ssh-agent -s) > /dev/null
+    - mkdir -p ~/.ssh
+    - chown 700 ~/.ssh
+    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
+  script:
+    - cd $MODULES_DIR
+    - git checkout master
+    - git fetch
+    - git checkout $CI_COMMIT_SHA
+
+deploy-sandhills:
+  stage: deploy
+  environment:
+    name: sandhills_production
+    url: https://sandhills.unl.edu
+  image: unlhcc/crane-build-el6
+  only:
+    - master
+  tags:
+    - sandhills
+  before_script:
+    - eval $(ssh-agent -s) > /dev/null
+    - mkdir -p ~/.ssh
+    - chown 700 ~/.ssh
+    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
+  script:
+    - cd $MODULES_DIR
+    - git checkout master
+    - git fetch
+    - git checkout $CI_COMMIT_SHA

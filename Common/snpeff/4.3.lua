@@ -14,6 +14,6 @@ whatis("Keywords:  Biology, Sequencing, Variants")
 whatis("Description: Genetic variant annotation and effect prediction toolbox.")
 whatis("URL: http://snpeff.sourceforge.net")
 
-pushenv("CONDA_DEFAULT_ENV","snpeff-4.3.1r")
-prepend_path("PATH","/util/opt/anaconda/deployed-conda-envs/packages/snpeff/envs/snpeff-4.3.1r/bin")
+pushenv("CONDA_DEFAULT_ENV","snpeff-4.3.1t")
+prepend_path("PATH","/util/opt/anaconda/deployed-conda-envs/packages/snpeff/envs/snpeff-4.3.1t/bin")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/snpeff/envs")

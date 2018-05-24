@@ -1,30 +1,95 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-05-21T23:11:55Z" UniqueID="localsoft4.runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org">
+  <RPSoftwareList Timestamp="2018-05-24T21:09:19Z" UniqueID="localsoft4.runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org">
     <ResourceID>runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>mcl</Name>
-      <Description>MCL</Description>
-      <Flavor>14.137</Flavor>
+      <Name>bioperl</Name>
+      <Description>BioPerl - Perl Modules for Biology</Description>
+      <Flavor>1.6.924</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>mcl/14.137</HandleKey>
+        <HandleKey>bioperl/1.6.924</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>application</Type>
-      <Domain>tool</Domain>
-      <Name>lynx</Name>
-      <Description>Lynx is a text browser for the World Wide Web.</Description>
-      <Flavor>2.8.8</Flavor>
+      <Type>library</Type>
+      <Domain>biological computation</Domain>
+      <Name>biopython</Name>
+      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
+      <Flavor>1.71</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>lynx/2.8</HandleKey>
+        <HandleKey>biopython/py27/1.71</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>biological computation</Domain>
+      <Name>biopython</Name>
+      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
+      <Flavor>1.71</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>biopython/py36/1.71</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>biological computation</Domain>
+      <Name>biopython</Name>
+      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
+      <Flavor>1.70</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>biopython/py27/1.70</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>biological computation</Domain>
+      <Name>biopython</Name>
+      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
+      <Flavor>1.71</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>biopython/py35/1.71</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>biological computation</Domain>
+      <Name>biopython</Name>
+      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
+      <Flavor>1.70</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>biopython/py35/1.70</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>biological computation</Domain>
+      <Name>biopython</Name>
+      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
+      <Flavor>1.70</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>biopython/py36/1.70</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -69,14 +134,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>tool</Domain>
-      <Name>aria2</Name>
-      <Description>aria2 is a lightweight multi-protocol &amp; multi-source command-line download utility. </Description>
-      <Flavor>1.23.0</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>pirs</Name>
+      <Description />
+      <Flavor>2.0.2</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>aria2/1.23</HandleKey>
+        <HandleKey>pirs/2.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -134,14 +199,92 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Biology</Domain>
-      <Name>agfusion</Name>
-      <Description>AGFusion is a python package for annotating gene fusions from the human or mouse genomes.</Description>
+      <Domain>computational biology</Domain>
+      <Name>orthofinder</Name>
+      <Description>OrthoFinder is a fast, accurate and comprehensive analysis tool for comparative genomics.</Description>
+      <Flavor>1.1.8</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>orthofinder/1.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>megahit</Name>
+      <Description>MEGAHIT: An ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph.</Description>
+      <Flavor>1.1</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>megahit/1.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>high-throughput sequencing data</Domain>
+      <Name>abayesqr</Name>
+      <Description>aBayesQR is a viral quasispecies reconstruction algorithm that employs a maximum-likelihood framework to infer individual sequences in a mixture from high-throughput sequencing data.</Description>
       <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>agfusion/1.0</HandleKey>
+        <HandleKey>abayesqr/1.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>tool</Domain>
+      <Name>globus-cli</Name>
+      <Description>Command line clients provide an interface to Globus services from the shell, and are suited for both interactive use and simple scripting use cases.</Description>
+      <Flavor>1.2.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>globus-cli/1.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>bioconductor-jmosaics</Name>
+      <Description>Joint analysis of multiple ChIP-Seq data sets.</Description>
+      <Flavor>1.10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>bioconductor-jmosaics/1.10</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>augustus</Name>
+      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
+      <Flavor>3.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>augustus/3.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>augustus</Name>
+      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
+      <Flavor>3.2.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>augustus/3.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -160,66 +303,53 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>NGS data</Domain>
-      <Name>cutadapt</Name>
-      <Description>Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</Description>
-      <Flavor>1.13</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>kalign</Name>
+      <Description>Kalign is a fast and accurate multiple sequence alignment algorithm designed to align large numbers of protein sequences.</Description>
+      <Flavor>2.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>cutadapt/1.13</HandleKey>
+        <HandleKey>kalign/2.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>cutadapt</Name>
-      <Description>Cutadapt removes adapter sequences from DNA high-throughput sequencing data.</Description>
-      <Flavor>1.4</Flavor>
+      <Name>sift4g</Name>
+      <Description>SIFT 4G is a faster version of SIFT that enables us to scale up and provide SIFT predictions for more organisms.</Description>
+      <Flavor>2.0.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>cutadapt/1.4</HandleKey>
+        <HandleKey>sift4g/2.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>utility</Domain>
-      <Name>scons</Name>
-      <Description>SCons: A software construction tool.</Description>
-      <Flavor>2.5</Flavor>
+      <Domain>Biology</Domain>
+      <Name>agfusion</Name>
+      <Description>AGFusion is a python package for annotating gene fusions from the human or mouse genomes.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>scons/2.5</HandleKey>
+        <HandleKey>agfusion/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>utility</Domain>
-      <Name>scons</Name>
-      <Description>SCons: A software construction tool.</Description>
-      <Flavor>3.0</Flavor>
+      <Domain>tool</Domain>
+      <Name>aria2</Name>
+      <Description>aria2 is a lightweight multi-protocol &amp; multi-source command-line download utility. </Description>
+      <Flavor>1.23.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>scons/3.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>megahit</Name>
-      <Description>MEGAHIT: An ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph.</Description>
-      <Flavor>1.1</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>megahit/1.1</HandleKey>
+        <HandleKey>aria2/1.23</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -356,13 +486,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>pepr</Name>
-      <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
-      <Flavor>1.1.18</Flavor>
+      <Name>htslib</Name>
+      <Description>HTSlib is an implementation of a unified C library for accessing common file formats.</Description>
+      <Flavor>1.7</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pepr/1.1</HandleKey>
+        <HandleKey>htslib/1.7</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -420,27 +550,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Utility</Domain>
-      <Name>allinea</Name>
-      <Description />
-      <Flavor>18.0</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>snpeff</Name>
+      <Description>Genetic variant annotation and effect prediction toolbox.</Description>
+      <Flavor>4.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>allinea/18.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Utility</Domain>
-      <Name>allinea</Name>
-      <Description />
-      <Flavor>7.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>allinea/7.0</HandleKey>
+        <HandleKey>snpeff/4.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -459,27 +576,40 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>sift4g</Name>
-      <Description>SIFT 4G is a faster version of SIFT that enables us to scale up and provide SIFT predictions for more organisms.</Description>
-      <Flavor>2.0.0</Flavor>
+      <Domain>utility</Domain>
+      <Name>scons</Name>
+      <Description>SCons: A software construction tool.</Description>
+      <Flavor>2.5</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>sift4g/2.0</HandleKey>
+        <HandleKey>scons/2.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>tool</Domain>
-      <Name>globus-cli</Name>
-      <Description>Command line clients provide an interface to Globus services from the shell, and are suited for both interactive use and simple scripting use cases.</Description>
-      <Flavor>1.2.0</Flavor>
+      <Domain>utility</Domain>
+      <Name>scons</Name>
+      <Description>SCons: A software construction tool.</Description>
+      <Flavor>3.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>globus-cli/1.2</HandleKey>
+        <HandleKey>scons/3.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>qiime2</Name>
+      <Description>QIIME 2 is a powerful, extensible, and decentralized microbiome analysis package with a focus on data and analysis transparency.</Description>
+      <Flavor>2018.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>qiime2/2018.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -512,39 +642,39 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>deeptools</Name>
-      <Description />
-      <Flavor>2.5.4</Flavor>
+      <Name>snp-sites</Name>
+      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
+      <Flavor>2.3.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>deeptools/2.5</HandleKey>
+        <HandleKey>snp-sites/2.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>fastqc</Name>
-      <Description>fastqc - A Quality Control application for FastQ files</Description>
-      <Flavor>0.11.7</Flavor>
+      <Name>jvarkit-sam2tsv</Name>
+      <Description>Prints the SAM alignments as a TAB delimited file.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>fastqc/0.11</HandleKey>
+        <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>bioconductor-jmosaics</Name>
-      <Description>Joint analysis of multiple ChIP-Seq data sets.</Description>
-      <Flavor>1.10</Flavor>
+      <Domain>r</Domain>
+      <Name>r-ggfortify</Name>
+      <Description>ggfortify is a package of unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis.</Description>
+      <Flavor>0.4.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bioconductor-jmosaics/1.10</HandleKey>
+        <HandleKey>r-ggfortify/0.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -564,39 +694,39 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>htslib</Name>
-      <Description>HTSlib is an implementation of a unified C library for accessing common file formats.</Description>
-      <Flavor>1.7</Flavor>
+      <Name>ccat</Name>
+      <Description>A software package for the analysis of ChIP-seq data with negative control.</Description>
+      <Flavor>3.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>htslib/1.7</HandleKey>
+        <HandleKey>ccat/3.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>high-throughput sequencing data</Domain>
-      <Name>abayesqr</Name>
-      <Description>aBayesQR is a viral quasispecies reconstruction algorithm that employs a maximum-likelihood framework to infer individual sequences in a mixture from high-throughput sequencing data.</Description>
-      <Flavor>1.0</Flavor>
+      <Domain>physics</Domain>
+      <Name>xcrysden</Name>
+      <Description>XCrySDen is a crystalline and molecular structure visualisation program aiming at display of isosurfaces and contours, which can be superimposed on crystalline structures and interactively rotated and manipulated.</Description>
+      <Flavor>1.5.60</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>abayesqr/1.0</HandleKey>
+        <HandleKey>xcrysden/1.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>trinity</Name>
-      <Description>Trinity assembles transcript sequences from Illumina RNA-Seq data.</Description>
-      <Flavor>2.4.0</Flavor>
+      <Name>mapsplice</Name>
+      <Description>MapSplice is a software for mapping RNA-seq data to reference genome for splice junction discovery that depends only on reference genome, and not on any further annotations.</Description>
+      <Flavor>2.2.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>trinity/2.4</HandleKey>
+        <HandleKey>mapsplice/2.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -615,14 +745,27 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>ccat</Name>
-      <Description>A software package for the analysis of ChIP-seq data with negative control.</Description>
-      <Flavor>3.0</Flavor>
+      <Domain>unknown</Domain>
+      <Name>gnuplot</Name>
+      <Description>Gnuplot, plotting from command line</Description>
+      <Flavor>5.2.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ccat/3.0</HandleKey>
+        <HandleKey>gnuplot/5.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>gnuplot</Name>
+      <Description>Gnuplot, plotting from command line</Description>
+      <Flavor>4.6.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>gnuplot/4.6</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -679,80 +822,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>library</Type>
-      <Domain>biological computation</Domain>
-      <Name>biopython</Name>
-      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
-      <Flavor>1.71</Flavor>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>mcl</Name>
+      <Description>MCL</Description>
+      <Flavor>14.137</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>biopython/py27/1.71</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>biological computation</Domain>
-      <Name>biopython</Name>
-      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
-      <Flavor>1.71</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>biopython/py36/1.71</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>biological computation</Domain>
-      <Name>biopython</Name>
-      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
-      <Flavor>1.70</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>biopython/py27/1.70</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>biological computation</Domain>
-      <Name>biopython</Name>
-      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
-      <Flavor>1.71</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>biopython/py35/1.71</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>biological computation</Domain>
-      <Name>biopython</Name>
-      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
-      <Flavor>1.70</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>biopython/py35/1.70</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>biological computation</Domain>
-      <Name>biopython</Name>
-      <Description>Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.</Description>
-      <Flavor>1.70</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>biopython/py36/1.70</HandleKey>
+        <HandleKey>mcl/14.137</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -810,14 +888,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>perl</Domain>
-      <Name>perl</Name>
-      <Description>The Perl Programming Language</Description>
-      <Flavor>5.22</Flavor>
+      <Domain>Genomics</Domain>
+      <Name>r-genometricorr</Name>
+      <Description>Genometric Correlation (GenometriCorr) is an R package for spatial correlation of genome-wide interval datasets.</Description>
+      <Flavor>1.1.17</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>perl/5.22</HandleKey>
+        <HandleKey>r-genometricorr/1.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -849,53 +927,40 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Utilities</Domain>
-      <Name>autoconf</Name>
-      <Description>Extensible M4 macros that produce shell scripts to configure software source code packages.</Description>
-      <Flavor>2.69</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>bamtools</Name>
+      <Description>C++ API &amp; command-line toolkit for working with BAM data</Description>
+      <Flavor>2.3.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>autoconf/2.69</HandleKey>
+        <HandleKey>bamtools/2.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>gmap</Name>
-      <Description>GMAP: A Genomic Mapping and Alignment Program for mRNA and EST Sequences, and GSNAP: Genomic Short-read Nucleotide Alignment Program.</Description>
-      <Flavor>2015.12.31</Flavor>
+      <Name>bamtools</Name>
+      <Description>C++ API &amp; command-line toolkit for working with BAM data</Description>
+      <Flavor>2.4.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gmap/2015.12.31</HandleKey>
+        <HandleKey>bamtools/2.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>gmap</Name>
-      <Description>GMAP: A Genomic Mapping and Alignment Program for mRNA and EST Sequences, and GSNAP: Genomic Short-read Nucleotide Alignment Program.</Description>
-      <Flavor>2018.03.25</Flavor>
+      <Name>gatk4</Name>
+      <Description>GATK4: This toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</Description>
+      <Flavor>4.0.4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gmap/2018.03.25</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>gmap</Name>
-      <Description>GMAP: A Genomic Mapping and Alignment Program for mRNA and EST Sequences, and GSNAP: Genomic Short-read Nucleotide Alignment Program.</Description>
-      <Flavor>2017.05.08</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>gmap/2017.05.08</HandleKey>
+        <HandleKey>gatk4/4.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -915,13 +980,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>mapsplice</Name>
-      <Description>MapSplice is a software for mapping RNA-seq data to reference genome for splice junction discovery that depends only on reference genome, and not on any further annotations.</Description>
-      <Flavor>2.2.0</Flavor>
+      <Name>metasv</Name>
+      <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
+      <Flavor>0.5.4</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>mapsplice/2.2</HandleKey>
+        <HandleKey>metasv/0.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -966,79 +1031,92 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>metasv</Name>
-      <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
-      <Flavor>0.5.4</Flavor>
+      <Domain>engineering</Domain>
+      <Name>octave</Name>
+      <Description>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab.</Description>
+      <Flavor>4.2</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>metasv/0.5</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Genomics</Domain>
-      <Name>r-genometricorr</Name>
-      <Description>Genometric Correlation (GenometriCorr) is an R package for spatial correlation of genome-wide interval datasets.</Description>
-      <Flavor>1.1.17</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>r-genometricorr/1.1</HandleKey>
+        <HandleKey>octave/4.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>qiime2</Name>
-      <Description>QIIME 2 is a powerful, extensible, and decentralized microbiome analysis package with a focus on data and analysis transparency.</Description>
-      <Flavor>2018.4</Flavor>
+      <Name>bcftools</Name>
+      <Description>BCFtools is a set of utilities that manipulate variant calls in the Variant Call Format (VCF) and its binary counterpart BCF. All commands work transparently with both VCFs and BCFs, both uncompressed and BGZF-compressed.  Most commands accept VCF, bgzipped VCF and BCF with filetype detected automatically even when streaming from a pipe. Indexed VCF and BCF will work in all situations. Un-indexed VCF and BCF and streams will work in most, but not all situations.</Description>
+      <Flavor>1.3.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>qiime2/2018.4</HandleKey>
+        <HandleKey>bcftools/1.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>snpeff</Name>
-      <Description>Genetic variant annotation and effect prediction toolbox.</Description>
-      <Flavor>4.3</Flavor>
+      <Name>bcftools</Name>
+      <Description>BCFtools is a set of utilities that manipulate variant calls in the Variant Call Format (VCF) and its binary counterpart BCF. All commands work transparently with both VCFs and BCFs, both uncompressed and BGZF-compressed.  Most commands accept VCF, bgzipped VCF and BCF with filetype detected automatically even when streaming from a pipe. Indexed VCF and BCF will work in all situations. Un-indexed VCF and BCF and streams will work in most, but not all situations.</Description>
+      <Flavor>1.8</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snpeff/4.3</HandleKey>
+        <HandleKey>bcftools/1.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>repenrich</Name>
-      <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
-      <Flavor>1.2</Flavor>
+      <Name>fastqc</Name>
+      <Description>fastqc - A Quality Control application for FastQ files</Description>
+      <Flavor>0.11.7</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>repenrich/1.2</HandleKey>
+        <HandleKey>fastqc/0.11</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>mathematics</Domain>
+      <Name>glpk</Name>
+      <Description>The GLPK (GNU Linear Programming Kit) package is intended for solving large-scale linear programming (LP), mixed integer programming (MIP), and other related problems. It is a set of routines written in ANSI C and organized in the form of a callable library.</Description>
+      <Flavor>4.61</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>glpk/4.61</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>soapdenovo-trans</Name>
-      <Description>SOAPdenovo-Trans is a de novo transcriptome assembler basing on the SOAPdenovo framework, adapt to alternative splicing and different expression level among transcripts.</Description>
-      <Flavor>1.04</Flavor>
+      <Name>deeptools</Name>
+      <Description />
+      <Flavor>2.5.4</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>soapdenovo-trans/1.04</HandleKey>
+        <HandleKey>deeptools/2.5</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Utilities</Domain>
+      <Name>binutils</Name>
+      <Description>The GNU Binutils are a collection of binary tools.</Description>
+      <Flavor>2.30</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>binutils/2.30</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1121,41 +1199,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>salmon</Name>
-      <Description>Highly-accurate &amp; wicked fast transcript-level quantification from RNA-seq reads using lightweight alignments.</Description>
-      <Flavor>0.8.2</Flavor>
+      <Type>library</Type>
+      <Domain>tools</Domain>
+      <Name>git</Name>
+      <Description>distributed version control system</Description>
+      <Flavor>2.17.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>salmon/0.8</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>salmon</Name>
-      <Description>Highly-accurate &amp; wicked fast transcript-level quantification from RNA-seq reads using lightweight alignments.</Description>
-      <Flavor>0.6.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>salmon/0.6</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>salmon</Name>
-      <Description>Highly-accurate &amp; wicked fast transcript-level quantification from RNA-seq reads using lightweight alignments.</Description>
-      <Flavor>0.9.1</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>salmon/0.9</HandleKey>
+        <HandleKey>git/2.17</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1173,41 +1225,54 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>library</Type>
-      <Domain>tools</Domain>
-      <Name>git</Name>
-      <Description>distributed version control system</Description>
-      <Flavor>2.17.0</Flavor>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>gem</Name>
+      <Description>GEM: High resolution peak calling and motif discovery for ChIP-seq and ChIP-exo data.</Description>
+      <Flavor>2.7</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>git/2.17</HandleKey>
+        <HandleKey>gem/2.7</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>mathematics</Domain>
-      <Name>glpk</Name>
-      <Description>The GLPK (GNU Linear Programming Kit) package is intended for solving large-scale linear programming (LP), mixed integer programming (MIP), and other related problems. It is a set of routines written in ANSI C and organized in the form of a callable library.</Description>
-      <Flavor>4.61</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>bedtools</Name>
+      <Description>A powerful toolset for genome arithmetic</Description>
+      <Flavor>2.27.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>glpk/4.61</HandleKey>
+        <HandleKey>bedtools/2.27</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Utilities</Domain>
-      <Name>binutils</Name>
-      <Description>The GNU Binutils are a collection of binary tools.</Description>
-      <Flavor>2.30</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>bedtools</Name>
+      <Description>A powerful toolset for genome arithmetic</Description>
+      <Flavor>2.24.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>binutils/2.30</HandleKey>
+        <HandleKey>bedtools/2.24</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>plinkseq</Name>
+      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
+      <Flavor>0.10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>plinkseq/0.10</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1240,39 +1305,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>augustus</Name>
-      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
-      <Flavor>3.3</Flavor>
+      <Name>soapdenovo-trans</Name>
+      <Description>SOAPdenovo-Trans is a de novo transcriptome assembler basing on the SOAPdenovo framework, adapt to alternative splicing and different expression level among transcripts.</Description>
+      <Flavor>1.04</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>augustus/3.3</HandleKey>
+        <HandleKey>soapdenovo-trans/1.04</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>augustus</Name>
-      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
-      <Flavor>3.2.3</Flavor>
+      <Name>trimmomatic</Name>
+      <Description>Trimmomatic: A flexible read trimming tool for Illumina NGS data.</Description>
+      <Flavor>0.36</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>augustus/3.2</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>gem</Name>
-      <Description>GEM: High resolution peak calling and motif discovery for ChIP-seq and ChIP-exo data.</Description>
-      <Flavor>2.7</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>gem/2.7</HandleKey>
+        <HandleKey>trimmomatic/0.36</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1331,13 +1383,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>kalign</Name>
-      <Description>Kalign is a fast and accurate multiple sequence alignment algorithm designed to align large numbers of protein sequences.</Description>
-      <Flavor>2.0</Flavor>
+      <Name>peakranger</Name>
+      <Description>PeakRanger is a multi-purporse software suite for analyzing next-generation sequencing (NGS) data.</Description>
+      <Flavor>1.18</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>kalign/2.0</HandleKey>
+        <HandleKey>peakranger/1.18</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1435,13 +1487,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>peakranger</Name>
-      <Description>PeakRanger is a multi-purporse software suite for analyzing next-generation sequencing (NGS) data.</Description>
-      <Flavor>1.18</Flavor>
+      <Name>snp-pipeline</Name>
+      <Description>SNP Pipeline is a pipeline for the production of SNP matrices from sequence data used in the phylogenetic analysis of pathogenic organisms sequenced from samples of interest to food safety.</Description>
+      <Flavor>0.7</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>peakranger/1.18</HandleKey>
+        <HandleKey>snp-pipeline/0.7</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>snp-pipeline</Name>
+      <Description />
+      <Flavor>1.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>snp-pipeline/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1487,13 +1552,39 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>trimmomatic</Name>
-      <Description>Trimmomatic: A flexible read trimming tool for Illumina NGS data.</Description>
-      <Flavor>0.36</Flavor>
+      <Name>salmon</Name>
+      <Description>Highly-accurate &amp; wicked fast transcript-level quantification from RNA-seq reads using lightweight alignments.</Description>
+      <Flavor>0.8.2</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>trimmomatic/0.36</HandleKey>
+        <HandleKey>salmon/0.8</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>salmon</Name>
+      <Description>Highly-accurate &amp; wicked fast transcript-level quantification from RNA-seq reads using lightweight alignments.</Description>
+      <Flavor>0.6.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>salmon/0.6</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>salmon</Name>
+      <Description>Highly-accurate &amp; wicked fast transcript-level quantification from RNA-seq reads using lightweight alignments.</Description>
+      <Flavor>0.9.1</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>salmon/0.9</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1552,13 +1643,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>jvarkit-sam2tsv</Name>
-      <Description>Prints the SAM alignments as a TAB delimited file.</Description>
-      <Flavor>1.0</Flavor>
+      <Name>pepr</Name>
+      <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
+      <Flavor>1.1.18</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
+        <HandleKey>pepr/1.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1591,26 +1682,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>plinkseq</Name>
-      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
-      <Flavor>0.10</Flavor>
+      <Name>repenrich</Name>
+      <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
+      <Flavor>1.2</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>plinkseq/0.10</HandleKey>
+        <HandleKey>repenrich/1.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>snp-sites</Name>
-      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
-      <Flavor>2.3.3</Flavor>
+      <Domain>perl</Domain>
+      <Name>perl</Name>
+      <Description>The Perl Programming Language</Description>
+      <Flavor>5.22</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snp-sites/2.3</HandleKey>
+        <HandleKey>perl/5.22</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1643,26 +1734,52 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>orthofinder</Name>
-      <Description>OrthoFinder is a fast, accurate and comprehensive analysis tool for comparative genomics.</Description>
-      <Flavor>1.1.8</Flavor>
+      <Name>gmap</Name>
+      <Description>GMAP: A Genomic Mapping and Alignment Program for mRNA and EST Sequences, and GSNAP: Genomic Short-read Nucleotide Alignment Program.</Description>
+      <Flavor>2015.12.31</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>orthofinder/1.1</HandleKey>
+        <HandleKey>gmap/2015.12.31</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>gatk4</Name>
-      <Description>GATK4: This toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</Description>
-      <Flavor>4.0.4.0</Flavor>
+      <Name>gmap</Name>
+      <Description>GMAP: A Genomic Mapping and Alignment Program for mRNA and EST Sequences, and GSNAP: Genomic Short-read Nucleotide Alignment Program.</Description>
+      <Flavor>2018.03.25</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gatk4/4.0</HandleKey>
+        <HandleKey>gmap/2018.03.25</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>gmap</Name>
+      <Description>GMAP: A Genomic Mapping and Alignment Program for mRNA and EST Sequences, and GSNAP: Genomic Short-read Nucleotide Alignment Program.</Description>
+      <Flavor>2017.05.08</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>gmap/2017.05.08</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>tool</Domain>
+      <Name>lynx</Name>
+      <Description>Lynx is a text browser for the World Wide Web.</Description>
+      <Flavor>2.8.8</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>lynx/2.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1695,13 +1812,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>pirs</Name>
-      <Description />
-      <Flavor>2.0.2</Flavor>
+      <Name>trinity</Name>
+      <Description>Trinity assembles transcript sequences from Illumina RNA-Seq data.</Description>
+      <Flavor>2.4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pirs/2.0</HandleKey>
+        <HandleKey>trinity/2.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1759,14 +1876,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>engineering</Domain>
-      <Name>octave</Name>
-      <Description>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab.</Description>
-      <Flavor>4.2</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>transdecoder</Name>
+      <Description>TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.</Description>
+      <Flavor>3.0.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>octave/4.2</HandleKey>
+        <HandleKey>transdecoder/3.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1785,40 +1902,40 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>snp-pipeline</Name>
-      <Description>SNP Pipeline is a pipeline for the production of SNP matrices from sequence data used in the phylogenetic analysis of pathogenic organisms sequenced from samples of interest to food safety.</Description>
-      <Flavor>0.7</Flavor>
+      <Domain>Utilities</Domain>
+      <Name>autoconf</Name>
+      <Description>Extensible M4 macros that produce shell scripts to configure software source code packages.</Description>
+      <Flavor>2.69</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snp-pipeline/0.7</HandleKey>
+        <HandleKey>autoconf/2.69</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>snp-pipeline</Name>
-      <Description />
-      <Flavor>1.0</Flavor>
+      <Domain>NGS data</Domain>
+      <Name>cutadapt</Name>
+      <Description>Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</Description>
+      <Flavor>1.13</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snp-pipeline/1.0</HandleKey>
+        <HandleKey>cutadapt/1.13</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>transdecoder</Name>
-      <Description>TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.</Description>
-      <Flavor>3.0.1</Flavor>
+      <Name>cutadapt</Name>
+      <Description>Cutadapt removes adapter sequences from DNA high-throughput sequencing data.</Description>
+      <Flavor>1.4</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>transdecoder/3.0</HandleKey>
+        <HandleKey>cutadapt/1.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1850,14 +1967,27 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>r</Domain>
-      <Name>r-ggfortify</Name>
-      <Description>ggfortify is a package of unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis.</Description>
-      <Flavor>0.4.1</Flavor>
+      <Domain>Utility</Domain>
+      <Name>allinea</Name>
+      <Description />
+      <Flavor>18.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>r-ggfortify/0.4</HandleKey>
+        <HandleKey>allinea/18.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Utility</Domain>
+      <Name>allinea</Name>
+      <Description />
+      <Flavor>7.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>allinea/7.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>

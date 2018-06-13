@@ -39,7 +39,12 @@ for module in ${moduleList[@]}
 do
     NOTICE "Testing module '$module'"
     # Get the value of the directory for all 'prepend_path(' statements in the module file
-    dirsToTest=`grep -e 'prepend_path[(,{]"PATH"' -e 'prepend_path("LD_LIBRARY_PATH"' -e 'prepend_path("LIBRARY_PATH"' -e 'prepend_path("CPATH"' $module | cut -f 4 -d '"'`
+    dirsToTest=`grep -e 'prepend_path[(,{]"PATH"' -e 'prepend_path("LD_LIBRARY_PATH"' -e 'prepend_path("LIBRARY_PATH"' -e 'prepend_path("CPATH"' $module | cut -f 4 -d '"'` || true
+    if [ -z "${dirsToTest}" ]
+    then
+	NOTICE "No directories to test for module '$module'"
+	continue
+    fi
     # Test to make sure all directories exist
     for aDir in $dirsToTest
     do

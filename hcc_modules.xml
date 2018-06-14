@@ -1,5 +1,5 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-06-14T19:46:18Z" UniqueID="localsoft4.runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org">
+  <RPSoftwareList Timestamp="2018-06-14T21:02:26Z" UniqueID="localsoft4.runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org">
     <ResourceID>runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
@@ -688,6 +688,71 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>awscli/1.11</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>system</Domain>
+      <Name>cmake</Name>
+      <Description>CMake is an extensible, open-source system that manages the build process</Description>
+      <Flavor>2.8.10.2</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>cmake/2.8</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>system</Domain>
+      <Name>cmake</Name>
+      <Description>CMake is an extensible, open-source system that manages the build process</Description>
+      <Flavor>3.10.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>cmake/3.10</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>system</Domain>
+      <Name>cmake</Name>
+      <Description>CMake is an extensible, open-source system that manages the build process</Description>
+      <Flavor>3.11.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>cmake/3.11</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>system</Domain>
+      <Name>cmake</Name>
+      <Description>CMake is an extensible, open-source system that manages the build process</Description>
+      <Flavor>3.7.1</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>cmake/3.7</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>system</Domain>
+      <Name>cmake</Name>
+      <Description>CMake is an extensible, open-source system that manages the build process</Description>
+      <Flavor>3.5.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>cmake/3.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1461,13 +1526,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>snp-sites</Name>
-      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
-      <Flavor>2.3.3</Flavor>
+      <Name>peakzilla</Name>
+      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snp-sites/2.3</HandleKey>
+        <HandleKey>peakzilla/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1526,13 +1591,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>snpeff</Name>
-      <Description>Genetic variant annotation and effect prediction toolbox.</Description>
-      <Flavor>4.3</Flavor>
+      <Name>mapsplice</Name>
+      <Description>MapSplice is a software for mapping RNA-seq data to reference genome for splice junction discovery that depends only on reference genome, and not on any further annotations.</Description>
+      <Flavor>2.2.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snpeff/4.3</HandleKey>
+        <HandleKey>mapsplice/2.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1559,6 +1624,136 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>metasv/0.5</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>system</Domain>
+      <Name>lftp</Name>
+      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
+      <Flavor>4.8.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>lftp/4.8</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Malware</Domain>
+      <Name>apkid</Name>
+      <Description>APKiD is Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.</Description>
+      <Flavor>1.0.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>apkid/1.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>pomoxis</Name>
+      <Description>Pomoxis comprises APIs and command line tools for interacting and analysing Oxford Nanopore Technologies&#226;&#128;&#153; data in real time.</Description>
+      <Flavor>0.1.7</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>pomoxis/0.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Genomics</Domain>
+      <Name>r-genometricorr</Name>
+      <Description>Genometric Correlation (GenometriCorr) is an R package for spatial correlation of genome-wide interval datasets.</Description>
+      <Flavor>1.1.17</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>r-genometricorr/1.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>plink</Name>
+      <Description>PLINK is a free, open-source whole genome association analysis toolset, designed to perform a range of basic, large-scale analyses in a computationally efficient manner.</Description>
+      <Flavor>1.90b4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>plink/1.90</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>trimmomatic</Name>
+      <Description>Trimmomatic: A flexible read trimming tool for Illumina NGS data.</Description>
+      <Flavor>0.36</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>trimmomatic/0.36</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Utility</Domain>
+      <Name>seedme</Name>
+      <Description>Client program for SeedMe.org.</Description>
+      <Flavor>1.2</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>seedme/1.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>snpeff</Name>
+      <Description>Genetic variant annotation and effect prediction toolbox.</Description>
+      <Flavor>4.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>snpeff/4.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>augustus</Name>
+      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
+      <Flavor>3.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>augustus/3.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>augustus</Name>
+      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
+      <Flavor>3.2.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>augustus/3.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1615,119 +1810,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>mapsplice</Name>
-      <Description>MapSplice is a software for mapping RNA-seq data to reference genome for splice junction discovery that depends only on reference genome, and not on any further annotations.</Description>
-      <Flavor>2.2.0</Flavor>
+      <Type>library</Type>
+      <Domain>tools</Domain>
+      <Name>git</Name>
+      <Description>distributed version control system</Description>
+      <Flavor>2.17.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>mapsplice/2.2</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>pomoxis</Name>
-      <Description>Pomoxis comprises APIs and command line tools for interacting and analysing Oxford Nanopore Technologies&#226;&#128;&#153; data in real time.</Description>
-      <Flavor>0.1.7</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>pomoxis/0.1</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>system</Domain>
-      <Name>aspera-cli</Name>
-      <Description>IBM Aspera Command-Line Interface (the Aspera CLI) is a collection of Aspera tools for performing high-speed, secure data transfers from the command line.</Description>
-      <Flavor>3.7.7</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>aspera-cli/3.7</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Malware</Domain>
-      <Name>apkid</Name>
-      <Description>APKiD is Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.</Description>
-      <Flavor>1.0.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>apkid/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>plink</Name>
-      <Description>PLINK is a free, open-source whole genome association analysis toolset, designed to perform a range of basic, large-scale analyses in a computationally efficient manner.</Description>
-      <Flavor>1.90b4</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>plink/1.90</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Utility</Domain>
-      <Name>seedme</Name>
-      <Description>Client program for SeedMe.org.</Description>
-      <Flavor>1.2</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>seedme/1.2</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>jamm</Name>
-      <Description>JAMM is a peak finder for NGS datasets (ChIP-Seq, ATAC-Seq, DNase-Seq..etc.) that can integrate replicates and assign peak boundaries accurately.</Description>
-      <Flavor>1.0.7r2</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>jamm/1.0.7r2</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>augustus</Name>
-      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
-      <Flavor>3.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>augustus/3.3</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>augustus</Name>
-      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
-      <Flavor>3.2.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>augustus/3.2</HandleKey>
+        <HandleKey>git/2.17</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1810,15 +1901,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>library</Type>
-      <Domain>tools</Domain>
-      <Name>git</Name>
-      <Description>distributed version control system</Description>
-      <Flavor>2.17.0</Flavor>
+      <Type>application</Type>
+      <Domain>Biology</Domain>
+      <Name>freebayes</Name>
+      <Description>Bayesian haplotype-based polymorphism discovery and genotyping</Description>
+      <Flavor>1.2.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>git/2.17</HandleKey>
+        <HandleKey>freebayes/1.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1837,19 +1928,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Biology</Domain>
-      <Name>freebayes</Name>
-      <Description>Bayesian haplotype-based polymorphism discovery and genotyping</Description>
-      <Flavor>1.2.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>freebayes/1.2</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>tool</Domain>
       <Name>aria2</Name>
       <Description>aria2 is a lightweight multi-protocol &amp; multi-source command-line download utility. </Description>
@@ -1858,58 +1936,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>aria2/1.23</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Utilities</Domain>
-      <Name>binutils</Name>
-      <Description>The GNU Binutils are a collection of binary tools.</Description>
-      <Flavor>2.30</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>binutils/2.30</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>trinity</Name>
-      <Description>Trinity assembles transcript sequences from Illumina RNA-Seq data.</Description>
-      <Flavor>2.4.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>trinity/2.4</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>biology</Domain>
-      <Name>beast</Name>
-      <Description>BEAST is a cross-platform program for Bayesian analysis of molecular sequences using MCMC.</Description>
-      <Flavor>1.8</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>beast/1.8</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>R</Domain>
-      <Name>r-markdown</Name>
-      <Description>Markdown is a plain-text formatting syntax that can be converted to XHTML or other formats.</Description>
-      <Flavor>0.8</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>r-markdown/0.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1928,27 +1954,53 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Applications</Domain>
-      <Name>sas</Name>
-      <Description>SAS is a software suite developed by SAS Institute for advanced analytics, business intelligence, data management, and predictive analytics.</Description>
-      <Flavor>9.3</Flavor>
+      <Domain>biology</Domain>
+      <Name>beast</Name>
+      <Description>BEAST is a cross-platform program for Bayesian analysis of molecular sequences using MCMC.</Description>
+      <Flavor>1.8</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>sas/9.3</HandleKey>
+        <HandleKey>beast/1.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Applications</Domain>
-      <Name>sas</Name>
-      <Description>SAS is a software suite developed by SAS Institute for advanced analytics, business intelligence, data management, and predictive analytics.</Description>
-      <Flavor>9.4</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>trinity</Name>
+      <Description>Trinity assembles transcript sequences from Illumina RNA-Seq data.</Description>
+      <Flavor>2.4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>sas/9.4</HandleKey>
+        <HandleKey>trinity/2.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>R</Domain>
+      <Name>r-markdown</Name>
+      <Description>Markdown is a plain-text formatting syntax that can be converted to XHTML or other formats.</Description>
+      <Flavor>0.8</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>r-markdown/0.8</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>unknown</Domain>
+      <Name>graphviz</Name>
+      <Description />
+      <Flavor>2.38.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>graphviz/2.38</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1980,27 +2032,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>jvarkit-sam2tsv</Name>
-      <Description>Prints the SAM alignments as a TAB delimited file.</Description>
-      <Flavor>1.0</Flavor>
+      <Domain>Utilities</Domain>
+      <Name>binutils</Name>
+      <Description>The GNU Binutils are a collection of binary tools.</Description>
+      <Flavor>2.30</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>transdecoder</Name>
-      <Description>TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.</Description>
-      <Flavor>3.0.1</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>transdecoder/3.0</HandleKey>
+        <HandleKey>binutils/2.30</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2027,6 +2066,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>octave/4.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>transdecoder</Name>
+      <Description>TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.</Description>
+      <Flavor>3.0.1</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>transdecoder/3.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2079,19 +2131,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>spades/3.10</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>unknown</Domain>
-      <Name>graphviz</Name>
-      <Description />
-      <Flavor>2.38.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>graphviz/2.38</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2189,19 +2228,6 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>plinkseq</Name>
-      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
-      <Flavor>0.10</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>plinkseq/0.10</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
       <Name>orthofinder</Name>
       <Description>OrthoFinder is a fast, accurate and comprehensive analysis tool for comparative genomics.</Description>
       <Flavor>1.1.8</Flavor>
@@ -2214,14 +2240,53 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Mapping</Domain>
-      <Name>bsmap</Name>
-      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
-      <Flavor>2.90</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>bioconductor-jmosaics</Name>
+      <Description>Joint analysis of multiple ChIP-Seq data sets.</Description>
+      <Flavor>1.10</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bsmap/2.90</HandleKey>
+        <HandleKey>bioconductor-jmosaics/1.10</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Applications</Domain>
+      <Name>sas</Name>
+      <Description>SAS is a software suite developed by SAS Institute for advanced analytics, business intelligence, data management, and predictive analytics.</Description>
+      <Flavor>9.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>sas/9.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Applications</Domain>
+      <Name>sas</Name>
+      <Description>SAS is a software suite developed by SAS Institute for advanced analytics, business intelligence, data management, and predictive analytics.</Description>
+      <Flavor>9.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>sas/9.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>plinkseq</Name>
+      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
+      <Flavor>0.10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>plinkseq/0.10</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2240,14 +2305,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>system</Domain>
-      <Name>lftp</Name>
-      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
-      <Flavor>4.8.3</Flavor>
+      <Domain>Mapping</Domain>
+      <Name>bsmap</Name>
+      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
+      <Flavor>2.90</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>lftp/4.8</HandleKey>
+        <HandleKey>bsmap/2.90</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2293,13 +2358,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>bioconductor-jmosaics</Name>
-      <Description>Joint analysis of multiple ChIP-Seq data sets.</Description>
-      <Flavor>1.10</Flavor>
+      <Name>bx-python/py35</Name>
+      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
+      <Flavor>0.8.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bioconductor-jmosaics/1.10</HandleKey>
+        <HandleKey>bx-python/py35/0.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2332,13 +2397,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>bx-python/py35</Name>
+      <Name>bx-python/py27</Name>
       <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
       <Flavor>0.8.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bx-python/py35/0.8</HandleKey>
+        <HandleKey>bx-python/py27/0.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2397,13 +2462,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>bx-python/py27</Name>
-      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
-      <Flavor>0.8.1</Flavor>
+      <Name>jvarkit-sam2tsv</Name>
+      <Description>Prints the SAM alignments as a TAB delimited file.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bx-python/py27/0.8</HandleKey>
+        <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2422,40 +2487,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Genomics</Domain>
-      <Name>r-genometricorr</Name>
-      <Description>Genometric Correlation (GenometriCorr) is an R package for spatial correlation of genome-wide interval datasets.</Description>
-      <Flavor>1.1.17</Flavor>
+      <Domain>system</Domain>
+      <Name>aspera-cli</Name>
+      <Description>IBM Aspera Command-Line Interface (the Aspera CLI) is a collection of Aspera tools for performing high-speed, secure data transfers from the command line.</Description>
+      <Flavor>3.7.7</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>r-genometricorr/1.1</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>peakzilla</Name>
-      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
-      <Flavor>1.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>peakzilla/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Bioinformatics</Domain>
-      <Name>seqyclean</Name>
-      <Description>Main purpose of this software is to pre-process NGS data in order to prepare for downstream analysis.</Description>
-      <Flavor>1.10.07</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>seqyclean/1.10</HandleKey>
+        <HandleKey>aspera-cli/3.7</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2487,14 +2526,40 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>trimmomatic</Name>
-      <Description>Trimmomatic: A flexible read trimming tool for Illumina NGS data.</Description>
-      <Flavor>0.36</Flavor>
+      <Domain>Bioinformatics</Domain>
+      <Name>seqyclean</Name>
+      <Description>Main purpose of this software is to pre-process NGS data in order to prepare for downstream analysis.</Description>
+      <Flavor>1.10.07</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>trimmomatic/0.36</HandleKey>
+        <HandleKey>seqyclean/1.10</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>snp-sites</Name>
+      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
+      <Flavor>2.3.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>snp-sites/2.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>jamm</Name>
+      <Description>JAMM is a peak finder for NGS datasets (ChIP-Seq, ATAC-Seq, DNase-Seq..etc.) that can integrate replicates and assign peak boundaries accurately.</Description>
+      <Flavor>1.0.7r2</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>jamm/1.0.7r2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>

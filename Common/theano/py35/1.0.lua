@@ -8,8 +8,7 @@ whatis("Name: Theano")
 whatis("Version: 1.0.2")
 whatis("Category: mathematics, machine learning")
 whatis("Keywords: Mathematics, Machine Learning")
-whatis("Description: Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays ef
-ficiently.")
+whatis("Description: Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.")
 whatis("URL: http://deeplearning.net/software/theano/index.html")
 
 pushenv("CONDA_DEFAULT_ENV", "theano-1.0.2-py35")

@@ -15,8 +15,7 @@ whatis("URL: http://www.gaussian.com/g_prod/g09.htm")
 
 setenv("g09root", "/util/opt/gaussian/09/RevD")
 setenv("GAUSS_SCRDIR", "/tmp")
-prepend_path("LD_LIBRARY_PATH","/util/comp/pgi/linux86-64/12/libso")
+prepend_path("LD_LIBRARY_PATH","/util/comp/pgi/2012/linux86-64/12/libso")
+prepend_path("LIBRARY_PATH","/util/comp/pgi/2012/linux86-64/12/libso")
 
 family("gaussian")
-
-prepend_path("LIBRARY_PATH","/util/comp/pgi/linux86-64/12/libso")

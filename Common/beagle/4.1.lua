@@ -5,6 +5,11 @@ Version 4.1
 
 ]])
 
+if mode() == "load" then
+  LmodMessage("Usage: beagle <arguments>")
+  LmodMessage("Increase Java heap space to 10GBs: beagle -Xms512m -Xmx10g <arguments>")
+end
+
 whatis("Name: Beagle")
 whatis("Version: 4.1_21Jan17")
 whatis("Category: Biology, Genotyping")

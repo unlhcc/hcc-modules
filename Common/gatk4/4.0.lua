@@ -4,6 +4,11 @@ This module loads GATK4.
 Version 4.0.4.0
 ]])
 
+if mode() == "load" then
+  LmodMessage("Usage: gatk <program name>")
+  LmodMessage("Increase Java heap space to 10GBs: gatk -Xms512m -Xmx10g <program name>")
+end
+
 whatis("Name: GATK4")
 whatis("Version: 4.0.4.0")
 whatis("Category: computational biology, sequencing")

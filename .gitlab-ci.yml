@@ -8,6 +8,7 @@ stages:
   - test
   - updatexml
   - deploy
+  - sync-to-github
 
 test-modules:
   stage: test
@@ -148,3 +149,22 @@ deploy-sandhills:
     - git checkout master
     - git fetch
     - git checkout $CI_COMMIT_SHA
+
+sync-to-github:
+  stage: sync-to-github
+  image: unlhcc/crane-build-el6
+  allow_failure: yes
+  only:
+    - master
+  script:
+    - eval $(ssh-agent -s) > /dev/null
+    - mkdir -p ~/.ssh
+    - chown 700 ~/.ssh
+    - echo $GITHUB_SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - ssh-add <(echo "$GITHUB_SSH_DEPLOY_PKEY" | base64 --decode)
+    - git config user.name "HCC Gitlab CI"
+    - git config user.email "hcc-support@unl.edu"
+    - git checkout master
+    - git remote add github git@github.com:unlhcc/hcc-modules.git
+    - git push github +master

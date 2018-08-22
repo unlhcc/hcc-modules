@@ -1,5 +1,5 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-08-20T17:07:51Z" UniqueID="localsoft4.runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org">
+  <RPSoftwareList Timestamp="2018-08-22T21:53:12Z" UniqueID="localsoft4.runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org">
     <ResourceID>runner-45ffcae5-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
@@ -1851,13 +1851,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>trimmomatic</Name>
-      <Description>Trimmomatic: A flexible read trimming tool for Illumina NGS data.</Description>
-      <Flavor>0.36</Flavor>
+      <Name>mapsplice</Name>
+      <Description>MapSplice is a software for mapping RNA-seq data to reference genome for splice junction discovery that depends only on reference genome, and not on any further annotations.</Description>
+      <Flavor>2.2.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>trimmomatic/0.36</HandleKey>
+        <HandleKey>mapsplice/2.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>ccat</Name>
+      <Description>A software package for the analysis of ChIP-seq data with negative control.</Description>
+      <Flavor>3.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>ccat/3.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1876,14 +1889,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>ccat</Name>
-      <Description>A software package for the analysis of ChIP-seq data with negative control.</Description>
-      <Flavor>3.0</Flavor>
+      <Domain>high-throughput sequencing data</Domain>
+      <Name>abayesqr</Name>
+      <Description>aBayesQR is a viral quasispecies reconstruction algorithm that employs a maximum-likelihood framework to infer individual sequences in a mixture from high-throughput sequencing data.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ccat/3.0</HandleKey>
+        <HandleKey>abayesqr/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1928,14 +1941,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>high-throughput sequencing data</Domain>
-      <Name>abayesqr</Name>
-      <Description>aBayesQR is a viral quasispecies reconstruction algorithm that employs a maximum-likelihood framework to infer individual sequences in a mixture from high-throughput sequencing data.</Description>
-      <Flavor>1.0</Flavor>
+      <Domain>system</Domain>
+      <Name>lftp</Name>
+      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
+      <Flavor>4.8.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>abayesqr/1.0</HandleKey>
+        <HandleKey>lftp/4.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1980,27 +1993,27 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>repenrich</Name>
-      <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
-      <Flavor>1.2</Flavor>
+      <Domain>Malware</Domain>
+      <Name>apkid</Name>
+      <Description>APKiD is Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.</Description>
+      <Flavor>1.0.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>repenrich/1.2</HandleKey>
+        <HandleKey>apkid/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>system</Domain>
-      <Name>lftp</Name>
-      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
-      <Flavor>4.8.3</Flavor>
+      <Domain>engineering</Domain>
+      <Name>octave</Name>
+      <Description>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab.</Description>
+      <Flavor>4.2</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>lftp/4.8</HandleKey>
+        <HandleKey>octave/4.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2032,19 +2045,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>engineering</Domain>
-      <Name>octave</Name>
-      <Description>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab.</Description>
-      <Flavor>4.2</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>octave/4.2</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>computational biology</Domain>
       <Name>metasv</Name>
       <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
@@ -2053,6 +2053,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>metasv/0.5</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>plinkseq</Name>
+      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
+      <Flavor>0.10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>plinkseq/0.10</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2123,19 +2136,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Utilities</Domain>
-      <Name>autoconf</Name>
-      <Description>Extensible M4 macros that produce shell scripts to configure software source code packages.</Description>
-      <Flavor>2.69</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>autoconf/2.69</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>computational biology</Domain>
       <Name>htslib</Name>
       <Description>HTSlib is an implementation of a unified C library for accessing common file formats.</Description>
@@ -2144,6 +2144,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>htslib/1.7</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>jamm</Name>
+      <Description>JAMM is a peak finder for NGS datasets (ChIP-Seq, ATAC-Seq, DNase-Seq..etc.) that can integrate replicates and assign peak boundaries accurately.</Description>
+      <Flavor>1.0.7r2</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>jamm/1.0.7r2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2162,14 +2175,27 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Mapping</Domain>
-      <Name>bsmap</Name>
-      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
-      <Flavor>2.90</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>bx-python/py35</Name>
+      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
+      <Flavor>0.8.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bsmap/2.90</HandleKey>
+        <HandleKey>bx-python/py35/0.8</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>bitmap</Domain>
+      <Name>imagemagick</Name>
+      <Description>Software suite to create, edit, compose, or convert bitmap images.</Description>
+      <Flavor>7.0.8_10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>imagemagick/7.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2183,19 +2209,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>beta/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>bx-python/py35</Name>
-      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
-      <Flavor>0.8.1</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>bx-python/py35/0.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2331,19 +2344,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>system</Domain>
-      <Name>aspera-cli</Name>
-      <Description>IBM Aspera Command-Line Interface (the Aspera CLI) is a collection of Aspera tools for performing high-speed, secure data transfers from the command line.</Description>
-      <Flavor>3.7.7</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>aspera-cli/3.7</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>computational biology</Domain>
       <Name>orthofinder</Name>
       <Description>OrthoFinder is a fast, accurate and comprehensive analysis tool for comparative genomics.</Description>
@@ -2383,6 +2383,19 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
+      <Domain>system</Domain>
+      <Name>aspera-cli</Name>
+      <Description>IBM Aspera Command-Line Interface (the Aspera CLI) is a collection of Aspera tools for performing high-speed, secure data transfers from the command line.</Description>
+      <Flavor>3.7.7</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>aspera-cli/3.7</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
       <Domain>biology</Domain>
       <Name>beast</Name>
       <Description>BEAST is a cross-platform program for Bayesian analysis of molecular sequences using MCMC.</Description>
@@ -2391,32 +2404,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>beast/1.8</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>trinity</Name>
-      <Description>Trinity assembles transcript sequences from Illumina RNA-Seq data.</Description>
-      <Flavor>2.4.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>trinity/2.4</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>trinity</Name>
-      <Description>Trinity RNA-Seq de novo transcriptome assembly</Description>
-      <Flavor>2.6.6</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>trinity/2.6</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2499,6 +2486,19 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>bx-python/py27</Name>
+      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
+      <Flavor>0.8.1</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>bx-python/py27/0.8</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
       <Type>library</Type>
       <Domain>unknown</Domain>
       <Name>graphviz</Name>
@@ -2512,15 +2512,28 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>bx-python/py27</Name>
-      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
-      <Flavor>0.8.1</Flavor>
+      <Type>library</Type>
+      <Domain>java</Domain>
+      <Name>ant</Name>
+      <Description>Java build tool</Description>
+      <Flavor>1.10.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bx-python/py27/0.8</HandleKey>
+        <HandleKey>ant/1.10</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>java</Domain>
+      <Name>ant</Name>
+      <Description>Java build tool</Description>
+      <Flavor>1.9.9</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>ant/1.9</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2565,19 +2578,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>viennarna</Name>
-      <Description>The ViennaRNA Package consists of a C code library and several stand-alone programs for the prediction and comparison of RNA secondary structures.</Description>
-      <Flavor>2.3.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>viennarna/2.3</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>Utilities</Domain>
       <Name>binutils</Name>
       <Description>The GNU Binutils are a collection of binary tools.</Description>
@@ -2586,6 +2586,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>binutils/2.30</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>viennarna</Name>
+      <Description>The ViennaRNA Package consists of a C code library and several stand-alone programs for the prediction and comparison of RNA secondary structures.</Description>
+      <Flavor>2.3.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>viennarna/2.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2721,14 +2734,27 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>genomics</Domain>
-      <Name>ssake</Name>
-      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
-      <Flavor>4.0</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>trinity</Name>
+      <Description>Trinity assembles transcript sequences from Illumina RNA-Seq data.</Description>
+      <Flavor>2.4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ssake/4.0</HandleKey>
+        <HandleKey>trinity/2.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>trinity</Name>
+      <Description>Trinity RNA-Seq de novo transcriptome assembly</Description>
+      <Flavor>2.6.6</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>trinity/2.6</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2746,28 +2772,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>library</Type>
-      <Domain>java</Domain>
-      <Name>ant</Name>
-      <Description>Java build tool</Description>
-      <Flavor>1.10.1</Flavor>
+      <Type>application</Type>
+      <Domain>genomics</Domain>
+      <Name>ssake</Name>
+      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
+      <Flavor>4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ant/1.10</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>java</Domain>
-      <Name>ant</Name>
-      <Description>Java build tool</Description>
-      <Flavor>1.9.9</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>ant/1.9</HandleKey>
+        <HandleKey>ssake/4.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2864,14 +2877,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>mapsplice</Name>
-      <Description>MapSplice is a software for mapping RNA-seq data to reference genome for splice junction discovery that depends only on reference genome, and not on any further annotations.</Description>
-      <Flavor>2.2.0</Flavor>
+      <Domain>Mapping</Domain>
+      <Name>bsmap</Name>
+      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
+      <Flavor>2.90</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>mapsplice/2.2</HandleKey>
+        <HandleKey>bsmap/2.90</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2942,27 +2955,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>jamm</Name>
-      <Description>JAMM is a peak finder for NGS datasets (ChIP-Seq, ATAC-Seq, DNase-Seq..etc.) that can integrate replicates and assign peak boundaries accurately.</Description>
-      <Flavor>1.0.7r2</Flavor>
+      <Domain>Utilities</Domain>
+      <Name>autoconf</Name>
+      <Description>Extensible M4 macros that produce shell scripts to configure software source code packages.</Description>
+      <Flavor>2.69</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>jamm/1.0.7r2</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Malware</Domain>
-      <Name>apkid</Name>
-      <Description>APKiD is Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.</Description>
-      <Flavor>1.0.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>apkid/1.0</HandleKey>
+        <HandleKey>autoconf/2.69</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2994,6 +2994,19 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>repenrich</Name>
+      <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
+      <Flavor>1.2</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>repenrich/1.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
       <Domain>Bioinformatics</Domain>
       <Name>seqyclean</Name>
       <Description>Main purpose of this software is to pre-process NGS data in order to prepare for downstream analysis.</Description>
@@ -3008,19 +3021,6 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>plinkseq</Name>
-      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
-      <Flavor>0.10</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>plinkseq/0.10</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
       <Name>jvarkit-sam2tsv</Name>
       <Description>Prints the SAM alignments as a TAB delimited file.</Description>
       <Flavor>1.0</Flavor>
@@ -3028,6 +3028,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>trimmomatic</Name>
+      <Description>Trimmomatic: A flexible read trimming tool for Illumina NGS data.</Description>
+      <Flavor>0.36</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>trimmomatic/0.36</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>

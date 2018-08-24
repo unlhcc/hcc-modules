@@ -2,6 +2,7 @@ variables:
   WORK: "/tmp"
   LMOD_REDIRECT: "yes"
   XML_FILE: "hcc_modules.xml"
+  BIODATA_XML_FILE: "biodata_module.xml"
   MODULES_DIR: "/util/opt/hcc-modules"
 
 stages:
@@ -77,7 +78,8 @@ updatexml:
     - git checkout $CI_COMMIT_REF_NAME
   script:
     - /util/opt/lmod/lmod/libexec/spider -o xmlSoftwarePage $CI_PROJECT_DIR/Common > $XML_FILE
-    - git add $XML_FILE
+    - scripts/create_biodata_xml_file.py Common/biodata/1.0.lua $BIODATA_XML_FILE
+    - git add $XML_FILE $BIODATA_XML_FILE
     - git commit -m "Automated XML update [skip ci]"
     - git push origin-push $CI_COMMIT_REF_NAME || true
 

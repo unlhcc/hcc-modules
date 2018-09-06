@@ -1,5 +1,5 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-08-30T03:35:01Z" UniqueID="localsoft4.runner-b557f845-project-3516-concurrent-0.tacc.xsede.org">
+  <RPSoftwareList Timestamp="2018-09-06T02:18:28Z" UniqueID="localsoft4.runner-b557f845-project-3516-concurrent-0.tacc.xsede.org">
     <ResourceID>runner-b557f845-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
@@ -459,14 +459,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Mapping</Domain>
-      <Name>bsmap</Name>
-      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
-      <Flavor>2.90</Flavor>
+      <Domain>genomics</Domain>
+      <Name>gdcclient</Name>
+      <Description>GDC provides a standard client-based mechanism in support of high performance data downloads and submission.</Description>
+      <Flavor>1.3.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bsmap/2.90</HandleKey>
+        <HandleKey>gdcclient/1.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -883,6 +883,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>xcrysden/1.5</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>ucsc-liftover</Name>
+      <Description>The Batch Coordinate Conversion (liftOver) utility converts genome coordinates and genome annotation files between assemblies.</Description>
+      <Flavor>366</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>ucsc-liftover/366</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1408,27 +1421,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>NGS data</Domain>
-      <Name>cutadapt</Name>
-      <Description>Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</Description>
-      <Flavor>1.13</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>cutadapt/1.13</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>cutadapt</Name>
-      <Description>Cutadapt removes adapter sequences from DNA high-throughput sequencing data.</Description>
-      <Flavor>1.4</Flavor>
+      <Name>sift4g</Name>
+      <Description>SIFT 4G is a faster version of SIFT that enables us to scale up and provide SIFT predictions for more organisms.</Description>
+      <Flavor>2.0.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>cutadapt/1.4</HandleKey>
+        <HandleKey>sift4g/2.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1799,13 +1799,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>snp-sites</Name>
-      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
-      <Flavor>2.3.3</Flavor>
+      <Name>bx-python/py35</Name>
+      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
+      <Flavor>0.8.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snp-sites/2.3</HandleKey>
+        <HandleKey>bx-python/py35/0.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1916,26 +1916,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>metasv</Name>
-      <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
-      <Flavor>0.5.4</Flavor>
+      <Name>gatk4</Name>
+      <Description>GATK4: This toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</Description>
+      <Flavor>4.0.4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>metasv/0.5</HandleKey>
+        <HandleKey>gatk4/4.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>high-throughput sequencing data</Domain>
-      <Name>abayesqr</Name>
-      <Description>aBayesQR is a viral quasispecies reconstruction algorithm that employs a maximum-likelihood framework to infer individual sequences in a mixture from high-throughput sequencing data.</Description>
-      <Flavor>1.0</Flavor>
+      <Domain>system</Domain>
+      <Name>lftp</Name>
+      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
+      <Flavor>4.8.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>abayesqr/1.0</HandleKey>
+        <HandleKey>lftp/4.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1954,14 +1954,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Malware</Domain>
-      <Name>apkid</Name>
-      <Description>APKiD is Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.</Description>
-      <Flavor>1.0.0</Flavor>
+      <Domain>Mapping</Domain>
+      <Name>bsmap</Name>
+      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
+      <Flavor>2.90</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>apkid/1.0</HandleKey>
+        <HandleKey>bsmap/2.90</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1993,14 +1993,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>genomics</Domain>
-      <Name>ssake</Name>
-      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
-      <Flavor>4.0</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>snp-sites</Name>
+      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
+      <Flavor>2.3.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ssake/4.0</HandleKey>
+        <HandleKey>snp-sites/2.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2059,26 +2059,39 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>peakzilla</Name>
-      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
-      <Flavor>1.0</Flavor>
+      <Name>augustus</Name>
+      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
+      <Flavor>3.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>peakzilla/1.0</HandleKey>
+        <HandleKey>augustus/3.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Shell tool</Domain>
-      <Name>gnu-parallel</Name>
-      <Description>GNU parallel is a shell tool for executing jobs in parallel using one or more computers.</Description>
-      <Flavor>20180522</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>augustus</Name>
+      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
+      <Flavor>3.2.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gnu-parallel/20180522</HandleKey>
+        <HandleKey>augustus/3.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>plinkseq</Name>
+      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
+      <Flavor>0.10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>plinkseq/0.10</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2123,45 +2136,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>plinkseq</Name>
-      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
-      <Flavor>0.10</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>plinkseq/0.10</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>gatk4</Name>
-      <Description>GATK4: This toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</Description>
-      <Flavor>4.0.4.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>gatk4/4.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>system</Domain>
-      <Name>lftp</Name>
-      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
-      <Flavor>4.8.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>lftp/4.8</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>r</Domain>
       <Name>r-ggfortify</Name>
       <Description>ggfortify is a package of unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis.</Description>
@@ -2175,27 +2149,66 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>sift4g</Name>
-      <Description>SIFT 4G is a faster version of SIFT that enables us to scale up and provide SIFT predictions for more organisms.</Description>
-      <Flavor>2.0.0</Flavor>
+      <Domain>Malware</Domain>
+      <Name>apkid</Name>
+      <Description>APKiD is Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.</Description>
+      <Flavor>1.0.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>sift4g/2.0</HandleKey>
+        <HandleKey>apkid/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>pomoxis</Name>
-      <Description>Pomoxis comprises APIs and command line tools for interacting and analysing Oxford Nanopore Technologies&#226;&#128;&#153; data in real time.</Description>
-      <Flavor>0.1.7</Flavor>
+      <Domain>unknown</Domain>
+      <Name>mathematica</Name>
+      <Description />
+      <Flavor>11.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pomoxis/0.1</HandleKey>
+        <HandleKey>mathematica/11.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>mathematica</Name>
+      <Description />
+      <Flavor>10.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>mathematica/10.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>mathematica</Name>
+      <Description />
+      <Flavor>9.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>mathematica/9.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>mathematica</Name>
+      <Description />
+      <Flavor>10.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>mathematica/10.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2228,13 +2241,52 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>jvarkit-sam2tsv</Name>
-      <Description>Prints the SAM alignments as a TAB delimited file.</Description>
+      <Name>pomoxis</Name>
+      <Description>Pomoxis comprises APIs and command line tools for interacting and analysing Oxford Nanopore Technologies&#226;&#128;&#153; data in real time.</Description>
+      <Flavor>0.1.7</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>pomoxis/0.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>bitmap</Domain>
+      <Name>imagemagick</Name>
+      <Description>Software suite to create, edit, compose, or convert bitmap images.</Description>
+      <Flavor>7.0.8_10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>imagemagick/7.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>repenrich</Name>
+      <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
+      <Flavor>1.2</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>repenrich/1.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>zerone</Name>
+      <Description>Zerone discretizes several ChIP-seq replicates simultaneously and resolves conflicts between them. After the job is done, Zerone checks the results and tells you whether it passes the quality control.</Description>
       <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
+        <HandleKey>zerone/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2266,27 +2318,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>augustus</Name>
-      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
-      <Flavor>3.3</Flavor>
+      <Domain>engineering</Domain>
+      <Name>octave</Name>
+      <Description>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab.</Description>
+      <Flavor>4.2</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>augustus/3.3</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>augustus</Name>
-      <Description>AUGUSTUS is a gene prediction program for eukaryotes written by Mario Stanke and Oliver Keller. It can be used as an ab initio program, which means it bases its prediction purely on the sequence. AUGUSTUS may also incorporate hints on the gene structure coming from extrinsic sources such as EST, MS/MS, protein alignments and synthenic genomic alignments.</Description>
-      <Flavor>3.2.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>augustus/3.2</HandleKey>
+        <HandleKey>octave/4.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2486,15 +2525,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>application</Type>
-      <Domain>bitmap</Domain>
-      <Name>imagemagick</Name>
-      <Description>Software suite to create, edit, compose, or convert bitmap images.</Description>
-      <Flavor>7.0.8_10</Flavor>
+      <Type>library</Type>
+      <Domain>unknown</Domain>
+      <Name>graphviz</Name>
+      <Description />
+      <Flavor>2.38.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>imagemagick/7.0</HandleKey>
+        <HandleKey>graphviz/2.38</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2512,28 +2551,54 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>beta</Name>
-      <Description>Binding and Expression Target Analysis (BETA) is a software package that integrates ChIP-seq of transcription factors or chromatin regulators with differential gene expression data to infer direct target genes.</Description>
-      <Flavor>1.0.7</Flavor>
+      <Type>library</Type>
+      <Domain>java</Domain>
+      <Name>ant</Name>
+      <Description>Java build tool</Description>
+      <Flavor>1.10.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>beta/1.0</HandleKey>
+        <HandleKey>ant/1.10</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>java</Domain>
+      <Name>ant</Name>
+      <Description>Java build tool</Description>
+      <Flavor>1.9.9</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>ant/1.9</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>NGS data</Domain>
+      <Name>cutadapt</Name>
+      <Description>Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</Description>
+      <Flavor>1.13</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>cutadapt/1.13</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>ccat</Name>
-      <Description>A software package for the analysis of ChIP-seq data with negative control.</Description>
-      <Flavor>3.0</Flavor>
+      <Name>cutadapt</Name>
+      <Description>Cutadapt removes adapter sequences from DNA high-throughput sequencing data.</Description>
+      <Flavor>1.4</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ccat/3.0</HandleKey>
+        <HandleKey>cutadapt/1.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2566,26 +2631,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>pepr</Name>
-      <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
-      <Flavor>1.1.18</Flavor>
+      <Name>ccat</Name>
+      <Description>A software package for the analysis of ChIP-seq data with negative control.</Description>
+      <Flavor>3.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pepr/1.1</HandleKey>
+        <HandleKey>ccat/3.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>package</Domain>
-      <Name>afterqc</Name>
-      <Description>Automatic Filtering, Trimming, Error Removing and Quality Control for fastq data. AfterQC can simply go through all fastq files in a folder and then output three folders: good, bad and QC folders, which contains good reads, bad reads and the QC results of each fastq file/pair. Currently it supports processing data from HiSeq 2000/2500/3000/4000, Nextseq 500/550, MiniSeq...and other Illumina 1.8 or newer formats.</Description>
-      <Flavor>0.9.6</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>beta</Name>
+      <Description>Binding and Expression Target Analysis (BETA) is a software package that integrates ChIP-seq of transcription factors or chromatin regulators with differential gene expression data to infer direct target genes.</Description>
+      <Flavor>1.0.7</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>afterqc/0.9</HandleKey>
+        <HandleKey>beta/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2605,13 +2670,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>snpeff</Name>
-      <Description>Genetic variant annotation and effect prediction toolbox.</Description>
-      <Flavor>4.3</Flavor>
+      <Name>pepr</Name>
+      <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
+      <Flavor>1.1.18</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snpeff/4.3</HandleKey>
+        <HandleKey>pepr/1.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2670,39 +2735,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>zerone</Name>
-      <Description>Zerone discretizes several ChIP-seq replicates simultaneously and resolves conflicts between them. After the job is done, Zerone checks the results and tells you whether it passes the quality control.</Description>
-      <Flavor>1.0</Flavor>
+      <Name>snpeff</Name>
+      <Description>Genetic variant annotation and effect prediction toolbox.</Description>
+      <Flavor>4.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>zerone/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>java</Domain>
-      <Name>ant</Name>
-      <Description>Java build tool</Description>
-      <Flavor>1.10.1</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>ant/1.10</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>java</Domain>
-      <Name>ant</Name>
-      <Description>Java build tool</Description>
-      <Flavor>1.9.9</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>ant/1.9</HandleKey>
+        <HandleKey>snpeff/4.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2734,6 +2773,19 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
+      <Domain>genomics</Domain>
+      <Name>ssake</Name>
+      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
+      <Flavor>4.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>ssake/4.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
       <Domain>biology</Domain>
       <Name>beast2</Name>
       <Description>BEAST 2 is a cross-platform program for Bayesian phylogenetic analysis of molecular sequences.</Description>
@@ -2747,14 +2799,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>repenrich</Name>
-      <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
-      <Flavor>1.2</Flavor>
+      <Domain>package</Domain>
+      <Name>afterqc</Name>
+      <Description>Automatic Filtering, Trimming, Error Removing and Quality Control for fastq data. AfterQC can simply go through all fastq files in a folder and then output three folders: good, bad and QC folders, which contains good reads, bad reads and the QC results of each fastq file/pair. Currently it supports processing data from HiSeq 2000/2500/3000/4000, Nextseq 500/550, MiniSeq...and other Illumina 1.8 or newer formats.</Description>
+      <Flavor>0.9.6</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>repenrich/1.2</HandleKey>
+        <HandleKey>afterqc/0.9</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2773,14 +2825,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>engineering</Domain>
-      <Name>octave</Name>
-      <Description>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab.</Description>
-      <Flavor>4.2</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>jvarkit-sam2tsv</Name>
+      <Description>Prints the SAM alignments as a TAB delimited file.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>octave/4.2</HandleKey>
+        <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2863,15 +2915,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>library</Type>
-      <Domain>unknown</Domain>
-      <Name>graphviz</Name>
-      <Description />
-      <Flavor>2.38.0</Flavor>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>peakzilla</Name>
+      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>graphviz/2.38</HandleKey>
+        <HandleKey>peakzilla/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2942,79 +2994,40 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>genomics</Domain>
-      <Name>gdcclient</Name>
-      <Description>GDC provides a standard client-based mechanism in support of high performance data downloads and submission.</Description>
-      <Flavor>1.3.0</Flavor>
+      <Domain>Shell tool</Domain>
+      <Name>gnu-parallel</Name>
+      <Description>GNU parallel is a shell tool for executing jobs in parallel using one or more computers.</Description>
+      <Flavor>20180522</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gdcclient/1.3</HandleKey>
+        <HandleKey>gnu-parallel/20180522</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>high-throughput sequencing data</Domain>
+      <Name>abayesqr</Name>
+      <Description>aBayesQR is a viral quasispecies reconstruction algorithm that employs a maximum-likelihood framework to infer individual sequences in a mixture from high-throughput sequencing data.</Description>
+      <Flavor>1.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>abayesqr/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>bx-python/py35</Name>
-      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
-      <Flavor>0.8.1</Flavor>
+      <Name>metasv</Name>
+      <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
+      <Flavor>0.5.4</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bx-python/py35/0.8</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>mathematica</Name>
-      <Description />
-      <Flavor>11.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mathematica/11.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>mathematica</Name>
-      <Description />
-      <Flavor>10.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mathematica/10.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>mathematica</Name>
-      <Description />
-      <Flavor>9.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mathematica/9.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>mathematica</Name>
-      <Description />
-      <Flavor>10.4</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mathematica/10.4</HandleKey>
+        <HandleKey>metasv/0.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>

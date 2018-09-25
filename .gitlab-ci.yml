@@ -154,6 +154,8 @@ deploy-sandhills:
 
 sync-to-github:
   stage: sync-to-github
+  tags:
+    - docker
   image: unlhcc/crane-build-el6
   allow_failure: yes
   only:

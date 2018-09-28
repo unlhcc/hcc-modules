@@ -1,6 +1,6 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-09-26T23:42:39Z" UniqueID="localsoft4.runner-ca46ac4d-project-3516-concurrent-0.tacc.xsede.org">
-    <ResourceID>runner-ca46ac4d-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
+  <RPSoftwareList Timestamp="2018-09-28T22:09:38Z" UniqueID="localsoft4.runner-2210a532-project-3516-concurrent-0.tacc.xsede.org">
+    <ResourceID>runner-2210a532-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
       <Type>application</Type>
@@ -917,7 +917,7 @@
       <Domain>mathematics</Domain>
       <Name>R</Name>
       <Description>Microsoft R Open is the enhanced distribution of R from Microsoft Corporation.</Description>
-      <Flavor>3.5.0</Flavor>
+      <Flavor>3.5.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>

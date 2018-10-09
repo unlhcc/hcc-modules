@@ -1,6 +1,6 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-10-05T18:56:58Z" UniqueID="localsoft4.runner-2210a532-project-3516-concurrent-0.tacc.xsede.org">
-    <ResourceID>runner-2210a532-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
+  <RPSoftwareList Timestamp="2018-10-09T21:47:13Z" UniqueID="localsoft4.runner-ca46ac4d-project-3516-concurrent-0.tacc.xsede.org">
+    <ResourceID>runner-ca46ac4d-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
       <Type>application</Type>
@@ -441,6 +441,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>bioconductor/3.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Language</Domain>
+      <Name>julia</Name>
+      <Description>A high-performance dynamic programming language for data science</Description>
+      <Flavor>1.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>julia/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1200,14 +1213,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>snpfinder</Name>
-      <Description>SNPFinder is a simple alignment-based haplotype variant caller that can be used with metagenomic sequence data.</Description>
-      <Flavor>1.0.0</Flavor>
+      <Domain>biology</Domain>
+      <Name>r-regresshaplo</Name>
+      <Description>This package reconstructs haplotypes from a BAM file using a penalized regression approach.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snpfinder/1.0</HandleKey>
+        <HandleKey>r-regresshaplo/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1227,26 +1240,39 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>trinity</Name>
-      <Description>Trinity assembles transcript sequences from Illumina RNA-Seq data.</Description>
-      <Flavor>2.4.0</Flavor>
+      <Name>samtools</Name>
+      <Description>Tools for dealing with SAM, BAM and CRAM files</Description>
+      <Flavor>1.9</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>trinity/2.4</HandleKey>
+        <HandleKey>samtools/1.9</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>trinity</Name>
-      <Description>Trinity RNA-Seq de novo transcriptome assembly</Description>
-      <Flavor>2.6.6</Flavor>
+      <Name>samtools</Name>
+      <Description>SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format.</Description>
+      <Flavor>1.6</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>trinity/2.6</HandleKey>
+        <HandleKey>samtools/1.6</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>samtools</Name>
+      <Description>SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format.</Description>
+      <Flavor>1.5</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>samtools/1.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1447,27 +1473,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>NGS data</Domain>
-      <Name>cutadapt</Name>
-      <Description>Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</Description>
-      <Flavor>1.13</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>cutadapt/1.13</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>cutadapt</Name>
-      <Description>Cutadapt removes adapter sequences from DNA high-throughput sequencing data.</Description>
-      <Flavor>1.4</Flavor>
+      <Name>sift4g</Name>
+      <Description>SIFT 4G is a faster version of SIFT that enables us to scale up and provide SIFT predictions for more organisms.</Description>
+      <Flavor>2.0.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>cutadapt/1.4</HandleKey>
+        <HandleKey>sift4g/2.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1824,14 +1837,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>package</Domain>
-      <Name>afterqc</Name>
-      <Description>Automatic Filtering, Trimming, Error Removing and Quality Control for fastq data. AfterQC can simply go through all fastq files in a folder and then output three folders: good, bad and QC folders, which contains good reads, bad reads and the QC results of each fastq file/pair. Currently it supports processing data from HiSeq 2000/2500/3000/4000, Nextseq 500/550, MiniSeq...and other Illumina 1.8 or newer formats.</Description>
-      <Flavor>0.9.6</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>repenrich</Name>
+      <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
+      <Flavor>1.2</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>afterqc/0.9</HandleKey>
+        <HandleKey>repenrich/1.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1850,14 +1863,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>transdecoder</Name>
-      <Description>TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.</Description>
-      <Flavor>3.0.1</Flavor>
+      <Domain>package</Domain>
+      <Name>afterqc</Name>
+      <Description>Automatic Filtering, Trimming, Error Removing and Quality Control for fastq data. AfterQC can simply go through all fastq files in a folder and then output three folders: good, bad and QC folders, which contains good reads, bad reads and the QC results of each fastq file/pair. Currently it supports processing data from HiSeq 2000/2500/3000/4000, Nextseq 500/550, MiniSeq...and other Illumina 1.8 or newer formats.</Description>
+      <Flavor>0.9.6</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>transdecoder/3.0</HandleKey>
+        <HandleKey>afterqc/0.9</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1928,14 +1941,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Malware</Domain>
-      <Name>apkid</Name>
-      <Description>APKiD is Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.</Description>
-      <Flavor>1.0.0</Flavor>
+      <Domain>Mapping</Domain>
+      <Name>bsmap</Name>
+      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
+      <Flavor>2.90</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>apkid/1.0</HandleKey>
+        <HandleKey>bsmap/2.90</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1954,14 +1967,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>system</Domain>
-      <Name>lftp</Name>
-      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
-      <Flavor>4.8.3</Flavor>
+      <Domain>Malware</Domain>
+      <Name>apkid</Name>
+      <Description>APKiD is Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.</Description>
+      <Flavor>1.0.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>lftp/4.8</HandleKey>
+        <HandleKey>apkid/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2084,27 +2097,40 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>repenrich</Name>
-      <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
-      <Flavor>1.2</Flavor>
+      <Domain>NGS data</Domain>
+      <Name>cutadapt</Name>
+      <Description>Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</Description>
+      <Flavor>1.13</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>repenrich/1.2</HandleKey>
+        <HandleKey>cutadapt/1.13</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>jamm</Name>
-      <Description>JAMM is a peak finder for NGS datasets (ChIP-Seq, ATAC-Seq, DNase-Seq..etc.) that can integrate replicates and assign peak boundaries accurately.</Description>
-      <Flavor>1.0.7r2</Flavor>
+      <Name>cutadapt</Name>
+      <Description>Cutadapt removes adapter sequences from DNA high-throughput sequencing data.</Description>
+      <Flavor>1.4</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>jamm/1.0.7r2</HandleKey>
+        <HandleKey>cutadapt/1.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>unknown</Domain>
+      <Name>opencv/py36</Name>
+      <Description>OpenCV is a computer vision and machine learning software library.</Description>
+      <Flavor>3.4.1</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>opencv/py36/3.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2124,13 +2150,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>sift4g</Name>
-      <Description>SIFT 4G is a faster version of SIFT that enables us to scale up and provide SIFT predictions for more organisms.</Description>
-      <Flavor>2.0.0</Flavor>
+      <Name>transdecoder</Name>
+      <Description>TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.</Description>
+      <Flavor>3.0.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>sift4g/2.0</HandleKey>
+        <HandleKey>transdecoder/3.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2176,13 +2202,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>metasv</Name>
-      <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
-      <Flavor>0.5.4</Flavor>
+      <Name>pepr</Name>
+      <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
+      <Flavor>1.1.18</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>metasv/0.5</HandleKey>
+        <HandleKey>pepr/1.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2254,39 +2280,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>samtools</Name>
-      <Description>Tools for dealing with SAM, BAM and CRAM files</Description>
-      <Flavor>1.9</Flavor>
+      <Name>peakzilla</Name>
+      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>samtools/1.9</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>samtools</Name>
-      <Description>SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format.</Description>
-      <Flavor>1.6</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>samtools/1.6</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>samtools</Name>
-      <Description>SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format.</Description>
-      <Flavor>1.5</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>samtools/1.5</HandleKey>
+        <HandleKey>peakzilla/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2319,39 +2319,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>picard</Name>
-      <Description>A set of Java command line tools for manipulating high-throughput sequencing data (HTS) data and formats. </Description>
-      <Flavor>2.9.0</Flavor>
+      <Name>metasv</Name>
+      <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
+      <Flavor>0.5.4</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>picard/2.9</HandleKey>
+        <HandleKey>metasv/0.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>picard</Name>
-      <Description>A set of Java command line tools for manipulating high-throughput sequencing data (HTS) data and formats. </Description>
-      <Flavor>2.18.4</Flavor>
+      <Name>snpfinder</Name>
+      <Description>SNPFinder is a simple alignment-based haplotype variant caller that can be used with metagenomic sequence data.</Description>
+      <Flavor>1.0.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>picard/2.18</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>gtdbtk</Name>
-      <Description>A toolkit for assigning objective taxonomic classifications to bacterial and archaeal genomes.</Description>
-      <Flavor>0.1.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>gtdbtk/0.1</HandleKey>
+        <HandleKey>snpfinder/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2370,14 +2357,53 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>bx-python/py35</Name>
-      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
-      <Flavor>0.8.1</Flavor>
+      <Domain>unknown</Domain>
+      <Name>mathematica</Name>
+      <Description />
+      <Flavor>11.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bx-python/py35/0.8</HandleKey>
+        <HandleKey>mathematica/11.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>mathematica</Name>
+      <Description />
+      <Flavor>10.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>mathematica/10.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>mathematica</Name>
+      <Description />
+      <Flavor>9.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>mathematica/9.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>mathematica</Name>
+      <Description />
+      <Flavor>10.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>mathematica/10.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2538,6 +2564,32 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
+      <Type>library</Type>
+      <Domain>tools</Domain>
+      <Name>git</Name>
+      <Description>distributed version control system</Description>
+      <Flavor>2.7.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>git/2.7</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>library</Type>
+      <Domain>tools</Domain>
+      <Name>git</Name>
+      <Description>distributed version control system</Description>
+      <Flavor>2.17.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>git/2.17</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
       <Type>application</Type>
       <Domain>tool</Domain>
       <Name>aria2</Name>
@@ -2547,19 +2599,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>aria2/1.23</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Genomics</Domain>
-      <Name>r-genometricorr</Name>
-      <Description>Genometric Correlation (GenometriCorr) is an R package for spatial correlation of genome-wide interval datasets.</Description>
-      <Flavor>1.1.17</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>r-genometricorr/1.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2579,13 +2618,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>snpeff</Name>
-      <Description>Genetic variant annotation and effect prediction toolbox.</Description>
-      <Flavor>4.3</Flavor>
+      <Name>picard</Name>
+      <Description>A set of Java command line tools for manipulating high-throughput sequencing data (HTS) data and formats. </Description>
+      <Flavor>2.9.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snpeff/4.3</HandleKey>
+        <HandleKey>picard/2.9</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>picard</Name>
+      <Description>A set of Java command line tools for manipulating high-throughput sequencing data (HTS) data and formats. </Description>
+      <Flavor>2.18.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>picard/2.18</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2629,28 +2681,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>library</Type>
-      <Domain>tools</Domain>
-      <Name>git</Name>
-      <Description>distributed version control system</Description>
-      <Flavor>2.7.4</Flavor>
+      <Type>application</Type>
+      <Domain>Genomics</Domain>
+      <Name>r-genometricorr</Name>
+      <Description>Genometric Correlation (GenometriCorr) is an R package for spatial correlation of genome-wide interval datasets.</Description>
+      <Flavor>1.1.17</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>git/2.7</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>library</Type>
-      <Domain>tools</Domain>
-      <Name>git</Name>
-      <Description>distributed version control system</Description>
-      <Flavor>2.17.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>git/2.17</HandleKey>
+        <HandleKey>r-genometricorr/1.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2683,13 +2722,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>peakzilla</Name>
-      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
-      <Flavor>1.0</Flavor>
+      <Name>plinkseq</Name>
+      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
+      <Flavor>0.10</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>peakzilla/1.0</HandleKey>
+        <HandleKey>plinkseq/0.10</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2825,19 +2864,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>biology</Domain>
-      <Name>r-regresshaplo</Name>
-      <Description>This package reconstructs haplotypes from a BAM file using a penalized regression approach.</Description>
-      <Flavor>1.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>r-regresshaplo/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>computational biology</Domain>
       <Name>gatk4</Name>
       <Description>GATK4: This toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</Description>
@@ -2846,6 +2872,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>gatk4/4.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>jamm</Name>
+      <Description>JAMM is a peak finder for NGS datasets (ChIP-Seq, ATAC-Seq, DNase-Seq..etc.) that can integrate replicates and assign peak boundaries accurately.</Description>
+      <Flavor>1.0.7r2</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>jamm/1.0.7r2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2956,65 +2995,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>plinkseq</Name>
-      <Description>PLINK/SEQ is an open-source C/C++ library for working with human genetic variation data.</Description>
-      <Flavor>0.10</Flavor>
+      <Name>snpeff</Name>
+      <Description>Genetic variant annotation and effect prediction toolbox.</Description>
+      <Flavor>4.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>plinkseq/0.10</HandleKey>
+        <HandleKey>snpeff/4.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>mathematica</Name>
-      <Description />
-      <Flavor>11.0</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>gtdbtk</Name>
+      <Description>A toolkit for assigning objective taxonomic classifications to bacterial and archaeal genomes.</Description>
+      <Flavor>0.1.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>mathematica/11.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>mathematica</Name>
-      <Description />
-      <Flavor>10.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mathematica/10.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>mathematica</Name>
-      <Description />
-      <Flavor>9.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mathematica/9.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>mathematica</Name>
-      <Description />
-      <Flavor>10.4</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mathematica/10.4</HandleKey>
+        <HandleKey>gtdbtk/0.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3047,13 +3047,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>pepr</Name>
-      <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
-      <Flavor>1.1.18</Flavor>
+      <Name>trinity</Name>
+      <Description>Trinity assembles transcript sequences from Illumina RNA-Seq data.</Description>
+      <Flavor>2.4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pepr/1.1</HandleKey>
+        <HandleKey>trinity/2.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>trinity</Name>
+      <Description>Trinity RNA-Seq de novo transcriptome assembly</Description>
+      <Flavor>2.6.6</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>trinity/2.6</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3149,15 +3162,15 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>library</Type>
-      <Domain>unknown</Domain>
-      <Name>opencv/py36</Name>
-      <Description>OpenCV is a computer vision and machine learning software library.</Description>
-      <Flavor>3.4.1</Flavor>
+      <Type>application</Type>
+      <Domain>system</Domain>
+      <Name>lftp</Name>
+      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
+      <Flavor>4.8.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>opencv/py36/3.4</HandleKey>
+        <HandleKey>lftp/4.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3228,14 +3241,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Mapping</Domain>
-      <Name>bsmap</Name>
-      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
-      <Flavor>2.90</Flavor>
+      <Domain>Shell tool</Domain>
+      <Name>gnu-parallel</Name>
+      <Description>GNU parallel is a shell tool for executing jobs in parallel using one or more computers.</Description>
+      <Flavor>20180522</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bsmap/2.90</HandleKey>
+        <HandleKey>gnu-parallel/20180522</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3254,14 +3267,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Shell tool</Domain>
-      <Name>gnu-parallel</Name>
-      <Description>GNU parallel is a shell tool for executing jobs in parallel using one or more computers.</Description>
-      <Flavor>20180522</Flavor>
+      <Domain>genomics</Domain>
+      <Name>ssake</Name>
+      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
+      <Flavor>4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gnu-parallel/20180522</HandleKey>
+        <HandleKey>ssake/4.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3280,14 +3293,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>genomics</Domain>
-      <Name>ssake</Name>
-      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
-      <Flavor>4.0</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>bx-python/py35</Name>
+      <Description>Tools for manipulating biological data, particularly multiple sequence alignments</Description>
+      <Flavor>0.8.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ssake/4.0</HandleKey>
+        <HandleKey>bx-python/py35/0.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>

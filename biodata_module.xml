@@ -2307,6 +2307,70 @@
 <Type>Fasta Index .fai File</Type>
 </LocalDatabase>
 <LocalDatabase>
+<Short>HOMO_SAPIENS_ENSEMBL_GRCH37</Short>
+<Section>genomes</Section>
+<Scientific>Homo_sapiens</Scientific>
+<Source>Ensembl</Source>
+<Build>GRCh37</Build>
+<Type>Main Directory</Type>
+</LocalDatabase>
+<LocalDatabase>
+<Short>GENOME_HOMO_SAPIENS_ENSEMBL_GRCH37</Short>
+<Section>genomes</Section>
+<Scientific>Homo_sapiens</Scientific>
+<Source>Ensembl</Source>
+<Build>GRCh37</Build>
+<Type>Genome Fasta File</Type>
+</LocalDatabase>
+<LocalDatabase>
+<Short>CHR_HOMO_SAPIENS_ENSEMBL_GRCH37</Short>
+<Section>genomes</Section>
+<Scientific>Homo_sapiens</Scientific>
+<Source>Ensembl</Source>
+<Build>GRCh37</Build>
+<Type>Chromosome Fasta Files</Type>
+</LocalDatabase>
+<LocalDatabase>
+<Short>BOWTIE_HOMO_SAPIENS_ENSEMBL_GRCH37</Short>
+<Section>bowtie</Section>
+<Scientific>Homo_sapiens</Scientific>
+<Source>Ensembl</Source>
+<Build>GRCh37</Build>
+<Type>Bwa|Bowtie|Bowtie2 Index</Type>
+</LocalDatabase>
+<LocalDatabase>
+<Short>BOWTIE2_HOMO_SAPIENS_ENSEMBL_GRCH37</Short>
+<Section>bowtie2</Section>
+<Scientific>Homo_sapiens</Scientific>
+<Source>Ensembl</Source>
+<Build>GRCh37</Build>
+<Type>Bwa|Bowtie|Bowtie2 Index</Type>
+</LocalDatabase>
+<LocalDatabase>
+<Short>BWA_HOMO_SAPIENS_ENSEMBL_GRCH37</Short>
+<Section>bwa</Section>
+<Scientific>Homo_sapiens</Scientific>
+<Source>Ensembl</Source>
+<Build>GRCh37</Build>
+<Type>_bwa</Type>
+</LocalDatabase>
+<LocalDatabase>
+<Short>PICARD_HOMO_SAPIENS_ENSEMBL_GRCH37</Short>
+<Section>genomes</Section>
+<Scientific>Homo_sapiens</Scientific>
+<Source>Ensembl</Source>
+<Build>GRCh37</Build>
+<Type>Picard .dict File</Type>
+</LocalDatabase>
+<LocalDatabase>
+<Short>FAIDX_HOMO_SAPIENS_ENSEMBL_GRCH37</Short>
+<Section>genomes</Section>
+<Scientific>Homo_sapiens</Scientific>
+<Source>Ensembl</Source>
+<Build>GRCh37</Build>
+<Type>Fasta Index .fai File</Type>
+</LocalDatabase>
+<LocalDatabase>
 <Short>HUMAN</Short>
 <Section>genomes</Section>
 <Scientific>Homo_sapiens</Scientific>

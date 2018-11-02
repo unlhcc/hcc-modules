@@ -78,7 +78,17 @@ $BWA_ATH
 $PICARD_BOS_TAURUS_ENSEMBL_UMD3.1
 $FAIDX_MAIZE
 
+There are some shortcuts that point directly to BACTERIAL and ARCHAE genomic resources from NCBI. They
+are as follows (with $GENOME_* pointing to the FASTA file):
 
+$BLAST_BACTERIAL, $BWA_BACTERIAL, $BOWTIE2_BACTERIAL, 
+		$GENOME_BACTERIAL, $FAIDX_BACTERIAL	All _complete_ bacterial genomes
+$BLAST_BACTERIAL_ALL, $BWA_BACTERIAL_ALL, $BOWTIE2_BACTERIAL_ALL, 
+		$GENOME_BACTERIAL_ALL, $FAIDX_BACTERIAL_ALL	All bacterial genomes (incl. incomplete)
+$BLAST_ARCHAEA, $BWA_ARCHAEA, $BOWTIE2_ARCHAEA, 
+		$GENOME_ARCHAEA, $FAIDX_ARCHAEA	All _complete_ archaea genomes
+$BLAST_ARCHAEA_ALL, $BWA_ARCHAEA_ALL, $BOWTIE2_ARCHAEA_ALL, 
+		$GENOME_ARCHAEA_ALL, $FAIDX_ARCHAEA_ALL	All archaea genomes (incl. incomplete)
 
 ######################################################################
                  INSTALLLED SPECIES	(COMMON NAME/SHORTCUT)
@@ -146,6 +156,7 @@ local kegg = pathJoin(data, "kegg")
 local ipr_root = pathJoin(data, "interproscan")
 local panther_root = pathJoin(data, "panther")
 local taxon_root = pathJoin(data, "taxonomy")
+local app = "/work/HCC/BCRF/app_specific"
 
 
 pushenv("DATA", data)
@@ -156,6 +167,7 @@ pushenv("INDICES", indices)
 pushenv("INDICES_BOWTIE", bowtie)
 pushenv("INDICES_BOWTIE2", bowtie2)
 pushenv("INDICES_BWA", bwa)
+pushenv("APP", app)
 
 
 -- Most recent versions of major databases (where appropiate)
@@ -482,6 +494,14 @@ pushenv ("BOWTIE2_GLYCINE_MAX_ENSEMBL_GM01", pathJoin(bowtie2, "Glycine_max", "E
 pushenv ("BWA_GLYCINE_MAX_ENSEMBL_GM01", pathJoin(bwa, "Glycine_max", "Ensembl", "Gm01", _bwa))
 pushenv ("PICARD_GLYCINE_MAX_ENSEMBL_GM01", pathJoin(genomes, "Glycine_max", "Ensembl", "Gm01", _w, _p))
 pushenv ("FAIDX_GLYCINE_MAX_ENSEMBL_GM01", pathJoin(genomes, "Glycine_max", "Ensembl", "Gm01", _w, _s))
+pushenv ("HOMO_SAPIENS_ENSEMBL_GRCH37", pathJoin(genomes, "Homo_sapiens", "Ensembl", "GRCh37"))
+pushenv ("GENOME_HOMO_SAPIENS_ENSEMBL_GRCH37", pathJoin(genomes, "Homo_sapiens", "Ensembl", "GRCh37", _w, _f))
+pushenv ("CHR_HOMO_SAPIENS_ENSEMBL_GRCH37", pathJoin(genomes, "Homo_sapiens", "Ensembl", "GRCh37", _c))
+pushenv ("BOWTIE_HOMO_SAPIENS_ENSEMBL_GRCH37", pathJoin(bowtie, "Homo_sapiens", "Ensembl", "GRCh37", _b))
+pushenv ("BOWTIE2_HOMO_SAPIENS_ENSEMBL_GRCH37", pathJoin(bowtie2, "Homo_sapiens", "Ensembl", "GRCh37", _b))
+pushenv ("BWA_HOMO_SAPIENS_ENSEMBL_GRCH37", pathJoin(bwa, "Homo_sapiens", "Ensembl", "GRCh37", _bwa))
+pushenv ("PICARD_HOMO_SAPIENS_ENSEMBL_GRCH37", pathJoin(genomes, "Homo_sapiens", "Ensembl", "GRCh37", _w, _p))
+pushenv ("FAIDX_HOMO_SAPIENS_ENSEMBL_GRCH37", pathJoin(genomes, "Homo_sapiens", "Ensembl", "GRCh37", _w, _s))
 pushenv ("HUMAN", pathJoin(genomes, "Homo_sapiens", "NCBI", "GRCh38"))
 pushenv ("GENOME_HUMAN", pathJoin(genomes, "Homo_sapiens", "NCBI", "GRCh38", _w, _f))
 pushenv ("CHR_HUMAN", pathJoin(genomes, "Homo_sapiens", "NCBI", "GRCh38", _c))
@@ -798,7 +818,23 @@ pushenv("GENOME_BACTERIAL", pathJoin(genomes, "all_complete_bacterial_genome.fas
 pushenv("BOWTIE2_BACTERIAL", pathJoin(bowtie2, "all_complete_bacterial_genome"))
 pushenv("BWA_BACTERIAL", pathJoin(bwa, "all_complete_bacterial_genome"))
 pushenv("FAIDX_BACTERIAL", pathJoin(genomes, "all_complete_bacterial_genome.fasta.fai"))
-pushenv("BLAST_BACTERIAL", pathJoin(blast, "genomic_bacterial"))
+pushenv("BLAST_BACTERIAL", pathJoin(blast, "genomic_bacterial_complete_only"))
+
+-- Same for all bacteria, incl. incomplete. Please note there are no bowtie or bwa
+-- indices for these due to the sheer size.
+pushenv("GENOME_BACTERIAL_ALL", pathJoin(genomes, "all_bacterial_genomes.fasta"))
+pushenv("FAIDX_BACTERIAL_ALL", pathJoin(genomes, "all_bacterial_genomes.fasta.fai"))
+pushenv("BLAST_BACTERIAL_ALL", pathJoin(blast, "genomic_bacterial"))
+pushenv("GENOME_ARCHAEA", pathJoin(genomes, "all_complete_archaea_genome.fasta"))
+pushenv("BOWTIE2_ARCHAEA", pathJoin(bowtie2, "all_complete_archaea_genome"))
+pushenv("BWA_ARCHAEA", pathJoin(bwa, "all_complete_archaea_genome"))
+pushenv("FAIDX_ARCHAEA", pathJoin(genomes, "all_complete_archaea_genome.fasta.fai"))
+pushenv("BLAST_ARCHAEA", pathJoin(blast, "genomic_archaea_complete_only"))
+pushenv("GENOME_ARCHAEA_ALL", pathJoin(genomes, "all_archaea_genome.fasta"))
+pushenv("BOWTIE2_ARCHAEA_ALL", pathJoin(bowtie2, "all_archaea_genome"))
+pushenv("BWA_ARCHAEA_ALL", pathJoin(bwa, "all_archaea_genome"))
+pushenv("FAIDX_ARCHAEA_ALL", pathJoin(genomes, "all_archaea_genome.fasta.fai"))
+pushenv("BLAST_ARCHAEA_ALL", pathJoin(blast, "genomic_archaea"))
 
 if (mode() == "load") then
         LmodMessage("Static data resources for bioinformatics 1.0.")

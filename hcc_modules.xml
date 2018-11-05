@@ -1,17 +1,17 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-11-05T18:53:54Z" UniqueID="localsoft4.runner-ca46ac4d-project-3516-concurrent-0.tacc.xsede.org">
+  <RPSoftwareList Timestamp="2018-11-05T19:02:40Z" UniqueID="localsoft4.runner-ca46ac4d-project-3516-concurrent-0.tacc.xsede.org">
     <ResourceID>runner-ca46ac4d-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
-      <Type>application</Type>
-      <Domain>bioinformatics</Domain>
-      <Name>pygenometracks</Name>
-      <Description>Standalone program and library to plot beautiful genome browser tracks.</Description>
-      <Flavor>2.0</Flavor>
+      <Type>library</Type>
+      <Domain>Machine Learning</Domain>
+      <Name>mlpack</Name>
+      <Description>mlpack a fast, flexible machine learning library</Description>
+      <Flavor>3.0.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pygenometracks/2.0</HandleKey>
+        <HandleKey>mlpack/3.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -30,14 +30,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>biology</Domain>
-      <Name>beast2</Name>
-      <Description>BEAST 2 is a cross-platform program for Bayesian phylogenetic analysis of molecular sequences.</Description>
-      <Flavor>2.4</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>tophat</Name>
+      <Description>TopHat2 is a fast splice junction mapper for RNA-Seq reads. It aligns RNA-Seq reads to mammalian-sized genomes using the ultra high-throughput short read aligner Bowtie, and then analyzes the mapping results to identify splice junctions between exons.</Description>
+      <Flavor>2.1.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>beast2/2.4</HandleKey>
+        <HandleKey>tophat/2.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -472,14 +472,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Mapping</Domain>
-      <Name>bsmap</Name>
-      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
-      <Flavor>2.90</Flavor>
+      <Domain>genomics</Domain>
+      <Name>gdcclient</Name>
+      <Description>GDC provides a standard client-based mechanism in support of high performance data downloads and submission.</Description>
+      <Flavor>1.3.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bsmap/2.90</HandleKey>
+        <HandleKey>gdcclient/1.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1291,14 +1291,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>snpfinder</Name>
-      <Description>SNPFinder is a simple alignment-based haplotype variant caller that can be used with metagenomic sequence data.</Description>
-      <Flavor>1.0.0</Flavor>
+      <Domain>biology</Domain>
+      <Name>r-regresshaplo</Name>
+      <Description>This package reconstructs haplotypes from a BAM file using a penalized regression approach.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snpfinder/1.0</HandleKey>
+        <HandleKey>r-regresshaplo/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1552,6 +1552,19 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
+      <Name>targetfinder</Name>
+      <Description>Plant small RNA target prediction tool.</Description>
+      <Flavor>1.7</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>targetfinder/1.7</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
       <Name>sift4g</Name>
       <Description>SIFT 4G is a faster version of SIFT that enables us to scale up and provide SIFT predictions for more organisms.</Description>
       <Flavor>2.0.0</Flavor>
@@ -1643,13 +1656,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>targetfinder</Name>
-      <Description>Plant small RNA target prediction tool.</Description>
-      <Flavor>1.7</Flavor>
+      <Name>peakzilla</Name>
+      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>targetfinder/1.7</HandleKey>
+        <HandleKey>peakzilla/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1741,188 +1754,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>bam-readcount/0.8</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>bitmap</Domain>
-      <Name>imagemagick</Name>
-      <Description>Software suite to create, edit, compose, or convert bitmap images.</Description>
-      <Flavor>7.0.8_10</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>imagemagick/7.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>biom-format</Name>
-      <Description>The BIOM file format (canonically pronounced biome) is designed to be a general-use format for representing biological sample by observation contingency tables. BIOM is a recognized standard for the Earth Microbiome Project and is a Genomics Standards Consortium supported project.</Description>
-      <Flavor>2.1</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>biom-format/2.1</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>genomics</Domain>
-      <Name>gdcclient</Name>
-      <Description>GDC provides a standard client-based mechanism in support of high performance data downloads and submission.</Description>
-      <Flavor>1.3.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>gdcclient/1.3</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>quasr</Name>
-      <Description>QUASR is lightweight pipeline for processing and analysis of high-throughput sequencing data.</Description>
-      <Flavor>6.09</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>quasr/6.09</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>resistomeanalyzer</Name>
-      <Description>Resistome Analyzer is a simple tool for analyzing the resistome of large metagenomic datasets.</Description>
-      <Flavor>2018.09.06</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>resistomeanalyzer/2018.09.06</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>snp-sites</Name>
-      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
-      <Flavor>2.3.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>snp-sites/2.3</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>NGS data</Domain>
-      <Name>cutadapt</Name>
-      <Description>Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</Description>
-      <Flavor>1.13</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>cutadapt/1.13</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>cutadapt</Name>
-      <Description>Cutadapt removes adapter sequences from DNA high-throughput sequencing data.</Description>
-      <Flavor>1.4</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>cutadapt/1.4</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>sequencing</Domain>
-      <Name>stereogene</Name>
-      <Description>StereoGene: Rapid Estimation of Genomewide Correlation of Continuous or Interval Feature Data</Description>
-      <Flavor>2.20</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>stereogene/2.20</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>bioinformatics</Domain>
-      <Name>regtools</Name>
-      <Description>Tools that integrate DNA-seq and RNA-seq data to help interpret mutations in a regulatory and splicing context.</Description>
-      <Flavor>0.5.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>regtools/0.5</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Bioinformatics</Domain>
-      <Name>mummer4</Name>
-      <Description>MUMmer is a system for rapidly aligning entire genomes</Description>
-      <Flavor>4.0.0beta2</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mummer4/4.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>bioconductor-jmosaics</Name>
-      <Description>Joint analysis of multiple ChIP-Seq data sets.</Description>
-      <Flavor>1.10</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>bioconductor-jmosaics/1.10</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>AI</Domain>
-      <Name>mxnet</Name>
-      <Description>MXNet is an open-source deep learning framework that allows you to define, train, and deploy deep neural networks on a wide array of devices, from cloud infrastructure to mobile devices.</Description>
-      <Flavor>0.9.3a</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mxnet/0.9.3</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>treemix</Name>
-      <Description>TreeMix is a method for inferring the patterns of population splits and mixtures in the history of a set of populations.</Description>
-      <Flavor>1.13</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>treemix/1.13</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2032,27 +1863,157 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Bioinformatics</Domain>
-      <Name>geoparse</Name>
-      <Description>Python library to access Gene Expression Omnibus Database (GEO)</Description>
-      <Flavor>1.0.5</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>biom-format</Name>
+      <Description>The BIOM file format (canonically pronounced biome) is designed to be a general-use format for representing biological sample by observation contingency tables. BIOM is a recognized standard for the Earth Microbiome Project and is a Genomics Standards Consortium supported project.</Description>
+      <Flavor>2.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>geoparse/1.0</HandleKey>
+        <HandleKey>biom-format/2.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>package</Domain>
-      <Name>afterqc</Name>
-      <Description>Automatic Filtering, Trimming, Error Removing and Quality Control for fastq data. AfterQC can simply go through all fastq files in a folder and then output three folders: good, bad and QC folders, which contains good reads, bad reads and the QC results of each fastq file/pair. Currently it supports processing data from HiSeq 2000/2500/3000/4000, Nextseq 500/550, MiniSeq...and other Illumina 1.8 or newer formats.</Description>
-      <Flavor>0.9.6</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>jvarkit-sam2tsv</Name>
+      <Description>Prints the SAM alignments as a TAB delimited file.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>afterqc/0.9</HandleKey>
+        <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>quasr</Name>
+      <Description>QUASR is lightweight pipeline for processing and analysis of high-throughput sequencing data.</Description>
+      <Flavor>6.09</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>quasr/6.09</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>resistomeanalyzer</Name>
+      <Description>Resistome Analyzer is a simple tool for analyzing the resistome of large metagenomic datasets.</Description>
+      <Flavor>2018.09.06</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>resistomeanalyzer/2018.09.06</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>plink2</Name>
+      <Description>This is a comprehensive update to Shaun Purcell&apos;s PLINK command-line program, developed by Christopher Chang with support from the NIH-NIDDK&apos;s Laboratory of Biological Modeling, the Purcell Lab at Mount Sinai School of Medicine, and others.</Description>
+      <Flavor>2.0a1</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>plink2/2.0a1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>bioinformatics</Domain>
+      <Name>regtools</Name>
+      <Description>Tools that integrate DNA-seq and RNA-seq data to help interpret mutations in a regulatory and splicing context.</Description>
+      <Flavor>0.5.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>regtools/0.5</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>sequencing</Domain>
+      <Name>stereogene</Name>
+      <Description>StereoGene: Rapid Estimation of Genomewide Correlation of Continuous or Interval Feature Data</Description>
+      <Flavor>2.20</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>stereogene/2.20</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>treemix</Name>
+      <Description>TreeMix is a method for inferring the patterns of population splits and mixtures in the history of a set of populations.</Description>
+      <Flavor>1.13</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>treemix/1.13</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Bioinformatics</Domain>
+      <Name>mummer4</Name>
+      <Description>MUMmer is a system for rapidly aligning entire genomes</Description>
+      <Flavor>4.0.0beta2</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>mummer4/4.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>bioconductor-jmosaics</Name>
+      <Description>Joint analysis of multiple ChIP-Seq data sets.</Description>
+      <Flavor>1.10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>bioconductor-jmosaics/1.10</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>AI</Domain>
+      <Name>mxnet</Name>
+      <Description>MXNet is an open-source deep learning framework that allows you to define, train, and deploy deep neural networks on a wide array of devices, from cloud infrastructure to mobile devices.</Description>
+      <Flavor>0.9.3a</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>mxnet/0.9.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>genomics</Domain>
+      <Name>ssake</Name>
+      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
+      <Flavor>4.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>ssake/4.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2084,6 +2045,58 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
+      <Domain>Bioinformatics</Domain>
+      <Name>geoparse</Name>
+      <Description>Python library to access Gene Expression Omnibus Database (GEO)</Description>
+      <Flavor>1.0.5</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>geoparse/1.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>package</Domain>
+      <Name>afterqc</Name>
+      <Description>Automatic Filtering, Trimming, Error Removing and Quality Control for fastq data. AfterQC can simply go through all fastq files in a folder and then output three folders: good, bad and QC folders, which contains good reads, bad reads and the QC results of each fastq file/pair. Currently it supports processing data from HiSeq 2000/2500/3000/4000, Nextseq 500/550, MiniSeq...and other Illumina 1.8 or newer formats.</Description>
+      <Flavor>0.9.6</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>afterqc/0.9</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>NGS data</Domain>
+      <Name>cutadapt</Name>
+      <Description>Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</Description>
+      <Flavor>1.13</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>cutadapt/1.13</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>cutadapt</Name>
+      <Description>Cutadapt removes adapter sequences from DNA high-throughput sequencing data.</Description>
+      <Flavor>1.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>cutadapt/1.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
       <Domain>computational biology</Domain>
       <Name>rsem</Name>
       <Description>RSEM is a software package for estimating gene and isoform expression levels from RNA-Seq data.</Description>
@@ -2092,19 +2105,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>rsem/1.3</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>bedops</Name>
-      <Description>BEDOPS is an open-source command-line toolkit that performs highly efficient and scalable Boolean and other set operations, statistical calculations, archiving, conversion and other management of genomic data of arbitrary scale.</Description>
-      <Flavor>2.4.35</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>bedops/2.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2136,19 +2136,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>shapeit</Name>
-      <Description>SHAPEIT is a fast and accurate method for estimation of haplotypes (aka phasing) from genotype or sequencing data.</Description>
-      <Flavor>2.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>shapeit/2.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>Bioinformatics</Domain>
       <Name>rnastructure</Name>
       <Description>RNAstructure is a complete package for RNA and DNA secondary structure  prediction and analysis. It includes algorithms for secondary structure  prediction, including facility to predict base pairing probabilities. It  also can be used to predict bimolecular structures and can predict the  equilibrium binding affinity of an oligonucleotide to a structured RNA  target. This is useful for siRNA design. It can also predict secondary  structures common to two, unaligned sequences, which is much more accurate  than single sequence secondary structure prediction. Finally, RNAstructure  can take a number of different types of experiment mapping data to constrain or restrain structure prediction. These include chemical mapping, enzymatic mapping, NMR, and SHAPE data.</Description>
@@ -2163,26 +2150,26 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>tophat</Name>
-      <Description>TopHat2 is a fast splice junction mapper for RNA-Seq reads. It aligns RNA-Seq reads to mammalian-sized genomes using the ultra high-throughput short read aligner Bowtie, and then analyzes the mapping results to identify splice junctions between exons.</Description>
-      <Flavor>2.1.1</Flavor>
+      <Name>shapeit</Name>
+      <Description>SHAPEIT is a fast and accurate method for estimation of haplotypes (aka phasing) from genotype or sequencing data.</Description>
+      <Flavor>2.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>tophat/2.1</HandleKey>
+        <HandleKey>shapeit/2.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>tassel</Name>
-      <Description>TASSEL is a software package to evaluate traits associations, evolutionary patterns, and linkage disequilibrium.</Description>
-      <Flavor>5.2.40</Flavor>
+      <Domain>neuroimaging</Domain>
+      <Name>connectome-workbench</Name>
+      <Description>Connectome Workbench is an open source, freely available visualization and discovery tool used to map neuroimaging data, especially data generated by the Human Connectome Project</Description>
+      <Flavor>1.3.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>tassel/5.2</HandleKey>
+        <HandleKey>connectome-workbench/1.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2209,6 +2196,32 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>orthofinder/2.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>tassel</Name>
+      <Description>TASSEL is a software package to evaluate traits associations, evolutionary patterns, and linkage disequilibrium.</Description>
+      <Flavor>5.2.40</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>tassel/5.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>biology</Domain>
+      <Name>beast2</Name>
+      <Description>BEAST 2 is a cross-platform program for Bayesian phylogenetic analysis of molecular sequences.</Description>
+      <Flavor>2.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>beast2/2.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2318,40 +2331,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>biology</Domain>
-      <Name>r-regresshaplo</Name>
-      <Description>This package reconstructs haplotypes from a BAM file using a penalized regression approach.</Description>
-      <Flavor>1.0</Flavor>
+      <Domain>bioinformatics</Domain>
+      <Name>pygenometracks</Name>
+      <Description>Standalone program and library to plot beautiful genome browser tracks.</Description>
+      <Flavor>2.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>r-regresshaplo/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>graphlan</Name>
-      <Description>GraPhlAn is a software tool for producing high-quality circular representations of taxonomic and phylogenetic trees. It focuses on concise, integrative, informative, and publication-ready representations of phylogenetically- and taxonomically-driven investigation.</Description>
-      <Flavor>1.0.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>graphlan/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>pyfasta</Name>
-      <Description>Pyfasta - fast, memory-efficient, pythonic (and command-line) access to fasta sequence files.</Description>
-      <Flavor>0.5</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>pyfasta/0.5</HandleKey>
+        <HandleKey>pygenometracks/2.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2396,14 +2383,40 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Shell tool</Domain>
-      <Name>gnu-parallel</Name>
-      <Description>GNU parallel is a shell tool for executing jobs in parallel using one or more computers.</Description>
-      <Flavor>20180522</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>pyfasta</Name>
+      <Description>Pyfasta - fast, memory-efficient, pythonic (and command-line) access to fasta sequence files.</Description>
+      <Flavor>0.5</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gnu-parallel/20180522</HandleKey>
+        <HandleKey>pyfasta/0.5</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>R</Domain>
+      <Name>r-markdown</Name>
+      <Description>Markdown is a plain-text formatting syntax that can be converted to XHTML or other formats.</Description>
+      <Flavor>0.8</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>r-markdown/0.8</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>graphlan</Name>
+      <Description>GraPhlAn is a software tool for producing high-quality circular representations of taxonomic and phylogenetic trees. It focuses on concise, integrative, informative, and publication-ready representations of phylogenetically- and taxonomically-driven investigation.</Description>
+      <Flavor>1.0.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>graphlan/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2423,13 +2436,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>jvarkit-sam2tsv</Name>
-      <Description>Prints the SAM alignments as a TAB delimited file.</Description>
-      <Flavor>1.0</Flavor>
+      <Name>snp-sites</Name>
+      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
+      <Flavor>2.3.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>jvarkit-sam2tsv/1.0</HandleKey>
+        <HandleKey>snp-sites/2.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2486,19 +2499,6 @@
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
-      <Type>library</Type>
-      <Domain>Machine Learning</Domain>
-      <Name>mlpack</Name>
-      <Description>mlpack a fast, flexible machine learning library</Description>
-      <Flavor>3.0.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>mlpack/3.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
       <Name>gtdbtk</Name>
@@ -2508,32 +2508,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>gtdbtk/0.1</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>neuroimaging</Domain>
-      <Name>connectome-workbench</Name>
-      <Description>Connectome Workbench is an open source, freely available visualization and discovery tool used to map neuroimaging data, especially data generated by the Human Connectome Project</Description>
-      <Flavor>1.3.1</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>connectome-workbench/1.3</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>biology</Domain>
-      <Name>eqtlbma</Name>
-      <Description>Package to detect eQTLs jointly in multiple subgroups (e.g. tissues) via Bayesian Model Averaging.</Description>
-      <Flavor>1.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>eqtlbma/1.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2553,6 +2527,32 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
+      <Name>bedops</Name>
+      <Description>BEDOPS is an open-source command-line toolkit that performs highly efficient and scalable Boolean and other set operations, statistical calculations, archiving, conversion and other management of genomic data of arbitrary scale.</Description>
+      <Flavor>2.4.35</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>bedops/2.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>biology</Domain>
+      <Name>eqtlbma</Name>
+      <Description>Package to detect eQTLs jointly in multiple subgroups (e.g. tissues) via Bayesian Model Averaging.</Description>
+      <Flavor>1.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>eqtlbma/1.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
       <Name>pepr</Name>
       <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
       <Flavor>1.1.18</Flavor>
@@ -2560,6 +2560,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>pepr/1.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>viennarna</Name>
+      <Description>The ViennaRNA Package consists of a C code library and several stand-alone programs for the prediction and comparison of RNA secondary structures.</Description>
+      <Flavor>2.3.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>viennarna/2.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2617,14 +2630,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>viennarna</Name>
-      <Description>The ViennaRNA Package consists of a C code library and several stand-alone programs for the prediction and comparison of RNA secondary structures.</Description>
-      <Flavor>2.3.3</Flavor>
+      <Domain>Entrez</Domain>
+      <Name>entrez-direct</Name>
+      <Description>Entrez Direct (EDirect) is an advanced method for accessing the NCBI&apos;s set of interconnected databases (publication, sequence, structure, gene, variation, expression, etc.) from a UNIX terminal window. Functions take search terms from command-line arguments. Individual operations are combined to build multi-step queries. Record retrieval and formatting normally complete the process.</Description>
+      <Flavor>10.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>viennarna/2.3</HandleKey>
+        <HandleKey>entrez-direct/10.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2773,32 +2786,6 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>tool</Domain>
-      <Name>aria2</Name>
-      <Description>aria2 is a lightweight multi-protocol &amp; multi-source command-line download utility. </Description>
-      <Flavor>1.23.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>aria2/1.23</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Genomics</Domain>
-      <Name>r-genometricorr</Name>
-      <Description>Genometric Correlation (GenometriCorr) is an R package for spatial correlation of genome-wide interval datasets.</Description>
-      <Flavor>1.1.17</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>r-genometricorr/1.1</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>system</Domain>
       <Name>aspera-cli</Name>
       <Description>IBM Aspera Command-Line Interface (the Aspera CLI) is a collection of Aspera tools for performing high-speed, secure data transfers from the command line.</Description>
@@ -2812,14 +2799,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Biology</Domain>
-      <Name>freebayes</Name>
-      <Description>Bayesian haplotype-based polymorphism discovery and genotyping</Description>
-      <Flavor>1.2.0</Flavor>
+      <Domain>Genomics</Domain>
+      <Name>r-genometricorr</Name>
+      <Description>Genometric Correlation (GenometriCorr) is an R package for spatial correlation of genome-wide interval datasets.</Description>
+      <Flavor>1.1.17</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>freebayes/1.2</HandleKey>
+        <HandleKey>r-genometricorr/1.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2846,6 +2833,32 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>sas/9.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Biology</Domain>
+      <Name>freebayes</Name>
+      <Description>Bayesian haplotype-based polymorphism discovery and genotyping</Description>
+      <Flavor>1.2.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>freebayes/1.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>gatk4</Name>
+      <Description>GATK4: This toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</Description>
+      <Flavor>4.0.4.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>gatk4/4.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2929,14 +2942,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>R</Domain>
-      <Name>r-markdown</Name>
-      <Description>Markdown is a plain-text formatting syntax that can be converted to XHTML or other formats.</Description>
-      <Flavor>0.8</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>snpfinder</Name>
+      <Description>SNPFinder is a simple alignment-based haplotype variant caller that can be used with metagenomic sequence data.</Description>
+      <Flavor>1.0.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>r-markdown/0.8</HandleKey>
+        <HandleKey>snpfinder/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2994,27 +3007,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>gatk4</Name>
-      <Description>GATK4: This toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</Description>
-      <Flavor>4.0.4.0</Flavor>
+      <Domain>tool</Domain>
+      <Name>aria2</Name>
+      <Description>aria2 is a lightweight multi-protocol &amp; multi-source command-line download utility. </Description>
+      <Flavor>1.23.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gatk4/4.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>beta</Name>
-      <Description>Binding and Expression Target Analysis (BETA) is a software package that integrates ChIP-seq of transcription factors or chromatin regulators with differential gene expression data to infer direct target genes.</Description>
-      <Flavor>1.0.7</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>beta/1.0</HandleKey>
+        <HandleKey>aria2/1.23</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3054,6 +3054,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>snpeff/4.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>beta</Name>
+      <Description>Binding and Expression Target Analysis (BETA) is a software package that integrates ChIP-seq of transcription factors or chromatin regulators with differential gene expression data to infer direct target genes.</Description>
+      <Flavor>1.0.7</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>beta/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3397,14 +3410,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Entrez</Domain>
-      <Name>entrez-direct</Name>
-      <Description>Entrez Direct (EDirect) is an advanced method for accessing the NCBI&apos;s set of interconnected databases (publication, sequence, structure, gene, variation, expression, etc.) from a UNIX terminal window. Functions take search terms from command-line arguments. Individual operations are combined to build multi-step queries. Record retrieval and formatting normally complete the process.</Description>
-      <Flavor>10.0</Flavor>
+      <Domain>bitmap</Domain>
+      <Name>imagemagick</Name>
+      <Description>Software suite to create, edit, compose, or convert bitmap images.</Description>
+      <Flavor>7.0.8_10</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>entrez-direct/10.0</HandleKey>
+        <HandleKey>imagemagick/7.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3475,14 +3488,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>peakzilla</Name>
-      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
-      <Flavor>1.0</Flavor>
+      <Domain>Shell tool</Domain>
+      <Name>gnu-parallel</Name>
+      <Description>GNU parallel is a shell tool for executing jobs in parallel using one or more computers.</Description>
+      <Flavor>20180522</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>peakzilla/1.0</HandleKey>
+        <HandleKey>gnu-parallel/20180522</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3501,14 +3514,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>genomics</Domain>
-      <Name>ssake</Name>
-      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
-      <Flavor>4.0</Flavor>
+      <Domain>Mapping</Domain>
+      <Name>bsmap</Name>
+      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
+      <Flavor>2.90</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ssake/4.0</HandleKey>
+        <HandleKey>bsmap/2.90</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3528,19 +3541,6 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>deeptools</Name>
-      <Description />
-      <Flavor>2.5.4</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>deeptools/2.5</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>computational biology</Domain>
       <Name>repenrich</Name>
       <Description>RepEnrich is a method to estimate repetitive element enrichment using high-throughput sequencing data.</Description>
       <Flavor>1.2</Flavor>
@@ -3548,6 +3548,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>repenrich/1.2</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>deeptools</Name>
+      <Description />
+      <Flavor>2.5.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>deeptools/2.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>

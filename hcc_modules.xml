@@ -1,5 +1,5 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-11-08T06:42:02Z" UniqueID="localsoft4.runner-2210a532-project-3516-concurrent-0.tacc.xsede.org">
+  <RPSoftwareList Timestamp="2018-11-14T20:57:05Z" UniqueID="localsoft4.runner-2210a532-project-3516-concurrent-0.tacc.xsede.org">
     <ResourceID>runner-2210a532-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
@@ -3015,6 +3015,19 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>fenics/2018.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>biology</Domain>
+      <Name>beast</Name>
+      <Description>BEAST is a cross-platform program for Bayesian analysis of molecular sequences using MCMC.</Description>
+      <Flavor>1.10</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>beast/1.10</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>

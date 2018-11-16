@@ -15,4 +15,5 @@ whatis("Description: Microsoft R Open is the enhanced distribution of R from Mic
 pushenv("CONDA_DEFAULT_ENV", "mro-3.5.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/mro/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/mro/envs/mro-3.5.1/bin")
+prepend_path("R_LIBS", "/util/opt/anaconda/deployed-conda-envs/packages/mro/envs/mro-3.5.1/lib/R/library")
 family("R")

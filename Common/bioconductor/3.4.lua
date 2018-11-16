@@ -17,5 +17,6 @@ whatis("URL: http://bioconductor.org")
 
 prepend_path{"PATH"             ,"/util/opt/anaconda/deployed-conda-envs/packages/bioconductor/envs/bioconductor-3.4/bin",priority=100}
 pushenv("CONDA_DEFAULT_ENV"     ,"bioconductor-3.4")
-family("R")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/bioconductor/envs")
+prepend_path("R_LIBS", "/util/opt/anaconda/deployed-conda-envs/packages/bioconductor/envs/bioconductor-3.4/lib/R/library")
+family("R")

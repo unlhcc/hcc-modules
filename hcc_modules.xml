@@ -1,5 +1,5 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-11-16T20:40:35Z" UniqueID="localsoft4.runner-2210a532-project-3516-concurrent-0.tacc.xsede.org">
+  <RPSoftwareList Timestamp="2018-11-16T22:32:46Z" UniqueID="localsoft4.runner-2210a532-project-3516-concurrent-0.tacc.xsede.org">
     <ResourceID>runner-2210a532-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
@@ -252,13 +252,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>plink2</Name>
-      <Description>This is a comprehensive update to Shaun Purcell&apos;s PLINK command-line program, developed by Christopher Chang with support from the NIH-NIDDK&apos;s Laboratory of Biological Modeling, the Purcell Lab at Mount Sinai School of Medicine, and others.</Description>
-      <Flavor>2.0a1</Flavor>
+      <Name>seqtk</Name>
+      <Description>Seqtk is a fast and lightweight tool for processing sequences in the FASTA or FASTQ format.</Description>
+      <Flavor>1.2</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>plink2/2.0a1</HandleKey>
+        <HandleKey>seqtk/1.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -485,14 +485,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Mapping</Domain>
-      <Name>bsmap</Name>
-      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
-      <Flavor>2.90</Flavor>
+      <Domain>genomics</Domain>
+      <Name>gdcclient</Name>
+      <Description>GDC provides a standard client-based mechanism in support of high performance data downloads and submission.</Description>
+      <Flavor>1.3.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bsmap/2.90</HandleKey>
+        <HandleKey>gdcclient/1.3</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -571,6 +571,45 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>kalign/2.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Mathematics</Domain>
+      <Name>gurobi-python</Name>
+      <Description>The Gurobi Optimizer is the state-of-the-art math programming solver able to handle all major problem types.</Description>
+      <Flavor>8.1.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>gurobi-python/py36/8.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Mathematics</Domain>
+      <Name>gurobi-python</Name>
+      <Description>The Gurobi Optimizer is the state-of-the-art math programming solver able to handle all major problem types.</Description>
+      <Flavor>8.1.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>gurobi-python/py27/8.1</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Mathematics</Domain>
+      <Name>gurobi-python</Name>
+      <Description>The Gurobi Optimizer is the state-of-the-art math programming solver able to handle all major problem types.</Description>
+      <Flavor>8.1.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>gurobi-python/py35/8.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1642,40 +1681,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Chemistry</Domain>
-      <Name>gaussian</Name>
-      <Description />
-      <Flavor>09 RevD</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>ncbi-download</Name>
+      <Description>Python scriopt for downloading bacterial and fungal genomes from NCBI.</Description>
+      <Flavor>0.2.6</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gaussian/09/RevD</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Chemistry</Domain>
-      <Name>gaussian</Name>
-      <Description />
-      <Flavor>16 RevE</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>gaussian/16/RevA</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>Chemistry</Domain>
-      <Name>gaussian</Name>
-      <Description />
-      <Flavor>09 RevE</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>gaussian/09/RevE</HandleKey>
+        <HandleKey>ncbi-download/0.2</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1720,14 +1733,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>genomics</Domain>
-      <Name>gdcclient</Name>
-      <Description>GDC provides a standard client-based mechanism in support of high performance data downloads and submission.</Description>
-      <Flavor>1.3.0</Flavor>
+      <Domain>package</Domain>
+      <Name>afterqc</Name>
+      <Description>Automatic Filtering, Trimming, Error Removing and Quality Control for fastq data. AfterQC can simply go through all fastq files in a folder and then output three folders: good, bad and QC folders, which contains good reads, bad reads and the QC results of each fastq file/pair. Currently it supports processing data from HiSeq 2000/2500/3000/4000, Nextseq 500/550, MiniSeq...and other Illumina 1.8 or newer formats.</Description>
+      <Flavor>0.9.6</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>gdcclient/1.3</HandleKey>
+        <HandleKey>afterqc/0.9</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1786,13 +1799,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>ncbi-download</Name>
-      <Description>Python scriopt for downloading bacterial and fungal genomes from NCBI.</Description>
-      <Flavor>0.2.6</Flavor>
+      <Name>resistomeanalyzer</Name>
+      <Description>Resistome Analyzer is a simple tool for analyzing the resistome of large metagenomic datasets.</Description>
+      <Flavor>2018.09.06</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>ncbi-download/0.2</HandleKey>
+        <HandleKey>resistomeanalyzer/2018.09.06</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1851,13 +1864,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>resistomeanalyzer</Name>
-      <Description>Resistome Analyzer is a simple tool for analyzing the resistome of large metagenomic datasets.</Description>
-      <Flavor>2018.09.06</Flavor>
+      <Name>plink2</Name>
+      <Description>This is a comprehensive update to Shaun Purcell&apos;s PLINK command-line program, developed by Christopher Chang with support from the NIH-NIDDK&apos;s Laboratory of Biological Modeling, the Purcell Lab at Mount Sinai School of Medicine, and others.</Description>
+      <Flavor>2.0a1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>resistomeanalyzer/2018.09.06</HandleKey>
+        <HandleKey>plink2/2.0a1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -1928,40 +1941,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>deep learning</Domain>
-      <Name>pytorch</Name>
-      <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
-      <Flavor>0.4.0</Flavor>
+      <Domain>genomics</Domain>
+      <Name>ssake</Name>
+      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
+      <Flavor>4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pytorch/py36/0.4</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>deep learning</Domain>
-      <Name>pytorch</Name>
-      <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
-      <Flavor>0.4.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>pytorch/py35/0.4</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>deep learning</Domain>
-      <Name>pytorch</Name>
-      <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
-      <Flavor>0.4.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>pytorch/py27/0.4</HandleKey>
+        <HandleKey>ssake/4.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2058,27 +2045,53 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>package</Domain>
-      <Name>afterqc</Name>
-      <Description>Automatic Filtering, Trimming, Error Removing and Quality Control for fastq data. AfterQC can simply go through all fastq files in a folder and then output three folders: good, bad and QC folders, which contains good reads, bad reads and the QC results of each fastq file/pair. Currently it supports processing data from HiSeq 2000/2500/3000/4000, Nextseq 500/550, MiniSeq...and other Illumina 1.8 or newer formats.</Description>
-      <Flavor>0.9.6</Flavor>
+      <Domain>computational biology</Domain>
+      <Name>transdecoder</Name>
+      <Description>TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.</Description>
+      <Flavor>3.0.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>afterqc/0.9</HandleKey>
+        <HandleKey>transdecoder/3.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>snp-sites</Name>
-      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
-      <Flavor>2.3.3</Flavor>
+      <Domain>deep learning</Domain>
+      <Name>pytorch</Name>
+      <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
+      <Flavor>0.4.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>snp-sites/2.3</HandleKey>
+        <HandleKey>pytorch/py36/0.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>deep learning</Domain>
+      <Name>pytorch</Name>
+      <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
+      <Flavor>0.4.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>pytorch/py35/0.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>deep learning</Domain>
+      <Name>pytorch</Name>
+      <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
+      <Flavor>0.4.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>pytorch/py27/0.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2175,14 +2188,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>R</Domain>
-      <Name>r-markdown</Name>
-      <Description>Markdown is a plain-text formatting syntax that can be converted to XHTML or other formats.</Description>
-      <Flavor>0.8</Flavor>
+      <Domain>biology</Domain>
+      <Name>r-regresshaplo</Name>
+      <Description>This package reconstructs haplotypes from a BAM file using a penalized regression approach.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>r-markdown/0.8</HandleKey>
+        <HandleKey>r-regresshaplo/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2201,14 +2214,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>bedops</Name>
-      <Description>BEDOPS is an open-source command-line toolkit that performs highly efficient and scalable Boolean and other set operations, statistical calculations, archiving, conversion and other management of genomic data of arbitrary scale.</Description>
-      <Flavor>2.4.35</Flavor>
+      <Domain>bioinformatics</Domain>
+      <Name>pygenometracks</Name>
+      <Description>Standalone program and library to plot beautiful genome browser tracks.</Description>
+      <Flavor>2.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>bedops/2.4</HandleKey>
+        <HandleKey>pygenometracks/2.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2318,40 +2331,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>bioinformatics</Domain>
-      <Name>pygenometracks</Name>
-      <Description>Standalone program and library to plot beautiful genome browser tracks.</Description>
-      <Flavor>2.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>pygenometracks/2.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>r</Domain>
-      <Name>r-ggfortify</Name>
-      <Description>ggfortify is a package of unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis.</Description>
-      <Flavor>0.4.1</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>r-ggfortify/0.4</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>pyfasta</Name>
-      <Description>Pyfasta - fast, memory-efficient, pythonic (and command-line) access to fasta sequence files.</Description>
-      <Flavor>0.5</Flavor>
+      <Name>bedops</Name>
+      <Description>BEDOPS is an open-source command-line toolkit that performs highly efficient and scalable Boolean and other set operations, statistical calculations, archiving, conversion and other management of genomic data of arbitrary scale.</Description>
+      <Flavor>2.4.35</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pyfasta/0.5</HandleKey>
+        <HandleKey>bedops/2.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2370,40 +2357,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>Shell tool</Domain>
-      <Name>gnu-parallel</Name>
-      <Description>GNU parallel is a shell tool for executing jobs in parallel using one or more computers.</Description>
-      <Flavor>20180522</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>gnu-parallel/20180522</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>jvarkit-msa2vcf</Name>
-      <Description>Getting a VCF file from a CLUSTAW or a FASTA alignment.</Description>
-      <Flavor>1.0</Flavor>
+      <Name>pyfasta</Name>
+      <Description>Pyfasta - fast, memory-efficient, pythonic (and command-line) access to fasta sequence files.</Description>
+      <Flavor>0.5</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>jvarkit-msa2vcf/1.0</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>genomics</Domain>
-      <Name>ssake</Name>
-      <Description>SSAKE is a genomics application for de novo assembly of millions of very short DNA sequences.</Description>
-      <Flavor>4.0</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>ssake/4.0</HandleKey>
+        <HandleKey>pyfasta/0.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2456,6 +2417,58 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>mathematica/10.4</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>unknown</Domain>
+      <Name>graphlan</Name>
+      <Description>GraPhlAn is a software tool for producing high-quality circular representations of taxonomic and phylogenetic trees. It focuses on concise, integrative, informative, and publication-ready representations of phylogenetically- and taxonomically-driven investigation.</Description>
+      <Flavor>1.0.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>graphlan/1.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>jvarkit-msa2vcf</Name>
+      <Description>Getting a VCF file from a CLUSTAW or a FASTA alignment.</Description>
+      <Flavor>1.0</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>jvarkit-msa2vcf/1.0</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>snp-sites</Name>
+      <Description>SNP-sites rapidly extracts SNPs from a multi-FASTA alignment.</Description>
+      <Flavor>2.3.3</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>snp-sites/2.3</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>computational biology</Domain>
+      <Name>metasv</Name>
+      <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
+      <Flavor>0.5.4</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>metasv/0.5</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2514,13 +2527,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>pepr</Name>
-      <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
-      <Flavor>1.1.18</Flavor>
+      <Name>peakzilla</Name>
+      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
+      <Flavor>1.0</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>pepr/1.1</HandleKey>
+        <HandleKey>peakzilla/1.0</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2591,14 +2604,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>metasv</Name>
-      <Description>An accurate and integrative structural-variant caller for next generation sequencing.</Description>
-      <Flavor>0.5.4</Flavor>
+      <Domain>system</Domain>
+      <Name>lftp</Name>
+      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
+      <Flavor>4.8.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>metasv/0.5</HandleKey>
+        <HandleKey>lftp/4.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -2734,14 +2747,40 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>unknown</Domain>
-      <Name>graphlan</Name>
-      <Description>GraPhlAn is a software tool for producing high-quality circular representations of taxonomic and phylogenetic trees. It focuses on concise, integrative, informative, and publication-ready representations of phylogenetically- and taxonomically-driven investigation.</Description>
-      <Flavor>1.0.0</Flavor>
+      <Domain>Chemistry</Domain>
+      <Name>gaussian</Name>
+      <Description />
+      <Flavor>09 RevD</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>graphlan/1.0</HandleKey>
+        <HandleKey>gaussian/09/RevD</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Chemistry</Domain>
+      <Name>gaussian</Name>
+      <Description />
+      <Flavor>16 RevE</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>gaussian/16/RevA</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
+      <Domain>Chemistry</Domain>
+      <Name>gaussian</Name>
+      <Description />
+      <Flavor>09 RevE</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>gaussian/09/RevE</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3059,14 +3098,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>biology</Domain>
-      <Name>r-regresshaplo</Name>
-      <Description>This package reconstructs haplotypes from a BAM file using a penalized regression approach.</Description>
-      <Flavor>1.0</Flavor>
+      <Domain>r</Domain>
+      <Name>r-ggfortify</Name>
+      <Description>ggfortify is a package of unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis.</Description>
+      <Flavor>0.4.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>r-regresshaplo/1.0</HandleKey>
+        <HandleKey>r-ggfortify/0.4</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3307,13 +3346,13 @@
     <LocalSoftware>
       <Type>application</Type>
       <Domain>computational biology</Domain>
-      <Name>peakzilla</Name>
-      <Description>Peakzilla identifies sites of enrichment and transcription factor binding sites from transcription factor ChIP-seq and ChIP-exo experiments at hight accuracy and resolution.</Description>
-      <Flavor>1.0</Flavor>
+      <Name>pepr</Name>
+      <Description>Peak-calling and Prioritization pipeline for replicated ChIP-Seq data.</Description>
+      <Flavor>1.1.18</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>peakzilla/1.0</HandleKey>
+        <HandleKey>pepr/1.1</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3527,14 +3566,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>seqtk</Name>
-      <Description>Seqtk is a fast and lightweight tool for processing sequences in the FASTA or FASTQ format.</Description>
-      <Flavor>1.2</Flavor>
+      <Domain>Shell tool</Domain>
+      <Name>gnu-parallel</Name>
+      <Description>GNU parallel is a shell tool for executing jobs in parallel using one or more computers.</Description>
+      <Flavor>20180522</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>seqtk/1.2</HandleKey>
+        <HandleKey>gnu-parallel/20180522</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3553,14 +3592,14 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
-      <Domain>computational biology</Domain>
-      <Name>transdecoder</Name>
-      <Description>TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.</Description>
-      <Flavor>3.0.1</Flavor>
+      <Domain>Mapping</Domain>
+      <Name>bsmap</Name>
+      <Description>BSMAP is a short reads mapping software for bisulfite sequencing reads.</Description>
+      <Flavor>2.90</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
-        <HandleKey>transdecoder/3.0</HandleKey>
+        <HandleKey>bsmap/2.90</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>
@@ -3579,6 +3618,19 @@
     </LocalSoftware>
     <LocalSoftware>
       <Type>application</Type>
+      <Domain>R</Domain>
+      <Name>r-markdown</Name>
+      <Description>Markdown is a plain-text formatting syntax that can be converted to XHTML or other formats.</Description>
+      <Flavor>0.8</Flavor>
+      <Default>no</Default>
+      <Handle>
+        <HandleType>module</HandleType>
+        <HandleKey>r-markdown/0.8</HandleKey>
+      </Handle>
+      <Context>default</Context>
+    </LocalSoftware>
+    <LocalSoftware>
+      <Type>application</Type>
       <Domain>computational biology</Domain>
       <Name>deeptools</Name>
       <Description />
@@ -3587,19 +3639,6 @@
       <Handle>
         <HandleType>module</HandleType>
         <HandleKey>deeptools/2.5</HandleKey>
-      </Handle>
-      <Context>default</Context>
-    </LocalSoftware>
-    <LocalSoftware>
-      <Type>application</Type>
-      <Domain>system</Domain>
-      <Name>lftp</Name>
-      <Description>LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).</Description>
-      <Flavor>4.8.3</Flavor>
-      <Default>no</Default>
-      <Handle>
-        <HandleType>module</HandleType>
-        <HandleKey>lftp/4.8</HandleKey>
       </Handle>
       <Context>default</Context>
     </LocalSoftware>

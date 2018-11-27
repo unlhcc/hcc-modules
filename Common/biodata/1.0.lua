@@ -157,7 +157,7 @@ local ipr_root = pathJoin(data, "interproscan")
 local panther_root = pathJoin(data, "panther")
 local taxon_root = pathJoin(data, "taxonomy")
 local app = "/work/HCC/BCRF/app_specific"
-local orthodb_root = pathJoin(app, "busco/orthodb/v")
+local orthodb_root = pathJoin(app, "busco/orthodb")
 
 
 pushenv("DATA", data)
@@ -175,7 +175,7 @@ pushenv("APP", app)
 local panther_latest = "9.0"
 local ipr_latest = "5"
 local metaphlan_latest = "2.6"
-local orthodb_latest = "9"
+local orthodb_latest = "v9"
 local uniprot_latest = "latest"
 local uniref_root = pathJoin(uniprot_root, uniprot_latest, "uniref")
 local metaphlan_latest_root = pathJoin(metaphlan_root, metaphlan_latest)

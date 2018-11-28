@@ -1,5 +1,5 @@
 <V4RPSoftwareRP xmlns:ns1="https://mds.teragrid.org/2007/02/ctss">
-  <RPSoftwareList Timestamp="2018-11-27T17:43:38Z" UniqueID="localsoft4.runner-2210a532-project-3516-concurrent-0.tacc.xsede.org">
+  <RPSoftwareList Timestamp="2018-11-28T21:01:59Z" UniqueID="localsoft4.runner-2210a532-project-3516-concurrent-0.tacc.xsede.org">
     <ResourceID>runner-2210a532-project-3516-concurrent-0.tacc.xsede.org</ResourceID>
     <SiteID>tacc.xsede.org</SiteID>
     <LocalSoftware>
@@ -2256,7 +2256,7 @@
       <Domain>deep learning</Domain>
       <Name>pytorch</Name>
       <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
-      <Flavor>0.4.0</Flavor>
+      <Flavor>0.4.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
@@ -2269,7 +2269,7 @@
       <Domain>deep learning</Domain>
       <Name>pytorch</Name>
       <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
-      <Flavor>0.4.0</Flavor>
+      <Flavor>0.4.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
@@ -2282,7 +2282,7 @@
       <Domain>deep learning</Domain>
       <Name>pytorch</Name>
       <Description>PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.</Description>
-      <Flavor>0.4.0</Flavor>
+      <Flavor>0.4.1</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
@@ -2321,7 +2321,7 @@
       <Domain>mathematics</Domain>
       <Name>theano</Name>
       <Description>Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.</Description>
-      <Flavor>1.0.2</Flavor>
+      <Flavor>1.0.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
@@ -2347,7 +2347,7 @@
       <Domain>mathematics</Domain>
       <Name>theano</Name>
       <Description>Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.</Description>
-      <Flavor>1.0.2</Flavor>
+      <Flavor>1.0.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>
@@ -2360,7 +2360,7 @@
       <Domain>mathematics</Domain>
       <Name>theano</Name>
       <Description>Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.</Description>
-      <Flavor>1.0.2</Flavor>
+      <Flavor>1.0.3</Flavor>
       <Default>no</Default>
       <Handle>
         <HandleType>module</HandleType>

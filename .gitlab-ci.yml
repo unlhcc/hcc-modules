@@ -1,13 +1,10 @@
 variables:
   WORK: "/tmp"
   LMOD_REDIRECT: "yes"
-  XML_FILE: "hcc_modules.xml"
-  BIODATA_XML_FILE: "biodata_module.xml"
   MODULES_DIR: "/util/opt/hcc-modules"
 
 stages:
   - test
-  - updatexml
   - deploy
   - sync-to-github
 
@@ -44,34 +41,6 @@ test-tusker-paths:
     - tusker-test
   script:
     - scripts/test_changed_modules.sh
-
-updatexml:
-  stage: updatexml
-  image: unlhcc/crane-build-el6
-  allow_failure: yes
-  only:
-    - master
-  tags:
-    - docker
-  before_script:
-    - source /util/opt/lmod/lmod/init/profile
-    - module use $CI_PROJECT_DIR/Common
-    - eval $(ssh-agent -s) > /dev/null
-    - mkdir -p ~/.ssh
-    - chown 700 ~/.ssh
-    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
-    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
-    - git config user.name "HCC Gitlab CI"
-    - git config user.email "hcc-support@unl.edu"
-    - git remote add origin-push git@git.unl.edu:${CI_PROJECT_PATH}.git
-    - git checkout $CI_COMMIT_REF_NAME
-  script:
-    - /util/opt/lmod/lmod/libexec/spider -o xmlSoftwarePage $CI_PROJECT_DIR/Common > $XML_FILE
-    - scripts/create_biodata_xml_file.py Common/biodata/1.0.lua $BIODATA_XML_FILE
-    - git add $XML_FILE $BIODATA_XML_FILE
-    - git commit -m "Automated XML update [skip ci]"
-    - git push origin-push $CI_COMMIT_REF_NAME || true
 
 deploy-crane:
   stage: deploy

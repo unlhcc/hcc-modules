@@ -5,8 +5,11 @@ Version 4.0.4.0
 ]])
 
 if mode() == "load" then
-  LmodMessage("Usage: gatk <program name>")
-  LmodMessage("Increase Java heap space to 10GBs: gatk -Xms512m -Xmx10g <program name>")
+  LmodMessage("-------------------------| Help message for gatk module |-------------------------------")
+  LmodMessage("Usage: gatk <program name> <arguments>")
+  LmodMessage("You can also pass -Xms or -Xmx arguments to control Java memory allocation.")
+  LmodMessage("For example, to increase Java heap space to 10GB, run: gatk -Xms512m -Xmx10g <program name> <arguments>")
+  LmodMessage("------------------------------------------------------------------------------------------")
 end
 
 whatis("Name: GATK4")

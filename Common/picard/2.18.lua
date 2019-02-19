@@ -5,8 +5,11 @@ Version 2.18.4
 ]])
 
 if mode() == "load" then
-  LmodMessage("Usage: picard <program name> -h")
-  LmodMessage("Increase Java heap space to 10GBs: picard -Xms512m -Xmx10g <program name>")
+  LmodMessage("-------------------------| Help message for picard module |-------------------------------")
+  LmodMessage("Usage: picard <program name> <arguments>")
+  LmodMessage("You can also pass -Xms or -Xmx arguments to control Java memory allocation.")
+  LmodMessage("For example, to increase Java heap space to 10GB, run: picard -Xms512m -Xmx10g <program name> <arguments>")
+  LmodMessage("------------------------------------------------------------------------------------------")
 end
 
 whatis("Name: Picard")

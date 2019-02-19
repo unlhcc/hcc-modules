@@ -6,8 +6,11 @@ Version 4.1
 ]])
 
 if mode() == "load" then
+  LmodMessage("-------------------------| Help message for beagle module |-------------------------------")
   LmodMessage("Usage: beagle <arguments>")
-  LmodMessage("Increase Java heap space to 10GBs: beagle -Xms512m -Xmx10g <arguments>")
+  LmodMessage("You can also pass -Xms or -Xmx arguments to control Java memory allocation.")
+  LmodMessage("For example, to increase Java heap space to 10GB, run: beagle -Xms512m -Xmx10g <arguments>")
+  LmodMessage("------------------------------------------------------------------------------------------")
 end
 
 whatis("Name: Beagle")

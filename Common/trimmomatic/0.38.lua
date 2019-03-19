@@ -5,6 +5,12 @@ Version 0.38
 ]]
 )
 
+if mode() == "load" then
+  LmodMessage("-------------------------| Help message for trimmomatic module |-------------------------------")
+  LmodMessage("Usage: trimmomatic PE|SE <arguments>")
+  LmodMessage("------------------------------------------------------------------------------------------")
+end
+
 whatis("Name: Trimmomatic")
 whatis("Version: 0.38")
 whatis("Category: computational biology, genomics")

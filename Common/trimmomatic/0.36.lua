@@ -1,13 +1,13 @@
 help (
 [[
 This module loads Trimmomatic.
-How to run: 'trimmomatic --help'
-
 Version 0.36
 ]])
 
 if mode() == "load" then
-  LmodMessage("Usage: trimmomatic -h")
+  LmodMessage("-------------------------| Help message for trimmomatic module |-------------------------------")
+  LmodMessage("Usage: trimmomatic PE|SE <arguments>")
+  LmodMessage("------------------------------------------------------------------------------------------")
 end
 
 whatis("Name: Trimmomatic")

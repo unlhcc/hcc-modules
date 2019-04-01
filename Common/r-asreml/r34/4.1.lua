@@ -17,3 +17,4 @@ pushenv("CONDA_DEFAULT_ENV","mro-asreml-4.1.0.98-r34")
 prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/mro-asreml/envs/mro-asreml-4.1.0.98-r34",priority=100}
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/mro-asreml/envs")
 family("R")
+setenv("ASREML_LICENSE_FILE","/util/opt/asreml/4.1/bin/asreml.lic")

@@ -23,8 +23,12 @@ whatis("Keywords: computational biology, structure annotation, gene prediction")
 whatis("URL: https://github.com/Gaius-Augustus/BRAKER")
 whatis("Description: BRAKER2 is an extension of BRAKER1 which allows for fully automated training of the gene prediction tools GeneMark-EX and AUGUSTUS from RNA-Seq and/or protein homology information, and that integrates the extrinsic evidence from RNA-Seq and protein homology information into the prediction.")
 
+pushenv("AUGUSTUS_CONFIG_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker2/envs/braker2-2.1.2/config")
+pushenv("AUGUSTUS_SCRIPTS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker2/envs/braker2-2.1.2/bin")
+pushenv("AUGUSTUS_BIN_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker2/envs/braker2-2.1.2/bin")
 pushenv("GENEMARK_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker2/envs/braker2-2.1.2/bin")
 pushenv("GM_KEY", "/util/opt/anaconda/deployed-conda-envs/packages/braker2/envs/braker2-2.1.2/bin/gm_key")
+
 pushenv("CONDA_DEFAULT_ENV", "braker2-2.1.2")
 prepend_path{"PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker2/envs/braker2-2.1.2/bin", priority=100}
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker2/envs")

@@ -5,6 +5,14 @@ Version 0.11.2
 ]]
 )
 
+if mode() == "load" then
+  LmodMessage("-------------------------| Help message for humann2 module |-------------------------------")
+  LmodMessage("Currently HUMAnN2 is configured to use the UniRef90 database.")
+  LmodMessage("If you want to use UniRef50, please load the biodata module, `module load biodata/1.0`, first.")
+  LmodMessage("Then, use HUMAnN2 with the option `--protein-database $HUMANN2/uniref/uniref50`")
+  LmodMessage("------------------------------------------------------------------------------------------")
+end
+
 whatis("Name: HUMAnN2")
 whatis("Version: 0.11.2")
 whatis("Category: computational biology")

@@ -158,6 +158,7 @@ local panther_root = pathJoin(data, "panther")
 local taxon_root = pathJoin(data, "taxonomy")
 local app = "/work/HCC/BCRF/app_specific"
 local orthodb_root = pathJoin(app, "busco/orthodb")
+local humann2_root = pathJoin(app, "humann2")
 
 
 pushenv("DATA", data)
@@ -175,11 +176,13 @@ pushenv("APP", app)
 local panther_latest = "9.0"
 local ipr_latest = "5"
 local metaphlan_latest = "2.6"
+local humann2_latest = "0.11.2"
 local orthodb_latest = "v9"
 local uniprot_latest = "latest"
 local uniref_root = pathJoin(uniprot_root, uniprot_latest, "uniref")
 local metaphlan_latest_root = pathJoin(metaphlan_root, metaphlan_latest)
 local orthodb_latest_root = pathJoin(orthodb_root, orthodb_latest)
+local humann2_latest_root = pathJoin(humann2_root, humann2_latest)
 pushenv("IPR", pathJoin(ipr_root, ipr_latest))
 pushenv("PANTHER", pathJoin(panther_root, panther_latest))
 pushenv("UNIPROT", pathJoin(uniprot_root, uniprot_latest))
@@ -195,6 +198,7 @@ pushenv("TAXONOMY", taxon_root)
 pushenv("TAXONOMY_NAMES", pathJoin(taxon_root, "names.dmp"))
 pushenv("TAXONOMY_NODES", pathJoin(taxon_root, "nodes.dmp"))
 pushenv("ORTHODB", orthodb_latest_root)
+pushenv("HUMANN2", humann2_latest_root)
 
 
 -- Genome databases and indices

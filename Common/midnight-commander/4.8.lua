@@ -14,3 +14,4 @@ whatis("Description: GNU Midnight Commander is a visual file manager, licensed u
 pushenv("CONDA_DEFAULT_ENV", "midnight-commander-4.8.22")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/midnight-commander/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/midnight-commander/envs/midnight-commander-4.8.22/bin")
+set_alias("mc", ". /util/opt/anaconda/deployed-conda-envs/packages/midnight-commander/envs/midnight-commander-4.8.22/libexec/mc/mc-wrapper.sh")

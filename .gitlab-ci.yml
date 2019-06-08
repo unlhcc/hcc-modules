@@ -32,15 +32,15 @@ test-crane-paths:
   script:
     - scripts/test_changed_modules.sh
 
-#test-tusker-paths:
-#  stage: test
-#  image: unlhcc/crane-build-el6
-#  except:
-#    - master
-#  tags:
-#    - tusker-test
-#  script:
-#    - scripts/test_changed_modules.sh
+test-rhino-paths:
+  stage: test
+  image: unlhcc/rhino-build-el7
+  except:
+    - master
+  tags:
+    - rhino-test
+  script:
+    - scripts/test_changed_modules.sh
 
 deploy-crane:
   stage: deploy
@@ -65,28 +65,28 @@ deploy-crane:
     - git fetch
     - git checkout $CI_COMMIT_SHA
 
-#deploy-tusker:
-#  stage: deploy
-#  environment:
-#    name: tusker_production
-#    url: https://tusker.unl.edu
-#  image: unlhcc/crane-build-el6
-#  only:
-#    - master
-#  tags:
-#    - tusker
-#  before_script:
-#    - eval $(ssh-agent -s) > /dev/null
-#    - mkdir -p ~/.ssh
-#    - chown 700 ~/.ssh
-#    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
-#    - chmod 644 ~/.ssh/known_hosts
-#    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
-#  script:
-#    - cd $MODULES_DIR
-#    - git checkout master
-#    - git fetch
-#    - git checkout $CI_COMMIT_SHA
+deploy-rhino:
+  stage: deploy
+  environment:
+    name: rhino_production
+    url: https://rhino.unl.edu
+  image: unlhcc/rhino-build-el7
+  only:
+    - master
+  tags:
+    - rhino
+  before_script:
+    - eval $(ssh-agent -s) > /dev/null
+    - mkdir -p ~/.ssh
+    - chown 700 ~/.ssh
+    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
+  script:
+    - cd $MODULES_DIR
+    - git checkout master
+    - git fetch
+    - git checkout $CI_COMMIT_SHA
 
 sync-to-github:
   stage: sync-to-github

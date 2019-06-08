@@ -6,8 +6,8 @@ script_path="$(dirname "$( readlink -e ${BASH_SOURCE[0]} )" )"
 source $script_path/b-log.sh
 LOG_LEVEL_NOTICE
 
-NOTICE "Running 'git fetch origin master' to get master branch..."
-fetchOut="$(git fetch origin master 2>&1)"
+NOTICE "Running 'git fetch origin +master:master' to get master branch..."
+fetchOut="$(git fetch origin +master:master 2>&1)"
 echo "$fetchOut" | INFO
 
 NOTICE  "Finding changed modules according to git..."

@@ -38,3 +38,9 @@ end
 pushenv("CONDA_DEFAULT_ENV", "python-2.7")
 family("python")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/python/envs")
+
+if (mode() == "load") then
+        LmodMessage("NOTE: Python 2.7 will be end-of-life starting Jan. 1, 2020.")
+        LmodMessage("      Python 3 is NOT backwards compatible.  Your code may require changes to support Python 3.")
+        LmodMessage("      For more details on porting your code, see https://docs.python.org/3/howto/pyporting.html")
+end

@@ -14,7 +14,7 @@ whatis("Category: system, development")
 whatis("Keywords: System, Development, Python")
 whatis("URL: https://www.continuum.io/anaconda-overview")
 
-prepend_path("PATH",                "/util/opt/anaconda/4.6/bin")
+prepend_path{"PATH",                "/util/opt/anaconda/4.6/bin", priority=110}
 prepend_path("MANPATH",             "/util/opt/anaconda/4.6/share/man")
 
 local username = os.getenv("USER") or ""

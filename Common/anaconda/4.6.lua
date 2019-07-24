@@ -14,9 +14,6 @@ whatis("Category: system, development")
 whatis("Keywords: System, Development, Python")
 whatis("URL: https://www.continuum.io/anaconda-overview")
 
-prepend_path{"PATH",                "/util/opt/anaconda/4.6/bin", priority=110}
-prepend_path("MANPATH",             "/util/opt/anaconda/4.6/share/man")
-
 local username = os.getenv("USER") or ""
 if username ~= "root" then
   prepend_path("CONDA_ENVS_PATH", "~/.conda/envs")
@@ -36,4 +33,14 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/2.2/envs")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/4.3/envs")
 end
 
-family("python")
+prepend_path("PATH", "/util/opt/anaconda/4.6.8/condabin")
+prepend_path("PATH", "/util/opt/anaconda/4.6/condabin")
+execute{cmd="source /util/opt/anaconda/4.6/etc/profile.d/conda."..myShellType()..">& /dev/null",modeA={"load"}}
+execute{cmd="unset -f conda __add_sys_prefix_to_path __conda_activate __conda_hashr __conda_reactivate",modeA={"unload"}}
+if (myShellType() == "csh") then
+  execute{cmd="unalias conda",modeA={"unload"}}
+end
+if (mode() == "unload") then
+  remove_path("PATH", "/util/opt/anaconda/4.6.8/condabin")
+  remove_path("PATH", "/util/opt/anaconda/4.6/condabin")
+end

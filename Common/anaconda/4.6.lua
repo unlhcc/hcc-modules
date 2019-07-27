@@ -39,6 +39,7 @@ execute{cmd="source /util/opt/anaconda/4.6/etc/profile.d/conda."..myShellType().
 execute{cmd="unset -f conda __add_sys_prefix_to_path __conda_activate __conda_hashr __conda_reactivate",modeA={"unload"}}
 if (myShellType() == "csh") then
   execute{cmd="unalias conda",modeA={"unload"}}
+  execute{cmd="unsetenv CONDA_PYTHON_EXE CONDA_EXE _CONDA_ROOT _CONDA_EXE CONDA_SHLVL",modeA={"unload"}}
 end
 if (mode() == "unload") then
   remove_path("PATH", "/util/opt/anaconda/4.6.8/condabin")

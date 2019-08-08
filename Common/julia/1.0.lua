@@ -20,3 +20,4 @@ local work = os.getenv("WORK") or "/tmp"
 pushenv("JULIA_DEPOT_PATH", pathJoin(work,".julia") .. ":/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.0.3/local/share/julia:/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.0.3/share/julia")
 pushenv("JULIA_PROJECT", pathJoin(work,".julia"))
 pushenv("JULIA_LOAD_PATH", ":/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.0.3/share/julia/environments/v1.0")
+pushenv("JULIA_HISTORY", pathJoin(work,".julia/logs/repl_history.jl"))

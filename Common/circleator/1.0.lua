@@ -17,6 +17,7 @@ whatis("Keywords: computational biology, visualization, genome-association")
 whatis("URL: https://github.com/jonathancrabtree/Circleator")
 whatis("Description: Flexible circular visualization of genome-associated data with BioPerl and SVG.")
 
+load("java/1.8")
 setenv("CONFIG_DIR", "/util/opt/anaconda/deployed-conda-envs/packages/circleator/envs/circleator-1.0.2/share/circleator/conf/")
 pushenv("CONDA_DEFAULT_ENV", "circleator-1.0.2")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/circleator/envs")

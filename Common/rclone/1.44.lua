@@ -15,3 +15,13 @@ pushenv("CONDA_DEFAULT_ENV", "rclone-1.44")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/rclone/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/rclone/envs/rclone-1.44/bin")
 setenv("RCLONE_CONFIG",pathJoin(os.getenv("WORK"),".config/rclone/rclone.conf"))
+
+
+if mode() == "load" then
+  local w = os.getenv("WORK")
+  local d = pathJoin(w,".config/rclone")
+  if (not isDir(d)) then
+    lfs.mkdir(pathJoin(w,".config"))
+    lfs.mkdir(d)
+  end
+end

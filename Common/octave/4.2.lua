@@ -13,3 +13,5 @@ whatis("Description: GNU Octave is a high-level language, primarily intended for
 pushenv("CONDA_DEFAULT_ENV","octave-4.2.1")
 prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-4.2.1/bin",priority=100}
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs")
+
+setenv("OCTAVE_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-4.2.1")

@@ -15,6 +15,7 @@ whatis("URL: https://evidencemodeler.github.io/")
 
 
 pushenv("CONDA_DEFAULT_ENV","evidencemodeler-1.1.1")
+pushenv("EVM_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/evidencemodeler/envs/evidencemodeler-1.1.1")
 prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/evidencemodeler/envs/evidencemodeler-1.1.1/bin",priority=100}
 
 

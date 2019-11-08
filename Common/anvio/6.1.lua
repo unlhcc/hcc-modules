@@ -14,3 +14,4 @@ whatis("Description: An interactive analysis and visualization platform for omic
 pushenv("CONDA_DEFAULT_ENV", "anvio-6.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/anvio/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/anvio/envs/anvio-6.1/bin")
+setenv("COG_DATA_DIR", "/work/HCC/BCRF/app_specific/anvio/6.1/COG")

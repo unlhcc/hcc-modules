@@ -14,4 +14,5 @@ whatis("Description: A tool for clustering of RNAs based on their secondary stru
 
 pushenv("CONDA_DEFAULT_ENV", "rnaclust-1.3")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/rnaclust/envs")
+prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/rnaclust/envs/rnaclust-1.3/lib/")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/rnaclust/envs/rnaclust-1.3/bin")

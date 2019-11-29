@@ -18,5 +18,6 @@ whatis("Description: NoFold is an approach for characterizing and clustering RNA
 
 pushenv("CONDA_DEFAULT_ENV", "nofold-1.0.1")
 setenv("NOFOLD_DATA", "/util/opt/anaconda/deployed-conda-envs/packages/nofold/envs/nofold-1.0.1/share/nofold-1.0.1/")
+prepend_path("PERL5LIB", "/util/opt/anaconda/deployed-conda-envs/packages/nofold/envs/nofold-1.0.1/lib/perl/")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/nofold/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/nofold/envs/nofold-1.0.1/bin")

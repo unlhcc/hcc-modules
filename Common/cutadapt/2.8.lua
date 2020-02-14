@@ -8,8 +8,7 @@ whatis("Name: Cutadapt")
 whatis("Version: 2.8")
 whatis("Category: NGS data, trimming, adapter removal")
 whatis("Keywords: Genomics, Adapter Removal")
-whatis("Description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencin
-g reads.")
+whatis("Description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.")
 whatis("URL: https://github.com/marcelm/cutadapt")
 
 pushenv("CONDA_DEFAULT_ENV", "cutadapt-2.8")

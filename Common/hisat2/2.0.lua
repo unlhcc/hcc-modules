@@ -9,7 +9,7 @@ whatis("Name: HISAT2")
 whatis("Version: 2.0.5")
 whatis("Category: computational biology")
 whatis("Keywords: genomics, alignment, sequencing")
-whatis("URL: https://ccb.jhu.edu/software/hisat2/index.shtml")
+whatis("URL: https://daehwankimlab.github.io/hisat2/")
 whatis("Description: graph-based alignment of next generation sequencing reads to a population of genomes")
 
 pushenv("CONDA_DEFAULT_ENV", "hisat2-2.0.5")

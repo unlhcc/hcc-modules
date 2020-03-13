@@ -23,6 +23,7 @@ $GENOMES          Directory containing all available genomes (multiple sources, 
 $INDICES          Directory containing indices for bowtie, bowtie2, bwa for all available genomes
 $UNIPROT          Directory containing latest release of full UniProt database
 $TAXONOMY         Directory containing latest release of NCBO Taxonomy database
+$QIIME_DB_DIR     Directory containing releases of taxonomic databases Greengenes and Silva
 
 You can alsways check what's available by, e.g.
 
@@ -184,6 +185,7 @@ local uniref_root = pathJoin(uniprot_root, uniprot_latest, "uniref")
 local metaphlan_latest_root = pathJoin(metaphlan_root, metaphlan_latest)
 local orthodb_latest_root = pathJoin(orthodb_root, orthodb_latest)
 local humann2_latest_root = pathJoin(humann2_root, humann2_latest)
+local qiime_db = "/work/HCC/BCRF/app_specific/qiime/"
 pushenv("IPR", pathJoin(ipr_root, ipr_latest))
 pushenv("PANTHER", pathJoin(panther_root, panther_latest))
 pushenv("UNIPROT", pathJoin(uniprot_root, uniprot_latest))
@@ -200,6 +202,13 @@ pushenv("TAXONOMY_NAMES", pathJoin(taxon_root, "names.dmp"))
 pushenv("TAXONOMY_NODES", pathJoin(taxon_root, "nodes.dmp"))
 pushenv("ORTHODB", orthodb_latest_root)
 pushenv("HUMANN2", humann2_latest_root)
+pushenv("QIIME_DB_DIR", qiime_db)
+pushenv("SILVA", pathJoin(qiime_db, "silva-132-99-515-806-nb-classifier.qza"))
+pushenv("SILVA-132-99-515-806", pathJoin(qiime_db, "silva-132-99-515-806-nb-classifier.qza"))
+pushenv("SILVA-132-99-FULL-LENGTH", pathJoin(qiime_db, "silva-132-99-nb-classifier.qza"))
+pushenv("GREENGENES", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza"))
+pushenv("GREENGENES-13-8-99-515-806", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza"))
+pushenv("GREENGENES-13-8-99-FULL-LENGTH", pathJoin(qiime_db, "gg-13-8-99-nb-classifier.qza"))
 
 
 -- Genome databases and indices

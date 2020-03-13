@@ -204,11 +204,11 @@ pushenv("ORTHODB", orthodb_latest_root)
 pushenv("HUMANN2", humann2_latest_root)
 pushenv("QIIME_DB_DIR", qiime_db)
 pushenv("SILVA", pathJoin(qiime_db, "silva-132-99-515-806-nb-classifier.qza"))
-pushenv("SILVA-132-99-515-806", pathJoin(qiime_db, "silva-132-99-515-806-nb-classifier.qza"))
-pushenv("SILVA-132-99-FULL-LENGTH", pathJoin(qiime_db, "silva-132-99-nb-classifier.qza"))
+pushenv("SILVA_132_99_515_806", pathJoin(qiime_db, "silva-132-99-515-806-nb-classifier.qza"))
+pushenv("SILVA_132_99_FULL_LENGTH", pathJoin(qiime_db, "silva-132-99-nb-classifier.qza"))
 pushenv("GREENGENES", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza"))
-pushenv("GREENGENES-13-8-99-515-806", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza"))
-pushenv("GREENGENES-13-8-99-FULL-LENGTH", pathJoin(qiime_db, "gg-13-8-99-nb-classifier.qza"))
+pushenv("GREENGENES_13_8_99_515_806", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza"))
+pushenv("GREENGENES_13_8_99_FULL_LENGTH", pathJoin(qiime_db, "gg-13-8-99-nb-classifier.qza"))
 
 
 -- Genome databases and indices

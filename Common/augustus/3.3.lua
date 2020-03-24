@@ -4,6 +4,7 @@ This module loads Augustus.
 Version 3.3
 ]]
 )
+
 whatis("Name: Augustus")
 whatis("Version: 3.3")
 whatis("Category: computational biology, genomics")
@@ -14,6 +15,7 @@ whatis("Description: AUGUSTUS is a gene prediction program for eukaryotes writte
 setenv("AUGUSTUS_CONFIG_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/augustus/envs/augustus-3.3/config/")
 setenv("AUGUSTUS_SCRIPTS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/augustus/envs/augustus-3.3/bin/")
 setenv("AUGUSTUS_BIN_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/augustus/envs/augustus-3.3/bin/")
+prepend_path("PERL5LIB", "/util/opt/anaconda/deployed-conda-envs/packages/augustus/envs/augustus-3.3/lib/perl5/site_perl/5.22.0/")
 
 pushenv("CONDA_DEFAULT_ENV", "augustus-3.3")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/augustus/envs")

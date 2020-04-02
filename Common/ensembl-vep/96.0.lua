@@ -11,6 +11,8 @@ whatis("Keywords: Biology, Bioinformatics")
 whatis("URL: https://uswest.ensembl.org/info/docs/tools/vep/index.html")
 whatis("Description: The VEP determines the effect of your variants (SNPs, insertions, deletions, CNVs or structural variants) on genes, transcripts, and protein sequence, as well as regulatory regions.")
 
+prepend_path("PERL5LIB", "/util/opt/anaconda/deployed-conda-envs/packages/ensembl-vep/envs/ensembl-vep-96.0/lib/site_perl/5.26.2/")
+
 pushenv("CONDA_DEFAULT_ENV", "ensembl-vep-96.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/ensembl-vep/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/ensembl-vep/envs/ensembl-vep-96.0/bin")

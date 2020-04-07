@@ -15,7 +15,8 @@ will run the bowtie2 command utilizing the default Horse (Equus caballus) index.
 The major environment variables are:
 
 $DATA             Main database directory
-$BLAST            Main BLAST database directory
+$BLAST            Main BLAST database directory (>= blast 2.10)
+$BLAST_V4         Archived BLAST version 4 databases (blast <= 2.9)
 $KEGG             KEGG database main entry point (requires license)
 $PANTHER          PANTHER database main entry point (latest)
 $IPR              InterProScan database main entry point (latest)
@@ -152,6 +153,7 @@ local bowtie2 = pathJoin(indices, "bowtie2")
 local bowtie = pathJoin(indices, "bowtie")
 local bwa = pathJoin(indices, "bwa")
 local blast = pathJoin(data, "BLAST")
+local blast_v4 = pathJoin(data, "BLAST\v4\")
 local uniprot_root = pathJoin(data, "uniprot")
 local metaphlan_root = pathJoin(data, "metaphlan")
 local kegg = pathJoin(data, "kegg")
@@ -167,6 +169,7 @@ pushenv("DATA", data)
 pushenv("KEGG", kegg)
 pushenv("GENOMES", genomes)
 pushenv("BLAST", blast)
+pushenv("BLAST_V4", blast_v4)
 pushenv("INDICES", indices)
 pushenv("INDICES_BOWTIE", bowtie)
 pushenv("INDICES_BOWTIE2", bowtie2)
@@ -905,5 +908,7 @@ pushenv("BLAST_ARCHAEA_ALL", pathJoin(blast, "genomic_archaea"))
 if (mode() == "load") then
         LmodMessage("Static data resources for bioinformatics 1.0.")
         LmodMessage("     Contact the Bioinformatics Core Research Facility (bcrf-support@unl.edu) for questions/support.")
+        LmodMessage("     NOTE: use $BLAST_V4 for access to blast databases when using NCBI blast <= 2.9")
+        LmodMessage("     NOTE 2: $BLAST_V4 databases will not be updated going forward.")
 end
 

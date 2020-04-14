@@ -8,7 +8,7 @@ This module loads the g16 environment
 help(help_message,"\n")
 
 whatis("Name: g16")
-whatis("Version: 16 RevE")
+whatis("Version: 16 RevA")
 whatis("Category: Application, Chemistry")
 whatis("Keywords: Application, Chemistry")
 whatis("URL: http://www.gaussian.com/g_prod/g16.htm")

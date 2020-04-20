@@ -15,4 +15,9 @@ whatis("Category: Simulation, Physics, Chemistry")
 whatis("URL: https://www.schrodinger.com/")
 whatis("Description: Schrödinger is the scientific leader in developing state-of-the-art chemical simulation software for use in pharmaceutical, biotechnology, and materials research.")
 
-prepend_path("PATH","/util/opt/schrodinger/2020.1")
+local schrodinger = "/util/opt/schrodinger/2020.1"
+
+prepend_path("PATH", schrodinger)
+
+pushenv("SCHRODINGER", schrodinger)
+pushenv("SCHRODINGER_JOBDB2", "/scratch")

@@ -1,2 +1,3 @@
 #%Module
 hide-version cellranger/3.0
+hide-version humann2/0.9

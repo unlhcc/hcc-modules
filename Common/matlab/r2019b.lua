@@ -11,3 +11,4 @@ setenv("MATLAB_PREFDIR", "/tmp/matlab." .. os.getenv("USER") .. "/prefs")
 setenv("TZ", "America/Chicago") --fix the TimeZone warning message
 
 prepend_path("PATH","/util/opt/matlab/r2019b/bin")
+setenv("MATLAB_ROOT","/util/opt/matlab/r2019b")

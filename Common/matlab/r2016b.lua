@@ -10,3 +10,4 @@ whatis("Keywords: Application, Engineering, Math")
 setenv("MATLAB_PREFDIR", "/tmp/matlab." .. os.getenv("USER") .. "/prefs")
 
 prepend_path("PATH","/util/opt/matlab/r2016b/bin")
+setenv("MATLAB_ROOT","/util/opt/matlab/r2016b")

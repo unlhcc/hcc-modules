@@ -1,5 +1,5 @@
 local help_message = [[
-MATLAB r2012b
+MATLAB r2013b
 ]]
 
 help(help_message,"\n")
@@ -11,3 +11,4 @@ local WORK = os.getenv("WORK")
 setenv("MATLAB_PREFDIR", WORK .. "/.matlab")
 
 prepend_path("PATH","/util/opt/matlab/r2013b/bin")
+setenv("MATLAB_ROOT","/util/opt/matlab/r2013b")

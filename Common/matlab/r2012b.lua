@@ -11,3 +11,4 @@ local WORK = os.getenv("WORK")
 setenv("MATLAB_PREFDIR", WORK .. "/.matlab")
 
 prepend_path("PATH","/util/opt/matlab/r2012b/bin")
+setenv("MATLAB_ROOT","/util/opt/matlab/r2012b")

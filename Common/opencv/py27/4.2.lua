@@ -17,3 +17,8 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/opencv/envs/opencv-4.2.0-py27/bin")
 prepend_path("LD_LIBRARY_PATH","/util/opt/anaconda/deployed-conda-envs/packages/opencv/envs/opencv-4.2.0-py27/lib")
 prepend_path("LIBRARY_PATH","/util/opt/anaconda/deployed-conda-envs/packages/opencv/envs/opencv-4.2.0-py27/lib")
+prepend_path("INCLUDE","/util/opt/anaconda/deployed-conda-envs/packages/opencv/envs/opencv-4.2.0-py27/include/opencv4")
+prepend_path("CPATH","/util/opt/anaconda/deployed-conda-envs/packages/opencv/envs/opencv-4.2.0-py27/include/opencv4")
+prepend_path("PKG_CONFIG_PATH","/util/opt/anaconda/deployed-conda-envs/packages/opencv/envs/opencv-4.2.0-py27/lib/pkgconfig")
+setenv("OPENCV_DIR","/util/opt/anaconda/deployed-conda-envs/packages/opencv/envs/opencv-4.2.0-py27")
+family("opencv")

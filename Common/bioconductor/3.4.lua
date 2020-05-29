@@ -1,12 +1,13 @@
 help (
 [[
 This module loads Bioconductor.
-Due to the number of Bioconductor packages, this module
-only contains a subset.  To request a specific package be
-added, please email hcc-support@unl.edu
-
 Version 3.4
 ]])
+
+if mode() == "load" then
+  LmodMessage("NOTE: Due to the number of Bioconductor packages, this module only contains a subset.")
+  LmodMessage("To request a specific package be added, please email hcc-support@unl.edu.")
+end
 
 whatis("Name: Bioconductor")
 whatis("Version: 3.4")

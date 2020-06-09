@@ -15,3 +15,5 @@ whatis("Description: COBRApy is a package for constraint-based modeling of biolo
 pushenv("CONDA_DEFAULT_ENV", "cobra-0.17.1-py37")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/cobra/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/cobra/envs/cobra-0.17.1-py37/bin")
+
+family("python")

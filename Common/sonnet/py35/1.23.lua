@@ -14,3 +14,5 @@ whatis("Description: Sonnet is a library built on top of TensorFlow for building
 pushenv("CONDA_DEFAULT_ENV", "dm-sonnet-1.23-py35")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/dm-sonnet/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/dm-sonnet/envs/dm-sonnet-1.23-py35/bin")
+
+family("python")

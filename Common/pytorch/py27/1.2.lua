@@ -15,3 +15,5 @@ whatis("Description: PyTorch is an optimized tensor library for deep learning us
 pushenv("CONDA_DEFAULT_ENV", "pytorch-1.2.0-py27")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/pytorch/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/pytorch/envs/pytorch-1.2.0-py27/bin")
+
+family("python")

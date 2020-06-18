@@ -2,7 +2,7 @@ help (
 [[
 This module loads ggfortify.
 Version 0.4.1
-
+Note: This module includes R 3.3. Do not load any additional R modules.
 ]])
 
 whatis("Name: ggfortify")
@@ -15,3 +15,4 @@ whatis("Description: ggfortify is a package of unified plotting tools for statis
 pushenv("CONDA_DEFAULT_ENV","r-ggfortify-0.4.1")
 prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/r-ggfortify/envs/r-ggfortify-0.4.1/bin",priority=100}
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-ggfortify/envs")
+conflict("R/3.3")

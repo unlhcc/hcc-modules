@@ -2,6 +2,7 @@ help(
 [[
 This module loads r-keras.
 Version 2.2.4.1
+Note: This module includes R 3.5. Do not load any additional R modules.
 ]]
 )
 
@@ -15,3 +16,4 @@ whatis("Description: Interface to 'Keras' <https://keras.io>, a high-level neura
 pushenv("CONDA_DEFAULT_ENV", "r-keras-2.2.4.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-keras/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-keras/envs/r-keras-2.2.4.1/bin")
+conflict("R/3.5")

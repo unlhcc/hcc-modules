@@ -2,7 +2,7 @@ help (
 [[
 This module loads r-scImpute.
 Version 0.0.6
-
+Note: This module includes R 3.4. Do not load any additional R modules.
 ]])
 
 whatis("Name: r-scImpute")
@@ -15,3 +15,4 @@ whatis("Description: scImpute is accurate and robust imputation of single-cell R
 pushenv("CONDA_DEFAULT_ENV","r-scimpute-0.0.6")
 prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/r-scimpute/envs/r-scimpute-0.0.6/bin",priority=100}
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-scimpute/envs")
+conflict("R/3.4")

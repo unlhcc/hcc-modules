@@ -2,6 +2,7 @@ help(
 [[
 This module loads r-fastbaps.
 Version 1.0.1
+Note: This module includes R 3.6. Do not load any additional R modules.
 ]]
 )
 
@@ -15,3 +16,4 @@ whatis("Description: A fast approximation to a Dirichlet Process Mixture model (
 pushenv("CONDA_DEFAULT_ENV", "r-fastbaps-1.0.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-fastbaps/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-fastbaps/envs/r-fastbaps-1.0.1/bin")
+conflict("R/3.6")

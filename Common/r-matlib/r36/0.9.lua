@@ -2,6 +2,7 @@ help(
 [[
 This module loads r-matlib.
 Version 0.9.2
+Note: This module includes R 3.6. Do not load any additional R modules.
 ]]
 )
 
@@ -15,3 +16,4 @@ whatis("Description: A collection of matrix functions for teaching and learning 
 pushenv("CONDA_DEFAULT_ENV", "r-matlib-0.9.2")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-matlib/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-matlib/envs/r-matlib-0.9.2/bin")
+conflict("R/3.6")

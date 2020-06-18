@@ -2,6 +2,7 @@ help(
 [[
 This module loads R-markdown.
 Version 0.8
+Note: This module includes R 3.4. Do not load any additional R modules.
 ]]
 )
 whatis("Name: R-markdown")
@@ -14,3 +15,4 @@ whatis("Description: Markdown is a plain-text formatting syntax that can be conv
 pushenv("CONDA_DEFAULT_ENV", "r-markdown-0.8")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-markdown/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-markdown/envs/r-markdown-0.8/bin")
+conflict("R/3.4")

@@ -8,7 +8,7 @@ Version 3.0.2
 if mode() == "load" then
   LmodMessage("Before you use BUSCO, you need to copy the configuration file and set the path to your data and ORTHODB files.")
   LmodMessage("Copy the config file, config.ini, to the current directory: cp $BUSCO_CONFIG_FILE config.ini")
-  LmodMessage("Check the available OrthoDB files: ls $ORTHODB")
+  LmodMessage("Check the available OrthoDB files: ls $ORTHODB_V9")
 end
 
 whatis("Name: BUSCO")

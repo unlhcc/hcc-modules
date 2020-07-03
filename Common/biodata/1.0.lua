@@ -182,7 +182,7 @@ local panther_latest = "9.0"
 local ipr_latest = "5"
 local metaphlan_latest = "2.6"
 local humann2_latest = "0.11.2"
-local orthodb_latest = "v9"
+local orthodb_latest = "v10"
 local uniprot_latest = "latest"
 local uniref_root = pathJoin(uniprot_root, uniprot_latest, "uniref")
 local metaphlan_latest_root = pathJoin(metaphlan_root, metaphlan_latest)
@@ -204,6 +204,8 @@ pushenv("TAXONOMY", taxon_root)
 pushenv("TAXONOMY_NAMES", pathJoin(taxon_root, "names.dmp"))
 pushenv("TAXONOMY_NODES", pathJoin(taxon_root, "nodes.dmp"))
 pushenv("ORTHODB", orthodb_latest_root)
+pushenv("ORTHODB_V9", pathJoin(orthodb_root, "v9/"))
+pushenv("ORTHODB_V10", pathJoin(orthodb_root, "v10/"))
 pushenv("HUMANN2", humann2_latest_root)
 pushenv("QIIME_DB_DIR", qiime_db)
 pushenv("SILVA", pathJoin(qiime_db, "silva-132-99-515-806-nb-classifier.qza"))

@@ -1,6 +1,6 @@
 help(
 [[
-This module loads Git.
+This module loads Git and git-lfs.
 Version 2.17.0
 ]]
 )

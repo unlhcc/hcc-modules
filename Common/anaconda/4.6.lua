@@ -45,3 +45,5 @@ if (mode() == "unload") then
   remove_path("PATH", "/util/opt/anaconda/4.6.8/condabin")
   remove_path("PATH", "/util/opt/anaconda/4.6/condabin")
 end
+
+family('conda')

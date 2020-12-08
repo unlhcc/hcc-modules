@@ -18,6 +18,7 @@ whatis("Description: Schrödinger is the scientific leader in developing state-o
 local schrodinger = "/util/opt/schrodinger/2020.1"
 
 prepend_path("PATH", schrodinger)
+prepend_path("PATH", pathJoin(schrodinger,"utilities"))
 
 pushenv("SCHRODINGER", schrodinger)
 pushenv("SCHRODINGER_JOBDB2", "/scratch")

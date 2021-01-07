@@ -17,3 +17,4 @@ prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/r-asreml/en
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-asreml/envs")
 family("R")
 setenv("ASREML_LICENSE_FILE","/util/opt/asreml/4.1/bin/asreml.lic")
+setenv("vsni_LICENSE",  "/util/opt/anaconda/deployed-conda-envs/packages/r-asreml/envs/enterprise_licenses/y9PXN3X5bq7ZMGZJE.lic")

@@ -2,6 +2,7 @@ variables:
   WORK: "/tmp"
   LMOD_REDIRECT: "yes"
   MODULES_DIR: "/util/opt/hcc-modules"
+  LMOD_HOME: "/util/opt/lmod/lmod"
 
 stages:
   - test
@@ -16,7 +17,7 @@ test-modules:
   tags:
     - docker
   before_script:
-    - source /util/opt/lmod/lmod/init/profile
+    - source $LMOD_HOME/init/profile
   script:
     - module use $CI_PROJECT_DIR/Common
     - module av > /dev/null
@@ -39,6 +40,16 @@ test-rhino-paths:
     - master
   tags:
     - rhino-test
+  script:
+    - scripts/test_changed_modules.sh
+
+test-crane-el8-paths:
+  stage: test
+  image: unlhcc/crane-build-el8
+  except:
+    - master
+  tags:
+    - crane-el8
   script:
     - scripts/test_changed_modules.sh
 
@@ -87,6 +98,32 @@ deploy-rhino:
     - git checkout master
     - git fetch
     - git checkout $CI_COMMIT_SHA
+
+deploy-crane-el8:
+  stage: deploy
+  environment:
+    name: crane_el8_production
+    url: https://crane.unl.edu
+  image: unlhcc/crane-build-el8
+  only:
+    - master
+  tags:
+    - crane-el8
+  before_script:
+    - eval $(ssh-agent -s) > /dev/null
+    - mkdir -p ~/.ssh
+    - chown 700 ~/.ssh
+    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
+    - source $LMOD_HOME/init/profile
+    - module load lmod
+  script:
+    - cd $MODULES_DIR
+    - git checkout master
+    - git fetch
+    - git checkout $CI_COMMIT_SHA
+    - update_lmod_system_cache_files -d $MODULES_DIR/cacheDir -t $MODULES_DIR/cacheTS.txt $MODULES_DIR
 
 sync-to-github:
   stage: sync-to-github

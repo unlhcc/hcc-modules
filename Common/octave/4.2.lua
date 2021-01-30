@@ -15,7 +15,7 @@ prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/octave/envs
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs")
 
 setenv("OCTAVE_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-4.2.1")
-setenv("OCTAVE_SITE_INITFILE", "/util/opt/anaconda/deployed-conda-envs/packages/octave/octave-startup")
+setenv("OCTAVE_SITE_INITFILE", "/util/opt/anaconda/deployed-conda-envs/packages/octave/octave-startup-4.2.1")
 
 local base = "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-4.2.1/"
 local include = pathJoin(base,"/include");

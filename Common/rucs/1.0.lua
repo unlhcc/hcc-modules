@@ -19,6 +19,6 @@ whatis("Description: RUCS is a bioinformatics tool developed to ease the task of
 
 pushenv("CONDA_DEFAULT_ENV", "rucs-1.0.2")
 setenv("SETTINGS_FILE", "/util/opt/anaconda/deployed-conda-envs/packages/rucs/envs/rucs-1.0.2/share/rucs-1.0.2/settings.default.cjson")
-setenv("BLASTDB", "/work/HCC/BCRF/BLAST/")
+setenv("BLASTDB", "/work/HCC/BCRF/BLAST/v4")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/rucs/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/rucs/envs/rucs-1.0.2/bin")

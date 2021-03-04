@@ -4,7 +4,7 @@ This module loads Metacv.
 Version 2.3.0
 
 The environment variable METACV_DB is set
-and points to the prepare cvk6_2059* files.
+and points to the prepared cvk6_2059* files.
 ]]
 )
 whatis("Name: Metacv")

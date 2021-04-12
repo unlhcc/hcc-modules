@@ -19,8 +19,8 @@ whatis("Category: system, development")
 whatis("Keywords: System, Development, Python")
 whatis("URL: http://www.python.org/")
 
-prepend_path("PATH",                "/util/opt/anaconda/4.3/bin")
-prepend_path("MANPATH",             "/util/opt/anaconda/4.3/share/man")
+prepend_path("PATH",                "/util/opt/anaconda/4.9/bin")
+prepend_path("MANPATH",             "/util/opt/anaconda/4.9/share/man")
 prepend_path{"PATH",                "/util/opt/anaconda/deployed-conda-envs/packages/python/envs/python-3.8/bin",priority=100}
 
 local username = os.getenv("USER") or ""

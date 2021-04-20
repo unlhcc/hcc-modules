@@ -18,3 +18,5 @@ setenv("XDG_CACHE_HOME",pathJoin(os.getenv("WORK"),".cache"))
 
 -- the octave module includes gnuplot. trying to load them both can be problematic.
 conflict("octave")
+
+setenv("GNUPLOT_DRIVER_DIR","/util/opt/anaconda/deployed-conda-envs/packages/gnuplot/envs/gnuplot-5.4.1/libexec/gnuplot/5.4")

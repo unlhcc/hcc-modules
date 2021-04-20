@@ -17,6 +17,11 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/
 setenv("OCTAVE_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-4.2.1")
 setenv("OCTAVE_SITE_INITFILE", "/util/opt/anaconda/deployed-conda-envs/packages/octave/octave-startup-4.2.1")
 
+-- the octave module includes gnuplot. trying to load them both can be problematic.
+conflict("gnuplot")
+
+setenv("LIBGL_ALWAYS_INDIRECT", "true")
+
 local base = "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-4.2.1/"
 local include = pathJoin(base,"/include");
 local include2 = pathJoin(include,"octave-4.2.1")

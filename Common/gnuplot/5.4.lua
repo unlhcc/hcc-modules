@@ -20,3 +20,5 @@ setenv("XDG_CACHE_HOME",pathJoin(os.getenv("WORK"),".cache"))
 conflict("octave")
 
 setenv("GNUPLOT_DRIVER_DIR","/util/opt/anaconda/deployed-conda-envs/packages/gnuplot/envs/gnuplot-5.4.1/libexec/gnuplot/5.4")
+
+setenv("LIBGL_ALWAYS_INDIRECT", "true")

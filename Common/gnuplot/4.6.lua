@@ -18,3 +18,5 @@ setenv("XDG_CACHE_HOME",pathJoin(os.getenv("WORK"),".cache"))
 
 -- the octave module includes gnuplot. trying to load them both can be problematic.
 conflict("octave")
+
+setenv("LIBGL_ALWAYS_INDIRECT", "true")

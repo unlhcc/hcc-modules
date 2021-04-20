@@ -1,28 +1,28 @@
 local help_message = [[
-Octave 6.1
+Octave 6.2
 ]]
 
 help(help_message,"\n")
 
-whatis("Name: Octave 6.1")
-whatis("Version: 6.1")
+whatis("Name: Octave 6.2")
+whatis("Version: 6.2")
 whatis("Category: application, engineering, math")
 whatis("Keywords: Application, Engineering, Math")
 whatis("Description: GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab.")
 
-pushenv("CONDA_DEFAULT_ENV","octave-6.1.0")
-prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-6.1.0/bin",priority=100}
+pushenv("CONDA_DEFAULT_ENV","octave-6.2.0")
+prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-6.2.0/bin",priority=100}
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs")
 
-setenv("OCTAVE_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-6.1.0")
-setenv("OCTAVE_SITE_INITFILE", "/util/opt/anaconda/deployed-conda-envs/packages/octave/octave-startup-6.1.0")
+setenv("OCTAVE_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-6.2.0")
+setenv("OCTAVE_SITE_INITFILE", "/util/opt/anaconda/deployed-conda-envs/packages/octave/octave-startup-6.2.0")
 
 -- the octave module includes gnuplot. trying to load them both can be problematic.
 conflict("gnuplot")
 
-local base = "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-6.1.0/"
+local base = "/util/opt/anaconda/deployed-conda-envs/packages/octave/envs/octave-6.2.0/"
 local include = pathJoin(base,"/include");
-local include2 = pathJoin(include,"octave-6.1.0")
+local include2 = pathJoin(include,"octave-6.2.0")
 local lib = pathJoin(base,"/lib");
 setenv("LD_CXX", pathJoin(base,"bin/x86_64-conda_cos6-linux-gnu-c++"))
 setenv("DL_LD", pathJoin(base,"bin/x86_64-conda_cos6-linux-gnu-c++"))

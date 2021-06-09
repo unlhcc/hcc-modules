@@ -20,6 +20,7 @@ $BLAST_V4         Archived BLAST version 4 databases (blast <= 2.9)
 $KEGG             KEGG database main entry point (requires license)
 $PANTHER          PANTHER database main entry point (latest)
 $IPR              InterProScan database main entry point (latest)
+$IMG_VR           IMG VR database main entry point (latest)
 $GENOMES          Directory containing all available genomes (multiple sources, builds possible)
 $INDICES          Directory containing indices for bowtie, bowtie2, bwa for all available genomes
 $UNIPROT          Directory containing latest release of full UniProt database
@@ -161,6 +162,7 @@ local metaphlan_root = pathJoin(data, "metaphlan")
 local kegg = pathJoin(data, "kegg")
 local ipr_root = pathJoin(data, "interproscan")
 local panther_root = pathJoin(data, "panther")
+local img_vr_root = pathJoin(data, "img_vr")
 local taxon_root = pathJoin(data, "taxonomy")
 local app = "/work/HCC/BCRF/app_specific"
 local orthodb_root = pathJoin(app, "busco/orthodb")
@@ -186,10 +188,12 @@ local metaphlan_latest = "2.6"
 local humann2_latest = "0.11.2"
 local orthodb_latest = "v10"
 local uniprot_latest = "latest"
+local img_vr_latest = "latest"
 local uniref_root = pathJoin(uniprot_root, uniprot_latest, "uniref")
 local metaphlan_latest_root = pathJoin(metaphlan_root, metaphlan_latest)
 local orthodb_latest_root = pathJoin(orthodb_root, orthodb_latest)
 local humann2_latest_root = pathJoin(humann2_root, humann2_latest)
+local img_vr_latest_root = pathJoin(img_vr_root, img_vr_latest)
 local qiime_db = "/work/HCC/BCRF/app_specific/qiime/"
 pushenv("IPR", pathJoin(ipr_root, ipr_latest))
 pushenv("PANTHER", pathJoin(panther_root, panther_latest))
@@ -209,6 +213,9 @@ pushenv("ORTHODB", orthodb_latest_root)
 pushenv("ORTHODB_V9", pathJoin(orthodb_root, "v9/"))
 pushenv("ORTHODB_V10", pathJoin(orthodb_root, "v10/"))
 pushenv("HUMANN2", humann2_latest_root)
+pushenv("IMG_VR", img_vr_latest_root)
+pushenv("IMG_VR_PROT", pathJoin(blast, "IMG_VR_prot"))
+pushenv("IMG_VR_NUCL", pathJoin(blast, "IMG_VR_nucl"))
 pushenv("QIIME_DB_DIR", qiime_db)
 pushenv("SILVA", pathJoin(qiime_db, "silva-132-99-515-806-nb-classifier.qza"))
 pushenv("SILVA_132_99_515_806", pathJoin(qiime_db, "silva-132-99-515-806-nb-classifier.qza"))

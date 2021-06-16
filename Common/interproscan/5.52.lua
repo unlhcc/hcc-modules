@@ -34,7 +34,7 @@ whatis("URL: https://interproscan-docs.readthedocs.io/en/latest/")
 prepend_path("PATH"       ,"/util/opt/BCRF/interproscan/5.52/gcc/10.2")
 pushenv("TEST_PROT"	, "/util/opt/BCRF/interproscan/5.52/gcc/10.2/test_proteins.fasta")
 
-always_load("java/11", "python/3.8", "ipr-support/1.0)
+always_load("java/11", "python/3.8", "ipr-support/1.0")
 
 
 

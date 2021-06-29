@@ -16,4 +16,4 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/oncodriveclustl/envs/oncodriveclustl-1.1.3/bin")
 
 local work = os.getenv("WORK") or "/tmp"
-setenv("BGDATA_LOCAL", pathJoin(work,".bgdata")
+setenv("BGDATA_LOCAL", pathJoin(work,".bgdata"))

@@ -2,6 +2,8 @@ help(
 [[
 This module loads Smrtlink-tools.
 Version 5.1.0.26412
+
+Note: This module provide the CLI SMRT Tools only.
 ]]
 )
 whatis("Name: Smrtlink-tools")

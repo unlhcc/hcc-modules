@@ -29,3 +29,4 @@ setenv("AMORPH_TEST_FILES", "/util/opt/anaconda/deployed-conda-envs/packages/amo
 pushenv("CONDA_DEFAULT_ENV", "amorph-0.0.2021.05.10")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/amorph/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/amorph/envs/amorph-0.0.2021.05.10/bin")
+prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/amorph/envs/amorph-0.0.2021.05.10/lib/")

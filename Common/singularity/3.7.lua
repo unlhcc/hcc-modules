@@ -16,7 +16,7 @@ whatis("URL: https://sylabs.io/docs")
 if mode() == "load" then
   local jobid=os.getenv("SLURM_JOB_ID") or ""
   if jobid == "" then
-    LmodError("\n\tPlease do not run Singularity on the login node.\n\tUse an interactive job instead: https://hcc.unl.edu/docs/guides/submitting_jobs/submitting_an_interactive_job/")
+    LmodError("\n\tPlease do not run Singularity on the login node.\n\tUse an interactive job instead: https://hcc.unl.edu/docs/submitting_jobs/creating_an_interactive_job/")
   end
 
   local d= pathJoin(os.getenv("WORK"),".singularity")

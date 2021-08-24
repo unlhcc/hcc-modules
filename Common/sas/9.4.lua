@@ -13,7 +13,7 @@ whatis("Description: SAS is a software suite developed by SAS Institute for adva
 whatis("URL: http://www.sas.com/en_us/software/sas9.html")
 
 prepend_path("PATH"       ,"/util/opt/sas/9.4/SASFoundation/9.4")
-
+prepend_path("PATH"       ,"/util/opt/sas/9.4/SASFoundation/9.4/utilities/bin")
 --http://support.sas.com/documentation/cdl/en/hostunx/61879/HTML/default/viewer.htm#a000313346.htm
 setenv("SASV9_OPTIONS",	"-FILELOCKS NONE")
 

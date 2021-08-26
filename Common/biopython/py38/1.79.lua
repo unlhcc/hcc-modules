@@ -14,3 +14,5 @@ whatis("Description: Collection of freely available tools for computational mole
 pushenv("CONDA_DEFAULT_ENV", "biopython-1.79-py38")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/biopython/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/biopython/envs/biopython-1.79-py38/bin")
+
+family("python")

@@ -116,6 +116,7 @@ $BLAST_ARCHAEA_ALL, $BWA_ARCHAEA_ALL, $BOWTIE2_ARCHAEA_ALL,
                      MACACA_MULATTA	
                        MUS_MUSCULUS	(MOUSE)
    MYCOBACTERIUM_TUBERCULOSIS_H37RV	
+                    OAR_RAMBOUILLET	
               ORYZA_SATIVA_JAPONICA	(RICE)
                          OVIS_ARIES	(SHEEP)
                     PAN_TROGLODYTES	
@@ -703,6 +704,22 @@ pushenv ("BOWTIE2_MYCOBACTERIUM_TUBERCULOSIS_H37RV_NCBI_2001_09_07", pathJoin(bo
 pushenv ("BWA_MYCOBACTERIUM_TUBERCULOSIS_H37RV_NCBI_2001_09_07", pathJoin(bwa, "Mycobacterium_tuberculosis_H37RV", "NCBI", "2001-09-07", _bwa))
 pushenv ("PICARD_MYCOBACTERIUM_TUBERCULOSIS_H37RV_NCBI_2001_09_07", pathJoin(genomes, "Mycobacterium_tuberculosis_H37RV", "NCBI", "2001-09-07", _w, _p))
 pushenv ("FAIDX_MYCOBACTERIUM_TUBERCULOSIS_H37RV_NCBI_2001_09_07", pathJoin(genomes, "Mycobacterium_tuberculosis_H37RV", "NCBI", "2001-09-07", _w, _s))
+pushenv ("OAR_RAMBOUILLET", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0"))
+pushenv ("GENOME_OAR_RAMBOUILLET", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0", _w, _f))
+pushenv ("CHR_OAR_RAMBOUILLET", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0", _c))
+pushenv ("BOWTIE_OAR_RAMBOUILLET", pathJoin(bowtie, "Oar_rambouillet", "NCBI", "v2.0", _b))
+pushenv ("BOWTIE2_OAR_RAMBOUILLET", pathJoin(bowtie2, "Oar_rambouillet", "NCBI", "v2.0", _b))
+pushenv ("BWA_OAR_RAMBOUILLET", pathJoin(bwa, "Oar_rambouillet", "NCBI", "v2.0", _bwa))
+pushenv ("PICARD_OAR_RAMBOUILLET", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0", _w, _p))
+pushenv ("FAIDX_OAR_RAMBOUILLET", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0", _w, _s))
+pushenv ("OAR_RAMBOUILLET_NCBI_V2_0", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0"))
+pushenv ("GENOME_OAR_RAMBOUILLET_NCBI_V2_0", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0", _w, _f))
+pushenv ("CHR_OAR_RAMBOUILLET_NCBI_V2_0", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0", _c))
+pushenv ("BOWTIE_OAR_RAMBOUILLET_NCBI_V2_0", pathJoin(bowtie, "Oar_rambouillet", "NCBI", "v2.0", _b))
+pushenv ("BOWTIE2_OAR_RAMBOUILLET_NCBI_V2_0", pathJoin(bowtie2, "Oar_rambouillet", "NCBI", "v2.0", _b))
+pushenv ("BWA_OAR_RAMBOUILLET_NCBI_V2_0", pathJoin(bwa, "Oar_rambouillet", "NCBI", "v2.0", _bwa))
+pushenv ("PICARD_OAR_RAMBOUILLET_NCBI_V2_0", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0", _w, _p))
+pushenv ("FAIDX_OAR_RAMBOUILLET_NCBI_V2_0", pathJoin(genomes, "Oar_rambouillet", "NCBI", "v2.0", _w, _s))
 pushenv ("RICE", pathJoin(genomes, "Oryza_sativa_japonica", "Ensembl", "IRGSP-1.0"))
 pushenv ("GENOME_RICE", pathJoin(genomes, "Oryza_sativa_japonica", "Ensembl", "IRGSP-1.0", _w, _f))
 pushenv ("CHR_RICE", pathJoin(genomes, "Oryza_sativa_japonica", "Ensembl", "IRGSP-1.0", _c))

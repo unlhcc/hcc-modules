@@ -34,4 +34,6 @@ if username ~= "root" then
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda3/2.0/envs")
 end
 
+setenv("PYTHONNOUSERSITE", "1")
+
 family("python")

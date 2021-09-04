@@ -46,4 +46,6 @@ if (mode() == "unload") then
   remove_path("PATH", "/util/opt/anaconda/4.9/condabin")
 end
 
+setenv("PYTHONNOUSERSITE", "1")
+
 family('conda')

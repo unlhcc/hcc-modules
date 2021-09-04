@@ -37,3 +37,4 @@ end
 pushenv("CONDA_DEFAULT_ENV", "python-3.7")
 family("python")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/python/envs")
+setenv("PYTHONNOUSERSITE", "1")

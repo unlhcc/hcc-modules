@@ -36,4 +36,7 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda3/2.0/envs")
 end
 
 pushenv("CONDA_DEFAULT_ENV",	    "py33")
+
+setenv("PYTHONNOUSERSITE", "1")
+
 family("python")

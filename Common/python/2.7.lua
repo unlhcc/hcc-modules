@@ -44,3 +44,5 @@ if (mode() == "load") then
         LmodMessage("      Python 3 is NOT backwards compatible.  Your code may require changes to support Python 3.")
         LmodMessage("      For more details on porting your code, see https://docs.python.org/3/howto/pyporting.html")
 end
+
+setenv("PYTHONNOUSERSITE", "1")

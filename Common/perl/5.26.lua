@@ -14,3 +14,4 @@ whatis("URL: https://www.perl.org")
 prepend_path{"PATH"		,"/util/opt/anaconda/deployed-conda-envs/packages/perl/envs/perl-5.26.2/bin",priority=100}
 pushenv("CONDA_DEFAULT_ENV"	,"perl-5.26.2")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/perl/envs")
+family("perl")

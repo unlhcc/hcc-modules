@@ -1,4 +1,4 @@
-1help(
+help(
 [[
 This module loads HTSeq.
 Version 0.13.5

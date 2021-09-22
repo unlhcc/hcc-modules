@@ -14,3 +14,6 @@ whatis("Description: SNV calling software")
 pushenv("CONDA_DEFAULT_ENV", "metasnv-2.0.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metasnv/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metasnv/envs/metasnv-2.0.1/bin")
+
+family("python")
+family("R")

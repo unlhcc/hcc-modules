@@ -21,4 +21,4 @@ setenv("DOTNET_TOOLS","/util/opt/anaconda/deployed-conda-envs/packages/maxquant/
 setenv("DOTNET_MULTILEVEL_LOOKUP","0")
 setenv("DOTNET_SKIP_FIRST_TIME_EXPERIENCE","true")
 setenv("DOTNET_ROOT","/util/opt/anaconda/deployed-conda-envs/packages/maxquant/envs/maxquant-2.0.1.0/lib/dotnet")
-setenv("DOTNET_CLI_TELEMETRY_OPTOUT","true"
+setenv("DOTNET_CLI_TELEMETRY_OPTOUT","true")

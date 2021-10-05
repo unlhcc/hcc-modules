@@ -12,7 +12,14 @@ whatis("Keywords:  Mathematics, Statistics")
 whatis("Description: SAS is a software suite developed by SAS Institute for advanced analytics, business intelligence, data management, and predictive analytics." )
 whatis("URL: http://www.sas.com/en_us/software/sas9.html")
 
-prepend_path("PATH"       ,"/util/opt/sas/9.4/SASFoundation/9.4")
-prepend_path("PATH"       ,"/util/opt/sas/9.4/SASFoundation/9.4/utilities/bin")
---http://support.sas.com/documentation/cdl/en/hostunx/61879/HTML/default/viewer.htm#a000313346.htm
-setenv("SASV9_OPTIONS",	"-FILELOCKS NONE")
+if (mode() == "load") then
+    if userInGroups("sas") then
+        prepend_path("PATH"       ,"/util/opt/sas/9.4/SASFoundation/9.4")
+        prepend_path("PATH"       ,"/util/opt/sas/9.4/SASFoundation/9.4/utilities/bin")
+        --http://support.sas.com/documentation/cdl/en/hostunx/61879/HTML/default/viewer.htm#a000313346.htm
+        setenv("SASV9_OPTIONS",	"-FILELOCKS NONE")
+    else
+        LmodMessage("\tSAS is no longer generally available on HCC resources.")
+        LmodMessage("\tContact the STATS department to purchase a license.")
+    end
+end

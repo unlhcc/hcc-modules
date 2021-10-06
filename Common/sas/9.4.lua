@@ -16,6 +16,7 @@ if (mode() == "load") then
     if not userInGroups("sas") then
         LmodMessage("\tSAS is no longer generally available on HCC resources.")
         LmodMessage("\tContact the STATS department to purchase a license.")
+        LmodMessage("\tEmail areckewey2@unl.edu for more information.")
 	os.exit(0)
     end
 end

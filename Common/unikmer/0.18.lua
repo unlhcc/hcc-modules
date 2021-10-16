@@ -14,3 +14,5 @@ whatis("Description: unikmer: toolkit for nucleic acid k-mer analysis, including
 pushenv("CONDA_DEFAULT_ENV", "unikmer-0.18.7")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/unikmer/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/unikmer/envs/unikmer-0.18.7/bin")
+
+setenv("UNIKMER_DB", "/work/HCC/BCRF/app_specific/unikmer/0.18.7")

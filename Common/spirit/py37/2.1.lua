@@ -4,6 +4,13 @@ This module loads Spirit.
 Version 2.1.1
 ]]
 )
+
+if mode() == "load" then
+  LmodMessage("----------------------------| Help message for Spirit module |-------------------------------")
+  LmodMessage("To use the Spirit GUI, you must either enable X11 forwarding or use the HCC OnDemand Desktop (recommended).")
+  LmodMessage("---------------------------------------------------------------------------------------------")
+end
+
 whatis("Name: Spirit")
 whatis("Version: 2.1.1")
 whatis("Category: Physics, Simulation")

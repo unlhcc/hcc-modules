@@ -22,3 +22,5 @@ whatis("Description: A set of Java command line tools for manipulating high-thro
 prepend_path{"PATH", "/util/opt/anaconda/deployed-conda-envs/packages/picard/envs/picard-2.22.2/bin", priority=100}
 pushenv("CONDA_DEFAULT_ENV", "picard-2.22.2")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/picard/envs")
+
+family("R")

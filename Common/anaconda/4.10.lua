@@ -47,5 +47,6 @@ if (mode() == "unload") then
 end
 
 setenv("PYTHONNOUSERSITE", "1")
+setenv("MAMBA_NO_BANNER","1")
 
 family('conda')

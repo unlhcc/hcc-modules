@@ -39,4 +39,6 @@ if (mode() == "unload") then
   remove_path("PATH", "/util/opt/mamba/0.7/condabin")
 end
 
+setenv("MAMBA_NO_BANNER","1")
+
 family("conda")

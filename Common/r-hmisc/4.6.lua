@@ -15,3 +15,4 @@ whatis("Description: Contains many functions useful for data analysis, high-leve
 pushenv("CONDA_DEFAULT_ENV", "r-hmisc")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-hmisc/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/r-hmisc/envs/r-hmisc/bin")
+family("R")

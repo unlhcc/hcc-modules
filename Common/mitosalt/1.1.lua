@@ -33,3 +33,4 @@ prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/mitosalt/e
 
 setenv("MITOSALT_DATA", "/work/HCC/BCRF/app_specific/mitosalt/1.1.1")
 setenv("MITOSALT_CONFIG_FILE", "/util/opt/anaconda/deployed-conda-envs/packages/mitosalt/envs/mitosalt-1.1.1/share/mitosalt-1.1.1-0/")
+setenv("CONDA_ENV_BIN", "/util/opt/anaconda/deployed-conda-envs/packages/mitosalt/envs/mitosalt-1.1.1/bin/")

@@ -5,3 +5,4 @@ hide-version git/2.7
 hide-version bioconductor/3.4
 hide-version bioconductor/3.8
 hide-version bioconductor/4.0
+hide-version r-asreml

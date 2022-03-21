@@ -14,4 +14,5 @@ whatis("Description: AFNI is a suite of programs for looking at and analyzing 3D
 pushenv("CONDA_DEFAULT_ENV", "afni-18.2.06")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/afni/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/afni/envs/afni-18.2.06/bin")
+setenv("AFNI_PLUGINPATH", "/util/opt/anaconda/deployed-conda-envs/packages/afni/envs/afni-18.2.06/bin")
 family("R")

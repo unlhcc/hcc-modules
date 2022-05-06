@@ -22,7 +22,7 @@ test-modules:
     - module av > /dev/null
     - module spider > /dev/null
 
-test-rhino-paths:
+.test-rhino-paths:
   stage: test
   image: unlhcc/rhino-build-el7
   except:

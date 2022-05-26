@@ -12,6 +12,6 @@ whatis("Keywords: Tools, Utilities")
 whatis("Description: aria2 is a lightweight multi-protocol & multi-source command-line download utility. ")
 whatis("URL: https://aria2.github.io")
 
-prepend_path{"PATH"		,"/util/opt/anaconda/deployed-conda-envs/packages/aria2/envs/aria2-1.34.0/bin",priority=100}
+prepend_path("PATH"		,"/util/opt/anaconda/deployed-conda-envs/packages/aria2/envs/aria2-1.34.0/bin")
 pushenv("CONDA_DEFAULT_ENV"	,"aria2-1.34.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/aria2/envs")

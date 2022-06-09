@@ -22,16 +22,6 @@ test-modules:
     - module av > /dev/null
     - module spider > /dev/null
 
-.test-rhino-paths:
-  stage: test
-  image: unlhcc/rhino-build-el7
-  except:
-    - master
-  tags:
-    - rhino
-  script:
-    - scripts/test_changed_modules.sh
-
 test-crane-el8-paths:
   stage: test
   image: unlhcc/crane-build-el8
@@ -51,33 +41,6 @@ test-swan-paths:
     - swan
   script:
     - scripts/test_changed_modules.sh
-
-deploy-rhino:
-  stage: deploy
-  environment:
-    name: rhino_production
-    url: https://rhino.unl.edu
-  resource_group: production-rhino
-  image: unlhcc/rhino-build-el7
-  only:
-    - master
-  tags:
-    - rhino
-  before_script:
-    - eval $(ssh-agent -s) > /dev/null
-    - mkdir -p ~/.ssh
-    - chown 700 ~/.ssh
-    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
-    - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
-    - source $LMOD_HOME/init/profile
-    - module load lmod
-  script:
-    - cd $MODULES_DIR
-    - git checkout master
-    - git fetch
-    - git checkout $CI_COMMIT_SHA
-    - update_lmod_system_cache_files -d $MODULES_DIR/cacheDir -t $MODULES_DIR/cacheTS.txt $MODULES_DIR
 
 deploy-crane-el8:
   stage: deploy

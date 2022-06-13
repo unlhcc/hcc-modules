@@ -18,7 +18,7 @@ whatis("Category: computer science, databases")
 whatis("Keywords: Machine Learning, AI")
 whatis("Description: Static data resources for machine-learning/AI.")
 
-local data_root = "/work/HCC/DATA/ml-1.0"
+local data_root = "/work/HCC/DATA/mldata-1.0"
 local imagenet = pathJoin(data_root, "imagenet")
 local imagenet_latest = pathJoin(imagenet, "latest")
 local imagenet_winter21 = pathJoin(imagenet, "winter21")

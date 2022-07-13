@@ -20,3 +20,4 @@ setenv("GUROBI_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/en
 setenv("GUROBI_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/envs/gurobi-9.0.3-py37")
 setenv("GRB_LICENSE_FILE", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/gurobi.lic")
 prepend_path("MATLABPATH","/util/opt/anaconda/deployed-conda-envs/packages/gurobi/envs/gurobi-9.0.3-py37/share/gurobi-9.0.3-0/matlab")
+setenv("LAZYLPSOLVERLIBS_GUROBI_LIB", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/envs/gurobi-9.0.3-py37/lib/libgurobi90.so")

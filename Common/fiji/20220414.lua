@@ -14,3 +14,5 @@ whatis("Description: Fiji is an image processing package—a 'batteries-included
 pushenv("CONDA_DEFAULT_ENV", "fiji-20220414")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fiji/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fiji/envs/fiji-20220414/bin")
+setenv("JAVA_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/fiji/envs/fiji-20220414")
+setenv("JAVA_LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fiji/envs/fiji-20220414/jre/lib/amd64/server")

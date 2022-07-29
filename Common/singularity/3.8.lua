@@ -3,11 +3,11 @@ local lfs=require("lfs")
 help (
 [[
 This module makes available the singularity executable.
-Version 3.7
+Version 3.8
 ]])
 
 whatis("Name: singularity")
-whatis("Version: 3.7")
+whatis("Version: 3.8")
 whatis("Category: system, container")
 whatis("Keywords:  System, Container")
 whatis("Description: Application containers enabling mobility of compute.")

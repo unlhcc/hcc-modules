@@ -1,7 +1,7 @@
 help(
 [[
 This module loads HUMAnN.
-Version 3.0.0
+Version 3.1.1
 ]]
 )
 
@@ -16,14 +16,14 @@ if mode() == "load" then
 end
 
 whatis("Name: HUMAnN")
-whatis("Version: 3.0.0")
+whatis("Version: 3.1.1")
 whatis("Category: computational biology")
 whatis("Keywords: computational biology, metagenomics, metabolic network")
 whatis("URL: http://huttenhower.sph.harvard.edu/humann")
 whatis("Description: HUMAnN 3 is the next iteration of HUMAnN, the HMP Unified Metabolic Analysis Network.")
 
-setenv("METAPHLAN_BOWTIE2_DB", "/work/HCC/BCRF/app_specific/metaphlan2/v20_m200/mpa_v20_m200")
-setenv("MPA_PKL", "/work/HCC/BCRF/app_specific/metaphlan2/v20_m200/mpa_v20_m200.pkl")
-pushenv("CONDA_DEFAULT_ENV", "humann-3.0.0")
+setenv("METAPHLAN_BOWTIE2_DB", "/work/HCC/BCRF/app_specific/metaphlan/3/v31_201901/mpa_v31_CHOCOPhlAn_201901")
+setenv("MPA_PKL", "/work/HCC/BCRF/app_specific/metaphlan/3/v31_201901/mpa_v31_CHOCOPhlAn_201901.pkl")
+pushenv("CONDA_DEFAULT_ENV", "humann-3.1.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/humann/envs")
-prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/humann/envs/humann-3.0.0/bin")
+prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/humann/envs/humann-3.1.1/bin")

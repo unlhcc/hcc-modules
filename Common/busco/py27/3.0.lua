@@ -23,3 +23,5 @@ pushenv("CONDA_DEFAULT_ENV", "busco-3.0.2-py27")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/busco/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/busco/envs/busco-3.0.2-py27/bin")
 prepend_path("BUSCO_CONFIG_FILE", "/util/opt/anaconda/deployed-conda-envs/packages/busco/envs/busco-3.0.2-py27/config/config.ini")
+
+family("python")

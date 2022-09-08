@@ -14,3 +14,4 @@ whatis("Description: NetLogo is a multi-agent programmable modeling environment"
 pushenv("CONDA_DEFAULT_ENV", "netlogo-6.2.2")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/netlogo/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/netlogo/envs/netlogo-6.2.2/bin")
+setenv("JAVA_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/netlogo/envs/netlogo-6.2.2")

@@ -3,7 +3,7 @@ help(
 This module loads Pytorch.
 Version 1.12.1
 
-Note: This module includes tensorflow 2.6.0
+Note: This module includes tensorflow 2.9.
 Note: Load the 'pytorch-gpu' module for GPU support.
  
 ]]

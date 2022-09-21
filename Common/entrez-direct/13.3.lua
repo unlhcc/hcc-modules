@@ -15,3 +15,5 @@ whatis("Description: Entrez Direct (EDirect) is an advanced method for accessing
 pushenv("CONDA_DEFAULT_ENV", "entrez-direct-13.3")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/entrez-direct/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/entrez-direct/envs/entrez-direct-13.3/bin")
+
+family("perl")

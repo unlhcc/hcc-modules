@@ -6,9 +6,9 @@ Version 5.4.3
 )
 
 if mode() == "load" then
-  LmodMessage("Before you use BUSCO, you need to copy the configuration file and set the path to your data and ORTHODB files.")
-  LmodMessage("Copy the config file, config.ini, to the current directory: cp $BUSCO_CONFIG_FILE config.ini")
-  LmodMessage("Check the available OrthoDB files: ls $ORTHODB_V10")
+  LmodMessage("The available OrthoDB datasets can be listed with: ls $ORTHODB_V10")
+  LmodMessage("Then, pass the full path to the preferred dataset with -l (or --lineage_dataset):")
+  LmodMessage("e.g., busco -l $ORTHODB_V10/bacteria_odb10")
 end
 
 whatis("Name: BUSCO")
@@ -22,6 +22,5 @@ load("biodata/1.0")
 pushenv("CONDA_DEFAULT_ENV", "busco-5.4.3-py39")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/busco/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/busco/envs/busco-5.4.3-py39/bin")
-prepend_path("BUSCO_CONFIG_FILE", "/util/opt/anaconda/deployed-conda-envs/packages/busco/envs/busco-5.4.3-py39/config/config.ini")
 
 family("python")

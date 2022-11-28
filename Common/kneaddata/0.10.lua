@@ -5,6 +5,12 @@ Version 0.10.0
 ]]
 )
 
+if mode() == "load" then
+  LmodMessage("NOTE: To use trimmomatic with kneaddata, please add ")
+  LmodMessage("`--trimmomatic=/util/opt/anaconda/deployed-conda-envs/packages/kneaddata/envs/kneaddata-0.10.0/share/trimmomatic-0.39-2/` ")
+  LmodMessage("to the metaphlan command.")
+end
+
 whatis("Name: KneadData")
 whatis("Version: 0.10.0")
 whatis("Category: computational biology")

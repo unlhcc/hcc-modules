@@ -8,7 +8,8 @@ if mode() == "load" then
   LmodMessage("-------------------------| Help message for gatk module |-------------------------------")
   LmodMessage("Usage: gatk <program name> <arguments>")
   LmodMessage("You can also pass -Xms or -Xmx arguments to control Java memory allocation.")
-  LmodMessage("For example, to increase Java heap space to 10GB, run: gatk --java-options '-Xms512m -Xmx10g' <program name> <arguments>")
+  LmodMessage("For example, to increase Java heap space to 10GB, run:")
+  LmodMessage("gatk --java-options '-Djava.io.tmpdir=/scratch/$SLURM_JOBID -Xms512m -Xmx10g' <program name> <arguments>")
   LmodMessage("------------------------------------------------------------------------------------------")
 end
 

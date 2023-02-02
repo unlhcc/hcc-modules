@@ -34,4 +34,3 @@ if userInGroups("sas-unmccoph") then
   --http://support.sas.com/documentation/cdl/en/hostunx/61879/HTML/default/viewer.htm#a000313346.htm
   setenv("SASV9_OPTIONS", "-FILELOCKS NONE")
  end
-~

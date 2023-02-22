@@ -34,3 +34,10 @@ if userInGroups("sas-unmccoph") then
   --http://support.sas.com/documentation/cdl/en/hostunx/61879/HTML/default/viewer.htm#a000313346.htm
   setenv("SASV9_OPTIONS", "-FILELOCKS NONE")
  end
+
+if userInGroups("sas-unocba") then
+  prepend_path("PATH"       ,"/util/opt/sas-uno-cba/9.4/SASFoundation/9.4")
+  prepend_path("PATH"       ,"/util/opt/sas-uno-cba/9.4/SASFoundation/9.4/utilities/bin")
+  --http://support.sas.com/documentation/cdl/en/hostunx/61879/HTML/default/viewer.htm#a000313346.htm
+  setenv("SASV9_OPTIONS", "-FILELOCKS NONE")
+ end

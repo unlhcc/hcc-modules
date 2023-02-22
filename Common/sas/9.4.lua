@@ -13,7 +13,7 @@ whatis("Description: SAS is a software suite developed by SAS Institute for adva
 whatis("URL: http://www.sas.com/en_us/software/sas9.html")
 
 if (mode() == "load") then
-    if not userInGroups("sas","sas-unmccoph") then
+    if not userInGroups("sas","sas-unmccoph","sas-unocba") then
         LmodMessage("\tSAS is no longer generally available on HCC resources.")
         LmodMessage("\tContact the STATS department to purchase a license.")
         LmodMessage("\tEmail areckewey2@unl.edu for more information.")

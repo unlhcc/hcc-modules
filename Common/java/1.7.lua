@@ -14,3 +14,5 @@ whatis("URL: http://www.java.com")
 
 prepend_path("PATH"       ,"/util/opt/java/1.7/bin")
 setenv("JAVA_HOME"	  ,"/util/opt/java/1.7")
+
+family("java")

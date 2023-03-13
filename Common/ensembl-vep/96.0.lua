@@ -33,3 +33,5 @@ LmodMessage("")
 LmodMessage("***Be sure to install to a location in either $COMMON or $WORK.***")
 LmodMessage("***Do NOT use the default location of ~/.vep.***")
 end
+
+family("perl")

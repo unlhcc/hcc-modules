@@ -169,6 +169,7 @@ local taxon_root = pathJoin(data, "taxonomy")
 local app = "/work/HCC/BCRF/app_specific"
 local orthodb_root = pathJoin(app, "busco/orthodb")
 local humann2_root = pathJoin(app, "humann2")
+local phoenix_kraken2_root = pathJoin(app, "phoenix-minikraken2db")
 
 
 pushenv("DATA", data)
@@ -192,6 +193,7 @@ local humann2_latest = "0.11.2"
 local orthodb_latest = "v10"
 local uniprot_latest = "latest"
 local img_vr_latest = "latest"
+local phoenix_kraken2db = "03302023"
 local uniref_root = pathJoin(uniprot_root, uniprot_latest, "uniref")
 local metaphlan_latest_root = pathJoin(metaphlan_root, metaphlan_latest)
 local orthodb_latest_root = pathJoin(orthodb_root, orthodb_latest)
@@ -226,7 +228,7 @@ pushenv("SILVA_132_99_FULL_LENGTH", pathJoin(qiime_db, "silva-132-99-nb-classifi
 pushenv("GREENGENES", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza"))
 pushenv("GREENGENES_13_8_99_515_806", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza"))
 pushenv("GREENGENES_13_8_99_FULL_LENGTH", pathJoin(qiime_db, "gg-13-8-99-nb-classifier.qza"))
-
+pushenv("PHOENIX_KRAKEN2", pathJoin(phoenix_kraken2_root, phoenix_kraken2db))
 
 -- Genome databases and indices
 local _w = "WholeGenomeFasta"

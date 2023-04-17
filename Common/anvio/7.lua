@@ -4,6 +4,16 @@ This module loads Anvio.
 Version 7
 ]]
 )
+
+if mode() == "load" then
+  LmodMessage("-------------------------| Help message for Anvio module |-------------------------------")
+  LmodMessage("COG dataset is already predownloaded and can be accessed with the variables $COG_DATA_DIR")
+  LmodMessage("e.g.,: anvi- run-ncbi-cogs --cog-data-dir $COG_DATA_DIR")
+  LmodMessage("SCG dataset is already predownloaded and can be accessed with the variables $SCG_DATA_DIR")
+  LmodMessage("e.g.,: anvi-run-scg-taxonomy --scgs-taxonomy-data-dir $SCG_DATA_DIR")
+  LmodMessage("------------------------------------------------------------------------------------------")
+end
+
 whatis("Name: Anvio")
 whatis("Version: 7")
 whatis("Category: Omics, Visualization")
@@ -15,3 +25,4 @@ pushenv("CONDA_DEFAULT_ENV", "anvio-7")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/anvio/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/anvio/envs/anvio-7/bin")
 setenv("COG_DATA_DIR", "/work/HCC/BCRF/app_specific/anvio/7/COG")
+setenv("SCG_DATA_DIR", "/work/HCC/BCRF/app_specific/anvio/7/SCG")

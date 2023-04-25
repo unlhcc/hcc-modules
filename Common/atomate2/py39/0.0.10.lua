@@ -14,3 +14,5 @@ whatis("Description: atomate2 is a library of materials science workflows")
 pushenv("CONDA_DEFAULT_ENV", "atomate2-0.0.10-py39")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/atomate2/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/atomate2/envs/atomate2-0.0.10-py39/bin")
+
+family("python")

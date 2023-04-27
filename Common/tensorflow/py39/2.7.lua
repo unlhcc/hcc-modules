@@ -14,5 +14,6 @@ whatis("URL: https://www.tensorflow.org")
 pushenv("CONDA_DEFAULT_ENV", "tensorflow-2.7.0-py39")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/tensorflow/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/tensorflow/envs/tensorflow-2.7.0-py39/bin")
+setenv("PYTHONNOUSERSITE", "1")
 
 family("python")

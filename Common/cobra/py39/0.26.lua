@@ -30,3 +30,5 @@ prepend_path("PATH",     "/util/opt/IBM-ILOG-CPLEX/22.1.0/opl/oplide")
 prepend_path("ILOG_CPLEX_PATH",     "/util/opt/IBM-ILOG-CPLEX/22.1.0")
 
 family("python")
+conflict("ibm-ilog-cplex")
+conflict("gurobi")

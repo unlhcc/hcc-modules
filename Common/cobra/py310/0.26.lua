@@ -2,6 +2,9 @@ help(
 [[
 This module loads Cobra.
 Version 0.26.3
+
+NOTE: This module also provides access to the CPLEX and Gurobi solvers.
+It is not necessary to load additional modules.
 ]]
 )
 whatis("Name: Cobra")

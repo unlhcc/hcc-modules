@@ -14,3 +14,6 @@ whatis("Description: PoPoolation2 allows to compare allele frequencies for SNPs 
 pushenv("CONDA_DEFAULT_ENV", "popoolation2-1.201")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/popoolation2/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/popoolation2/envs/popoolation2-1.201/bin")
+
+family("R")
+family("perl")

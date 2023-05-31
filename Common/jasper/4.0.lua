@@ -19,3 +19,8 @@ setenv("JASPERLIB","/util/opt/anaconda/deployed-conda-envs/packages/jasper/envs/
 pushenv("CONDA_DEFAULT_ENV", "jasper-4.0.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/jasper/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/jasper/envs/jasper-4.0.0/bin")
+prepend_path("MANPATH", "/util/opt/anaconda/deployed-conda-envs/packages/jasper/envs/jasper-4.0.0/share/man")
+prepend_path("CPATH", "/util/opt/anaconda/deployed-conda-envs/packages/jasper/envs/jasper-4.0.0/include")
+prepend_path("LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/jasper/envs/jasper-4.0.0/lib")
+prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/jasper/envs/jasper-4.0.0/lib")
+prepend_path("PKG_CONFIG_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/jasper/envs/jasper-4.0.0/lib/pkgconfig")

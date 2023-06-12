@@ -22,4 +22,4 @@ pushenv("CONDA_DEFAULT_ENV",		"maker-3.01.03")
 
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/maker/envs")
 
-setenv("LIBDIR", "/work/HCC/BCRF/app_specific/dfam/3.7/")
+setenv("LIBDIR", "/util/opt/anaconda/deployed-conda-envs/packages/maker/envs/maker-3.01.03/share/RepeatMasker/Libraries/")

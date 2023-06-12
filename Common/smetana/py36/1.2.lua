@@ -12,7 +12,6 @@ whatis("Keywords: metabolics, SBML, cross-feeding")
 whatis("URL: https://github.com/cdanielmachado/smetana")
 whatis("Description: Species METabolic interaction ANAlysis (SMETANA) is a python-based command line tool to analyse microbial communities.")
 
-load("gurobi/py36/9.0")
 pushenv("CONDA_DEFAULT_ENV", "smetana-1.2.0-py36")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/smetana/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/smetana/envs/smetana-1.2.0-py36/bin")

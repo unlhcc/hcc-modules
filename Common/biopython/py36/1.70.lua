@@ -15,3 +15,4 @@ prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/biopython/e
 pushenv("CONDA_DEFAULT_ENV","biopython-1.70-py36")
 family("python")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/biopython/envs")
+setenv("PYTHONNOUSERSITE", "1")

@@ -17,7 +17,7 @@ prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/env
 setenv("GUROBI_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/envs/gurobi-10.0.2-py39")
 setenv("GUROBI_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/envs/gurobi-10.0.2-py39")
 setenv("GRB_LICENSE_FILE", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/gurobi.lic")
-prepend_path("MATLABPATH","/util/opt/anaconda/deployed-conda-envs/packages/gurobi/envs/gurobi-10.0.2-py39/share/gurobi-matlab-10.0.2-0/matlab")
+prepend_path("MATLABPATH","/util/opt/anaconda/deployed-conda-envs/packages/gurobi/envs/gurobi-10.0.2-py39/share/gurobi-matlab-10.0.2-1/matlab")
 setenv("LAZYLPSOLVERLIBS_GUROBI_LIB", "/util/opt/anaconda/deployed-conda-envs/packages/gurobi/envs/gurobi-10.0.2-py39/lib/libgurobi100.so")
 
 family("python")

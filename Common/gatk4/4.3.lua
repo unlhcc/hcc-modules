@@ -8,7 +8,7 @@ if mode() == "load" then
   LmodMessage("-------------------------| Help message for gatk module |-------------------------------")
   LmodMessage("Usage: gatk <program name> <arguments>")
   LmodMessage("For example, to increase Java heap space to 10GB, run:")
-  LmodMessage("gatk --java-options '-Djava.io.tmpdir=/scratch/$SLURM_JOBID -Xms512m -Xmx10g' <program name> <arguments>")
+  LmodMessage("gatk --java-options '-Djava.io.tmpdir:/scratch/$SLURM_JOBID -Xms512m -Xmx10g' <program name> <arguments>")
   LmodMessage("------------------------------------------------------------------------------------------")
   LmodMessage("For additional GATK4 performance optimization examples, see https://github.com/unlhcc/job-examples/tree/master/gatk4.")
   LmodMessage("------------------------------------------------------------------------------------------")

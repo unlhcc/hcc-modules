@@ -17,5 +17,8 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-2.6.3-py36/bin")
 prepend_path("CPATH", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-2.6.3-py36/include")
 prepend_path("INCLUDE", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-2.6.3-py36/include")
+prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-2.6.3-py36/lib")
+prepend_path("LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-2.6.3-py36/lib")
+setenv("SHTNS_ROOT", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-2.6.3-py36")
 
 family("python")

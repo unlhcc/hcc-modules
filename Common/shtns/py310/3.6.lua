@@ -17,5 +17,8 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-3.6-py310/bin")
 prepend_path("CPATH", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-3.6-py310/include")
 prepend_path("INCLUDE", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-3.6-py310/include")
+prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-3.6-py310/lib")
+prepend_path("LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-3.6-py310/lib")
+setenv("SHTNS_ROOT", "/util/opt/anaconda/deployed-conda-envs/packages/shtns/envs/shtns-3.6-py310")
 
 family("python")

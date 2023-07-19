@@ -38,7 +38,7 @@ whatis("URL: https://github.com/arpcard/rgi")
 pushenv("CONDA_DEFAULT_ENV","rgi-6.0.2")
 prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/rgi/envs/rgi-6.0.2/bin",priority=100}
 
-local data = "/work/HCC/BCRF/app_specific/rgi/6.0.2.2"
+local data = "/work/HCC/BCRF/app_specific/rgi/6.0.2"
 local wild = pathJoin(data, "wildcard")
 
 pushenv("CARD", data)

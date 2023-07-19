@@ -1,11 +1,11 @@
 help (
 [[
-This module loads beast.
-PATH has been prepended to include the beast program.
+This module loads beast2.
+PATH has been prepended to include the beast2 program.
 Version 2.6.3
 ]])
 
-whatis("Name: beast")
+whatis("Name: beast2")
 whatis("Version: 2.6.3")
 whatis("Category: biology, phylogeny")
 whatis("Keywords: Biology, Phylogeny")

@@ -16,7 +16,6 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.9.2/bin")
 
 local home = os.getenv("HOME") or "/tmp"
-setenv("JULIA_DEPOT_PATH", ":/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.9.2/share/julia")
-append_path("JULIA_DEPOT_PATH", pathJoin(home,".julia"))
+setenv("JULIA_DEPOT_PATH", pathJoin(home,".julia"))
 setenv("JULIA_PROJECT", pathJoin(home,".julia"))
 setenv("JULIA_LOAD_PATH","@:@julia-1.9.2:@stdlib")

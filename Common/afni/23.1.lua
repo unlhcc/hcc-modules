@@ -16,3 +16,4 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/afni/envs/afni-23.1.10/bin")
 setenv("AFNI_PLUGINPATH", "/util/opt/anaconda/deployed-conda-envs/packages/afni/envs/afni-23.1.10/lib/")
 setenv("AFNI_ATLAS_PATH", "/work/HCC/BCRF/app_specific/afni/afni_atlases_dist/")
+prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/afni/envs/afni-23.1.10/x86_64-conda-linux-gnu/sysroot/usr/lib64")

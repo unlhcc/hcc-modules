@@ -11,7 +11,7 @@ if mode() == "load" then
   LmodMessage("This database can be accessed with the variable $ETETOOLKIT_DB.")
   LmodMessage("In order to run MITOZ, this database needs to be in $HOME/.etetoolkit.")
   LmodMessage("Therefore, only the first time you run MITOZ, please do:")
-  LmodMessage(" ln -s $ETETOOLKIT_DB $HOME/.etetoolkit")
+  LmodMessage(" cp -r $ETETOOLKIT_DB $HOME/.etetoolkit/")
   LmodMessage("Next, you can run MITOZ as suggested.")
   LmodMessage("------------------------------------------------------------------------------------------")
 end

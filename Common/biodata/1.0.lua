@@ -176,7 +176,6 @@ pushenv("DATA", data)
 pushenv("KEGG", kegg)
 pushenv("GENOMES", genomes)
 pushenv("BLAST", blast)
-pushenv("BLASTDB", blast)
 pushenv("BLAST_V4", blast_v4)
 pushenv("INDICES", indices)
 pushenv("INDICES_BOWTIE", bowtie)
@@ -194,12 +193,14 @@ local orthodb_latest = "v10"
 local uniprot_latest = "latest"
 local img_vr_latest = "latest"
 local phoenix_kraken2db = "03302023"
+local phoenix_kraken2db_v2 = "06052023"
 local uniref_root = pathJoin(uniprot_root, uniprot_latest, "uniref")
 local metaphlan_latest_root = pathJoin(metaphlan_root, metaphlan_latest)
 local orthodb_latest_root = pathJoin(orthodb_root, orthodb_latest)
 local humann2_latest_root = pathJoin(humann2_root, humann2_latest)
 local img_vr_latest_root = pathJoin(img_vr_root, img_vr_latest)
 local qiime_db = "/work/HCC/BCRF/app_specific/qiime/"
+pushenv("BLASTDB", blast)
 pushenv("IPR", pathJoin(ipr_root, ipr_latest))
 pushenv("PANTHER", pathJoin(panther_root, panther_latest))
 pushenv("UNIPROT", pathJoin(uniprot_root, uniprot_latest))
@@ -229,6 +230,8 @@ pushenv("GREENGENES", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza")
 pushenv("GREENGENES_13_8_99_515_806", pathJoin(qiime_db, "gg-13-8-99-515-806-nb-classifier.qza"))
 pushenv("GREENGENES_13_8_99_FULL_LENGTH", pathJoin(qiime_db, "gg-13-8-99-nb-classifier.qza"))
 pushenv("PHOENIX_KRAKEN2", pathJoin(phoenix_kraken2_root, phoenix_kraken2db))
+pushenv("PHOENIXv2_KRAKEN2", pathJoin(phoenix_kraken2_root, phoenix_kraken2db_v2))
+
 
 -- Genome databases and indices
 local _w = "WholeGenomeFasta"
@@ -659,6 +662,14 @@ pushenv ("BOWTIE2_MACACA_MULATTA_ENSEMBL_MMUL_1", pathJoin(bowtie2, "Macaca_mula
 pushenv ("BWA_MACACA_MULATTA_ENSEMBL_MMUL_1", pathJoin(bwa, "Macaca_mulatta", "Ensembl", "Mmul_1", _bwa))
 pushenv ("PICARD_MACACA_MULATTA_ENSEMBL_MMUL_1", pathJoin(genomes, "Macaca_mulatta", "Ensembl", "Mmul_1", _w, _p))
 pushenv ("FAIDX_MACACA_MULATTA_ENSEMBL_MMUL_1", pathJoin(genomes, "Macaca_mulatta", "Ensembl", "Mmul_1", _w, _s))
+pushenv ("MUS_MUSCULUS_ENSEMBL_GRCM39", pathJoin(genomes, "Mus_musculus", "Ensembl", "GRCm39"))
+pushenv ("GENOME_MUS_MUSCULUS_ENSEMBL_GRCM39", pathJoin(genomes, "Mus_musculus", "Ensembl", "GRCm39", _w, _f))
+pushenv ("CHR_MUS_MUSCULUS_ENSEMBL_GRCM39", pathJoin(genomes, "Mus_musculus", "Ensembl", "GRCm39", _c))
+pushenv ("BOWTIE_MUS_MUSCULUS_ENSEMBL_GRCM39", pathJoin(bowtie, "Mus_musculus", "Ensembl", "GRCm39", _b))
+pushenv ("BOWTIE2_MUS_MUSCULUS_ENSEMBL_GRCM39", pathJoin(bowtie2, "Mus_musculus", "Ensembl", "GRCm39", _b))
+pushenv ("BWA_MUS_MUSCULUS_ENSEMBL_GRCM39", pathJoin(bwa, "Mus_musculus", "Ensembl", "GRCm39", _bwa))
+pushenv ("PICARD_MUS_MUSCULUS_ENSEMBL_GRCM39", pathJoin(genomes, "Mus_musculus", "Ensembl", "GRCm39", _w, _p))
+pushenv ("FAIDX_MUS_MUSCULUS_ENSEMBL_GRCM39", pathJoin(genomes, "Mus_musculus", "Ensembl", "GRCm39", _w, _s))
 pushenv ("MOUSE", pathJoin(genomes, "Mus_musculus", "NCBI", "GRCm38"))
 pushenv ("GENOME_MOUSE", pathJoin(genomes, "Mus_musculus", "NCBI", "GRCm38", _w, _f))
 pushenv ("CHR_MOUSE", pathJoin(genomes, "Mus_musculus", "NCBI", "GRCm38", _c))

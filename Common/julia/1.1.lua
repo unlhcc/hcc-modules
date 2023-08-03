@@ -15,6 +15,8 @@ whatis("Description: A high-performance dynamic programming language for data sc
 pushenv("CONDA_DEFAULT_ENV", "julia-1.1.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/julia/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.1.1/bin")
+prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.1.1/lib")
+prepend_path("LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.1.1/lib")
 
 local work = os.getenv("WORK") or "/tmp"
 pushenv("JULIA_DEPOT_PATH", pathJoin(work,".julia") .. ":/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.1.1/local/share/julia:/util/opt/anaconda/deployed-conda-envs/packages/julia/envs/julia-1.1.1/share/julia")

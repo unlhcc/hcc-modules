@@ -21,4 +21,4 @@ prepend_path("PATH", schrodinger)
 prepend_path("PATH", pathJoin(schrodinger,"utilities"))
 
 pushenv("SCHRODINGER", schrodinger)
-pushenv("SCHRODINGER_JOBDB2", "/scratch")
+pushenv("SCHRODINGER_JOBDB2", pathJoin(os.getenv("WORK"),".schrodinger/.jobdb2"))

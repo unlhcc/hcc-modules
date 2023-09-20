@@ -21,7 +21,7 @@ whatis("URL: http://www.python.org/")
 
 prepend_path("PATH",                "/util/opt/anaconda/4.9/bin")
 prepend_path("MANPATH",             "/util/opt/anaconda/4.9/share/man")
-prepend_path{"PATH",                "/util/opt/anaconda/deployed-conda-envs/packages/python/envs/python-3.9/bin",priority=100}
+prepend_path("PATH",                "/util/opt/anaconda/deployed-conda-envs/packages/python/envs/python-3.9/bin")
 setenv("PYTHON_DIR", "/util/opt/anaconda/deployed-conda-envs/packages/python/envs/python-3.9")
 
 local username = os.getenv("USER") or ""

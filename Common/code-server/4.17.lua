@@ -12,4 +12,4 @@ whatis("Keywords: Development, Programming")
 whatis("URL: https://coder.com/docs/code-server/latest")
 whatis("Description: VS Code in the browser.")
 
-prepend_path("PATH", "/util/opt/code-server/4.17/bin)
+prepend_path("PATH", "/util/opt/code-server/4.17/bin")

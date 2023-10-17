@@ -14,3 +14,5 @@ whatis("Description: PICRUSt: Phylogenetic Investigation of Communities by Recon
 pushenv("CONDA_DEFAULT_ENV", "picrust2-2.4.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/picrust2/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/picrust2/envs/picrust2-2.4.1/bin")
+
+family("python")

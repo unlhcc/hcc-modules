@@ -16,3 +16,4 @@ append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/picrust2/envs/picrust2-2.4.1/bin")
 
 family("python")
+family("R")

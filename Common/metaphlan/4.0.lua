@@ -1,24 +1,31 @@
 help(
 [[
 This module loads MetaPhlAn.
-Version 4.0.3
+
+Due to the new database size, request at least 15GB for `metaphlan` jobs, i.e. --mem=15GB as a SLURM resource request.
+
+Version 4.0.6
 ]]
 )
 
 if mode() == "load" then
-  LmodMessage("NOTE: The Bowtie2 dataset file is downloaded in $METAPHLAN_BOWTIE2_DB, so please use `--bowtie2db $METAPHLAN_BOWTIE2_DB` with `metaphlan` to specify its location.")
+  LmodMessage("NOTE: MetaPhAn automatically uses the default latest central database located ")
+  LmodMessage("at /work/HCC/BCRF/app_specific/metaphlan/4/vOct22_202212/.")
+  LmodMessage("To use the older (Oct '21) database use the `--bowtie2db /work/HCC/BCRF/app_specific/metaphlan/4/vJan21_202103/`")
+  LmodMessage("with `metaphlan`. The older database was the default for MetaPhlAn 4.03.")
 end
 
 whatis("Name: MetaPhlAn")
-whatis("Version: 4.0.3")
+whatis("Version: 4.0.6")
 whatis("Category: metagenomic phylogenetic analysis")
 whatis("Keywords: biology, metagenomic, phylogenetic")
 whatis("URL: https://github.com/biobakery/metaphlan")
 whatis("Description: MetaPhlAn is a computational tool for profiling the composition of microbial communities from metagenomic shotgun sequencing data.")
 
-pushenv("CONDA_DEFAULT_ENV", "metaphlan-4.0.3")
-setenv("METAPHLAN_BOWTIE2_DB", "/work/HCC/BCRF/app_specific/metaphlan/4/vJan21_202103/")
+pushenv("CONDA_DEFAULT_ENV", "metaphlan-4.0.6")
+setenv("METAPHLAN_BOWTIE2_DB", "/work/HCC/BCRF/app_specific/metaphlan/4/vOct22_202212/")
+setenv("DEFAULT_DB_FOLDER", "/work/HCC/BCRF/app_specific/metaphlan/4/vOct22_202212/")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metaphlan/envs")
-prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metaphlan/envs/metaphlan-4.0.3/bin")
+prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metaphlan/envs/metaphlan-4.0.6/bin")
 
 family("python")

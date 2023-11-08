@@ -16,6 +16,7 @@ prepend_path("PATH","/util/opt/anaconda/deployed-conda-envs/packages/fsl/envs/fs
 pushenv("CONDA_DEFAULT_ENV"	,"fsl-6.0.6")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fsl/envs")
 
+setenv("FSLDIR","/util/opt/anaconda/deployed-conda-envs/packages/fsl/envs/fsl-6.0.6")
 setenv("FSLGECUDAQ","cuda.q")
 setenv("FSLMULTIFILEQUIT","TRUE")
 setenv("FSLOUTPUTTYPE","NIFTI_GZ")

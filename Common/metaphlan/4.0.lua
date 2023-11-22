@@ -4,6 +4,8 @@ This module loads MetaPhlAn.
 
 Due to the new database size, request at least 15GB for `metaphlan` jobs, i.e. --mem=15GB as a SLURM resource request.
 
+The latest database is located at $METAPHLAN_DB_FOLDER and is from 22 October 2022.
+
 Version 4.0.6
 ]]
 )
@@ -25,6 +27,9 @@ whatis("Description: MetaPhlAn is a computational tool for profiling the composi
 pushenv("CONDA_DEFAULT_ENV", "metaphlan-4.0.6")
 setenv("METAPHLAN_BOWTIE2_DB", "/work/HCC/BCRF/app_specific/metaphlan/4/vOct22_202212/")
 setenv("DEFAULT_DB_FOLDER", "/work/HCC/BCRF/app_specific/metaphlan/4/vOct22_202212/")
+setenv("METAPHLAN_DB_DIR", "/work/HCC/BCRF/app_specific/metaphlan/4/vOct22_202212/")
+
+
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metaphlan/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metaphlan/envs/metaphlan-4.0.6/bin")
 

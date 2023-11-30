@@ -15,5 +15,6 @@ whatis("Description: vRhyme functions by utilizing coverage variance comparisons
 pushenv("CONDA_DEFAULT_ENV", "vrhyme-1.1.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/vrhyme/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/vrhyme/envs/vrhyme-1.1.0/bin")
+prepend_path("PYTHONPATH", "/util/opt/anaconda/deployed-conda-envs/packages/vrhyme/envs/vrhyme-1.1.0/lib/python3.9/site-packages/")
 
 family("python")

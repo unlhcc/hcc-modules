@@ -15,3 +15,5 @@ whatis("Description: Rapid large-scale prokaryote pan genome analysis")
 pushenv("CONDA_DEFAULT_ENV", "roary-3.13.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/roary/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/roary/envs/roary-3.13.0/bin")
+
+family("perl")

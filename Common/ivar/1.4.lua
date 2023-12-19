@@ -1,13 +1,13 @@
 help(
 [[
-This module loads Ivar.
+This module loads iVar.
 Version 1.4.2
 ]]
 )
-whatis("Name: Ivar")
+whatis("Name: iVar")
 whatis("Version: 1.4.2")
 whatis("Category: computational biology")
-whatis("Keywords: viral sequencing, variants, amplicon,")
+whatis("Keywords: viral sequencing, variants, amplicon")
 whatis("URL: https://andersen-lab.github.io/ivar/html/")
 whatis("Description: iVar is a computational package that contains functions broadly useful for viral amplicon-based sequencing.")
 

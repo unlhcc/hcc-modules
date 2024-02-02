@@ -1,3 +1,4 @@
+help(
 [[
 This module loads Phyluce.
 Version 1.6.8

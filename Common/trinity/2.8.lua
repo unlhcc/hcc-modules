@@ -4,6 +4,14 @@ This module loads Trinity.
 Version 2.8.4
 ]]
 )
+
+if mode() == "load" then
+  LmodMessage("------------------------------------------------------------------------------------------")
+  LmodMessage("NOTE: Trinity is I/O intensive program, so please use /scratch to store input and output data:")
+  LmodMessage("https://hcc.unl.edu/docs/applications/app_specific/bioinformatics_tools/de_novo_assembly_tools/trinity/running_trinity_in_multiple_steps/")
+  LmodMessage("------------------------------------------------------------------------------------------")
+end
+
 whatis("Name: Trinity")
 whatis("Version: 2.8.4")
 whatis("Category: computational biology, de novo assembly, RNA-Seq")

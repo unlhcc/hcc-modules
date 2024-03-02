@@ -15,3 +15,6 @@ whatis("Description: ExpansionHunter Denovo (EHdn) is a suite of tools for detec
 pushenv("CONDA_DEFAULT_ENV", "expansionhunterdenovo-0.9.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/expansionhunterdenovo/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/expansionhunterdenovo/envs/expansionhunterdenovo-0.9.0/bin")
+setenv("PYTHONNOUSERSITE", "1")
+
+family("python")

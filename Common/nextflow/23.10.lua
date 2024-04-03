@@ -4,6 +4,14 @@ This module loads Nextflow.
 Version 23.10.1
 ]]
 )
+
+if mode() == "load" then
+  LmodMessage("-------------------------| Help message for Nextflow module |-------------------------------")
+  LmodMessage("The Nextflow module loads Apptainer and uses the Apptainer Nextflow Engine.")
+  LmodMessage("To avoid errors, please do not use the `-profile` argument with Nextflow.")
+  LmodMessage("--------------------------------------------------------------------------------------------")
+end
+
 whatis("Name: Nextflow")
 whatis("Version: 23.10.1")
 whatis("Category: computational pipeline")

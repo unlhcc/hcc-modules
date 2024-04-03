@@ -12,6 +12,7 @@ whatis("Keywords: workflow, computation, container")
 whatis("URL: http://nextflow.io")
 whatis("Description: A DSL for data-driven computational pipelines http://nextflow.io")
 
+load("apptainer/1.1")
 setenv("NXF_HOME", os.getenv("WORK"))
 setenv("NXF_SINGULARITY_CACHEDIR", pathJoin(os.getenv("WORK"),".singularity"))
 

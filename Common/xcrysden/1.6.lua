@@ -12,4 +12,5 @@ whatis("URL: http://www.xcrysden.org/XCrySDen.html")
 whatis("Description: XCrySDen is a crystalline and molecular structure visualisation program aiming at display of isosurfaces and contours, which can be superimposed on crystalline structures and interactively rotated and manipulated.")
 
 setenv("XCRYSDEN_TOPDIR", "/util/opt/xcrysden/1.6")
+setenv("XCRYSDEN_SCRATCH", "/scratch")
 prepend_path("PATH", "/util/opt/xcrysden/1.6")

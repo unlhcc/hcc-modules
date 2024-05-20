@@ -1,7 +1,7 @@
 help(
 [[
 This module loads HISAT2.
-Version 2.2.0
+Version 2.2.1
 ]]
 )
 
@@ -14,14 +14,14 @@ if mode() == "load" then
 end
 
 whatis("Name: HISAT2")
-whatis("Version: 2.2.0")
+whatis("Version: 2.2.1")
 whatis("Category: computational biology")
 whatis("Keywords: genomics, alignment, sequencing")
 whatis("URL: https://daehwankimlab.github.io/hisat2/")
 whatis("Description: graph-based alignment of next generation sequencing reads to a population of genomes")
 
-setenv("HISAT2_HOMO_SAPIENS", "/work/HCC/BCRF/app_specific/hisat2/2.2.0/Homo_sapiens")
-setenv("HISAT2_MUS_MUSCULUS", "/work/HCC/BCRF/app_specific/hisat2/2.2.0/Mus_musculus")
-pushenv("CONDA_DEFAULT_ENV", "hisat2-2.2.0")
+setenv("HISAT2_HOMO_SAPIENS", "/work/HCC/BCRF/app_specific/hisat2/2.2.1/Homo_sapiens")
+setenv("HISAT2_MUS_MUSCULUS", "/work/HCC/BCRF/app_specific/hisat2/2.2.1/Mus_musculus")
+pushenv("CONDA_DEFAULT_ENV", "hisat2-2.2.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/hisat2/envs")
-prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/hisat2/envs/hisat2-2.2.0/bin")
+prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/hisat2/envs/hisat2-2.2.1/bin")

@@ -26,4 +26,3 @@ if mode() == "load" then
 end
 
 setenv("APPTAINER_CACHEDIR", pathJoin(os.getenv("WORK"),".apptainer"))
-setenv("REGISTRY",     "hcc-docker-registry.unl.edu")

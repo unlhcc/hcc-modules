@@ -15,7 +15,7 @@ whatis("Description: Visual Studio Code")
 prepend_path("PATH", "/util/opt/visual-studio-code/1.90/bin")
 
 if mode() == "load" then
-  LmodMessage("NOTE: This module requires a graphical interface, such as the Open OnDemand virtual desktop.")
+  LmodMessage("NOTE: This module requires a graphical environment, such as the Open OnDemand virtual desktop.")
   LmodMessage("      To start VS Code, run the 'code' command.")
 end
 

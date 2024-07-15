@@ -1,19 +1,18 @@
-help(
+help (
 [[
-This module loads OpenJDK.
-Version 17.0.5.8
-]]
-)
+This module loads OpenJDK (Java).
 
-whatis("Name: OpenJDK")
-whatis("Version: 17.0.5.8")
+Version 17
+]])
+
+whatis("Name: openjdk")
+whatis("Version: 17")
 whatis("Category: system, compiler")
-whatis("Keywords: system, utility, compiler")
-whatis("URL: https://openjdk.org/")
-whatis("Description: An open-source implementation of the JDK.")
+whatis("Keywords:  system, utility, compiler")
+whatis("Description: OpenJDK (Java).")
+whatis("URL: https://openjdk.org")
 
-pushenv("CONDA_DEFAULT_ENV", "openjdk-17.0.5.8")
-append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/openjdk/envs")
-prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/openjdk/envs/openjdk-17.0.5.8/bin")
+prepend_path("PATH"       ,"/util/opt/openjdk/17/bin")
+setenv("JAVA_HOME"	  ,"/util/opt/openjdk/17")
 
 family("java")

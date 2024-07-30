@@ -20,3 +20,5 @@ prepend_path("MANPATH",			"/util/opt/anaconda/deployed-conda-envs/packages/ortho
 pushenv("CONDA_DEFAULT_ENV",		"orthofinder-2.2.6")
 
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/orthofinder/envs")
+
+family("python")

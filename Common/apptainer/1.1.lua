@@ -19,6 +19,11 @@ if mode() == "load" then
     LmodError("\n\tPlease do not run Apptainer on the login node.\n\tUse an interactive job instead: https://hcc.unl.edu/docs/submitting_jobs/creating_an_interactive_job/")
   end
 
+  local apptainer_env=os.getenv("APPTAINER_ENVIRONMENT") or ""
+  if apptainer_env ~= "" then
+    LmodError("\n\tYou can not run Apptainer in already running container.\n\tUse an interactive job from the login node instead: https://hcc.unl.edu/docs/submitting_jobs/creating_an_interactive_job/")
+  end
+
   local d= pathJoin(os.getenv("WORK"),".apptainer")
   if (not isDir(d)) then
     lfs.mkdir(d)

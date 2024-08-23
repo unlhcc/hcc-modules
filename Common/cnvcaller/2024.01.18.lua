@@ -15,6 +15,7 @@ whatis("Description: CNVcaller is designed to detect copy number variation using
 pushenv("CONDA_DEFAULT_ENV", "cnvcaller-2024.01.18")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/cnvcaller/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/cnvcaller/envs/cnvcaller-2024.01.18/bin")
+setenv("CNVCALLER_ROOT", "/util/opt/anaconda/deployed-conda-envs/packages/cnvcaller/envs/cnvcaller-2024.01.18/")
 
 family("perl")
 family("python")

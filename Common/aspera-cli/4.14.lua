@@ -16,6 +16,7 @@ prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/aspera-cli
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/aspera-cli/envs")
 pushenv("ASPERA_PUBLIC_KEY", "/util/opt/anaconda/deployed-conda-envs/packages/aspera-cli/envs/aspera-cli-4.14.0/etc/aspera/aspera_bypass_rsa.pem")
 setenv("ASCLI_HOME",pathJoin(os.getenv("WORK"),".aspera"))
+setenv("GEM_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/aspera-cli/envs/aspera-cli-4.14.0/share/rubygems")
 
 if mode() == "load" then
   local w = os.getenv("WORK")

@@ -15,8 +15,16 @@ pushenv("CONDA_DEFAULT_ENV", "aspera-cli-4.14.0")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/aspera-cli/envs/aspera-cli-4.14.0/bin")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/aspera-cli/envs")
 pushenv("ASPERA_PUBLIC_KEY", "/util/opt/anaconda/deployed-conda-envs/packages/aspera-cli/envs/aspera-cli-4.14.0/etc/aspera/aspera_bypass_rsa.pem")
+setenv("ASCLI_HOME",pathJoin(os.getenv("WORK"),".aspera"))
 
 if mode() == "load" then
+  local w = os.getenv("WORK")
+  local d = pathJoin(w,".aspera")
+  if (not isDir(d)) then
+    lfs.mkdir(pathJoin(w,".aspera"))
+    lfs.mkdir(d)
+  end
+
   LmodMessage("The variable ASPERA_PUBLIC_KEY is set and points to the public key needed for download of NCBI data.")
   LmodMessage("Use that variable with the '-i' option for ascp.")
   LmodMessage("For example, 'ascp -i $ASPERA_PUBLIC_KEY -P33001 <additional options>'")

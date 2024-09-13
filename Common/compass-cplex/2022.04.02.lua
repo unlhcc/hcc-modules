@@ -1,13 +1,19 @@
 help(
 [[
-This module loads Compass-cplex.
+This module loads compass-cplex.
 Version 0.2022.04.02
 ]]
 )
-whatis("Name: Compass-cplex")
+
+if mode() == "load" then
+  LmodMessage("NOTE: This version of Compass includes the Mus musculus cache files.")
+  LmodMessage("If you need to use Homo sapiens instead, please email hcc-support@unl.edu.")
+end
+
+whatis("Name: compass-cplex")
 whatis("Version: 0.2022.04.02")
-whatis("Category: bioinformatics")
-whatis("Keywords: bioinformatics, in silico algorithm")
+whatis("Category: bioinformatics, single-cell")
+whatis("Keywords: bioinformatics, single-cell, transcriptomes")
 whatis("URL: https://github.com/YosefLab/Compass")
 whatis("Description: In-Silico Modeling of Metabolic Heterogeneity using Single-Cell Transcriptomes.")
 

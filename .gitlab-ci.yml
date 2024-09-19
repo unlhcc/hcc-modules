@@ -58,3 +58,5 @@ deploy-swan:
     - git fetch
     - git checkout $CI_COMMIT_SHA
     - update_lmod_system_cache_files -d $MODULES_DIR/cacheDir -t $MODULES_DIR/cacheTS.txt $MODULES_DIR
+  after_script:
+    - scripts/replace_software_keys.sh

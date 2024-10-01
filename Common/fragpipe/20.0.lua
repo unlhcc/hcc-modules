@@ -27,14 +27,16 @@ whatis("Keywords: mass spectrometry, proteomics, Java")
 whatis("URL: https://github.com/Nesvilab/FragPipe")
 whatis("Description: Pipeline for comprehensive analysis of shotgun proteomics data")
 
+local keys = require("/util/opt/fragpipe/20.0/fragpipe_keys")
+setenv("IONQUANT_KEY", keys.IONQUANTKEY)
+setenv("MSFRAGGER_KEY", keys.MSFRAGGERKEY)
+
 pushenv("CONDA_DEFAULT_ENV", "fragpipe-20.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0/bin")
 prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0/share/msfragger-4.0-1/MSFragger-4.0/ext/bruker/")
 setenv("CONDA_PREFIX", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0")
 
-setenv("MSFRAGGER_KEY", "MSFRAGGERKEY")
-setenv("IONQUANT_KEY", "IONQUANTKEY")
 setenv("MSFRAGGER_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0/share/msfragger-4.0-1/MSFragger.jar")
 setenv("IONQUANT_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0/share/ionquant-1.10.12-1/IonQuant.jar")
 

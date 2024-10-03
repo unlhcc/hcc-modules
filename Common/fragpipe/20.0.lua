@@ -27,7 +27,8 @@ whatis("Keywords: mass spectrometry, proteomics, Java")
 whatis("URL: https://github.com/Nesvilab/FragPipe")
 whatis("Description: Pipeline for comprehensive analysis of shotgun proteomics data")
 
-local keys = require("/util/opt/fragpipe/20.0/fragpipe_keys")
+package.path = package.path .. ";/util/opt/fragpipe/20/"
+local keys = require("/util/opt/fragpipe/20/fragpipe_keys")
 setenv("IONQUANT_KEY", keys.IONQUANTKEY)
 setenv("MSFRAGGER_KEY", keys.MSFRAGGERKEY)
 

@@ -27,6 +27,7 @@ whatis("Description: BRAKER3 is the latest pipeline in the BRAKER suite")
 setenv("AUGUSTUS_CONFIG_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker3/envs/braker3-3.0.8/config/")
 setenv("AUGUSTUS_SCRIPTS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker3/envs/braker3-3.0.8/bin/")
 setenv("AUGUSTUS_BIN_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker3/envs/braker3-3.0.8/bin/")
+setenv("PROTHINT_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker3/envs/braker3-3.0.8/bin/")
 pushenv("GENEMARK_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/braker3/envs/braker3-3.0.8/bin/")
 pushenv("GM_KEY", "/util/opt/anaconda/deployed-conda-envs/packages/braker3/envs/braker3-3.0.8/bin/gm_key")
 

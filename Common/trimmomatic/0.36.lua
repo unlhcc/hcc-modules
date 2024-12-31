@@ -20,3 +20,5 @@ whatis("URL: http://www.usadellab.org/cms/?page=trimmomatic")
 pushenv("CONDA_DEFAULT_ENV","trimmomatic-0.36")
 prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/trimmomatic/envs/trimmomatic-0.36/bin",priority=100}
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/trimmomatic/envs")
+
+setenv("TRIMMOMATIC_ADAPTERS", "/util/opt/anaconda/deployed-conda-envs/packages/trimmomatic/envs/trimmomatic-0.36/share/trimmomatic-0.36-5/adapters/")

@@ -38,7 +38,7 @@ prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/e
 prepend_path("LD_LIBRARY_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0/share/msfragger-4.0-1/MSFragger-4.0/ext/bruker/")
 setenv("CONDA_PREFIX", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0")
 
-setenv("MSFRAGGER_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0/share/msfragger-4.0-1/MSFragger.jar")
+setenv("MSFRAGGER_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0/share/msfragger-4.0-1/MSFragger-4.0/MSFragger-4.0.jar")
 setenv("IONQUANT_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-20.0/share/ionquant-1.10.12-1/IonQuant.jar")
 
 family("java")

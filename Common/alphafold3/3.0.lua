@@ -43,7 +43,5 @@ if (found) then
   setenv("AF3_MODELS", keys.AF3MODELS)
   setenv("AF3_DBS", keys.AF3DBS)
 else
-  LmodError("You do not have permission to run Alpha Fold 3.")
-  LmodError("To request access, please see https://hcc.unl.edu/request-alphafold3-access.")
-  LmodError("----------------------------------------------------------------------------")
+  LmodError("You do not have permission to run Alpha Fold 3. To request access, please see https://hcc.unl.edu/request-alphafold3-access.")
 end

@@ -15,3 +15,5 @@ whatis("Description: FEniCS is a collection of free software for automated, effi
 pushenv("CONDA_DEFAULT_ENV", "fenics-2018.1.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fenics/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/fenics/envs/fenics-2018.1.0/bin")
+
+family("python")

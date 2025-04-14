@@ -21,3 +21,4 @@ local home = os.getenv("HOME") or "/tmp"
 setenv("JULIA_DEPOT_PATH", pathJoin(home,".julia"))
 setenv("JULIA_PROJECT", pathJoin(home,".julia"))
 setenv("JULIA_LOAD_PATH","@:@julia-1.11.4:@stdlib")
+setenv("JULIA_HISTORY", pathJoin(home,".julia_history"))

@@ -5,6 +5,13 @@ Version 2.13.0
 ]]
 )
 
+if mode() == "load" then
+  LmodMessage("------------------------------------------------------------------------------------------")
+  LmodMessage("NOTE: BLAST is I/O intensive program, so please use /scratch to store input and output data:")
+  LmodMessage("https://hcc.unl.edu/docs/applications/app_specific/bioinformatics_tools/alignment_tools/blast/running_blast_alignment/")
+  LmodMessage("------------------------------------------------------------------------------------------")
+end
+
 whatis("Name: NCBI BLAST+")
 whatis("Version: 2.13.0")
 whatis("Category: computational biology, genomics")

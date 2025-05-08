@@ -6,7 +6,10 @@ Version 3.0.8
 )
 
 if mode() == "load" then
-  LmodMessage("-------------------------| Help message for braker3 module |-------------------------------")
+  LmodMessage("-------------------------| Help message for braker3 module |------------------------------")
+  LmodMessage("NOTE: BRAKER is I/O intensive program, so please use /scratch to store input and output data:")
+  LmodMessage("https://hcc.unl.edu/docs/handling_data/data_storage/using_scratch_space/")
+  LmodMessage("------------------------------------------------------------------------------------------")
   LmodMessage("The config/ directory from AUGUSTUS can be accessed with the variable AUGUSTUS_CONFIG_PATH.")
   LmodMessage("BRAKER3 requires this directory to be in a writable location, so you need to copy this directory anywhere in WORK, e.g.:")
   LmodMessage("cp -r $AUGUSTUS_CONFIG_PATH $WORK")

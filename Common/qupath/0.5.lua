@@ -5,6 +5,12 @@ Version 0.5.1
 ]]
 )
 
+if mode() == "load" then
+  LmodMessage("----------------------------------------------------------------------------------------")
+  LmodMessage("To run QuPath in GUI mode, please use the Open OnDemand Virtual Desktop.")
+  LmodMessage("----------------------------------------------------------------------------------------")
+end
+
 whatis("Name: QuPath")
 whatis("Version: 0.5.1")
 whatis("Category: bioimaging")

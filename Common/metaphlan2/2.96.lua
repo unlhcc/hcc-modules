@@ -6,7 +6,7 @@ Version 2.96.1
 )
 
 if mode() == "load" then
-  LmodMessage("NOTE: The Bowtie2 dataset file is downloaded in $METAPHLAN_BOWTIE2_DB, so please use `--bowtie2db $METAPHLAN_BOWTIE2_DB` with `metaphlan2.py` to specify its location.")
+  LmodMessage("NOTE: The Bowtie2 dataset file is downloaded in $METAPHLAN_BOWTIE2_DB, so please use `--bowtie2db $METAPHLAN_BOWTIE2_DB --index mpa_v20_m200` with `metaphlan2.py` to specify its location.")
 end
 
 whatis("Name: MetaPhlAn2")

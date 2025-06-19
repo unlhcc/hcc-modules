@@ -28,3 +28,6 @@ prepend_path{"PATH", "/util/opt/anaconda/deployed-conda-envs/packages/gatk4/envs
 setenv("GATK_LOCAL_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/gatk4/envs/gatk4-4.4.0.0/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar")
 pushenv("CONDA_DEFAULT_ENV", "gatk4-4.4.0.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/gatk4/envs")
+
+family("python")
+family("R")

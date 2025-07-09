@@ -15,3 +15,5 @@ whatis("Description: PhyloPhlAn is a computational pipeline for reconstructing h
 pushenv("CONDA_DEFAULT_ENV", "phylophlan-1.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/phylophlan/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/phylophlan/envs/phylophlan-1.0/bin")
+
+family("python")

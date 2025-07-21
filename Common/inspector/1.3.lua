@@ -1,4 +1,4 @@
-ihelp(
+help(
 [[
 This module loads Inspector.
 Version 1.3.1

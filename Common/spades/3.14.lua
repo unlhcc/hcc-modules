@@ -14,3 +14,4 @@ whatis("Description: SPAdes - St. Petersburg genome assembler - is intended for 
 pushenv("CONDA_DEFAULT_ENV", "spades-3.14.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/spades/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/spades/envs/spades-3.14.0/bin")
+family("python")

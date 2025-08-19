@@ -7,3 +7,8 @@ hide-version bioconductor/3.8
 hide-version bioconductor/4.0
 hide-version r-asreml/r36/4.1
 hide-version r-asreml/r40/4.1
+hide-version mummer/3.23
+hide-version schrodinger/2020.1
+hide-version schrodinger/2020.4
+hide-version schrodinger/2021.1
+hide-version schrodinger/2022.1

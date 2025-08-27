@@ -6,8 +6,7 @@ Version 0.2022.04.02
 )
 
 if mode() == "load" then
-  LmodMessage("NOTE: This version of Compass includes the Mus musculus cache files.")
-  LmodMessage("If you need to use Homo sapiens instead, please email hcc-support@unl.edu.")
+  LmodMessage("NOTE: This version of Compass includes the Homo sapiens cache files.")
 end
 
 whatis("Name: compass-cplex")

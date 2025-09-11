@@ -14,3 +14,5 @@ whatis("Description: Fast and accurate de novo assembler for single molecule seq
 pushenv("CONDA_DEFAULT_ENV", "flye-2.8.3")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/flye/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/flye/envs/flye-2.8.3/bin")
+
+family("python")

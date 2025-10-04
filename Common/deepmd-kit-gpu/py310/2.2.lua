@@ -1,11 +1,11 @@
 help (
 [[
 This module loads DeePMD-kit GPU.
-Version 2.2.5
+Version 2.2.11
 ]])
 
 whatis("Name: DeePMD-kit GPU")
-whatis("Version: 2.2.5")
+whatis("Version: 2.2.11")
 whatis("Category: molecular dynamics, deep learning")
 whatis("Keywords: Molecular Dynamics, Deep Learning")
 whatis("Description: Deep learning package for many-body potential energy representation and molecular dynamics.")
@@ -18,8 +18,8 @@ if mode() == "load" then
     LmodMessage("------------------------------------------------------------------------------------------")
 end
 
-pushenv("CONDA_DEFAULT_ENV", "deepmd-kit-gpu-2.2.5-py310")
+pushenv("CONDA_DEFAULT_ENV", "deepmd-kit-gpu-2.2.11-py310")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/deepmd-kit-gpu/envs")
-prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/deepmd-kit-gpu/envs/deepmd-kit-gpu-2.2.5-py310/bin")
+prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/deepmd-kit-gpu/envs/deepmd-kit-gpu-2.2.11-py310/bin")
 
 family("python")

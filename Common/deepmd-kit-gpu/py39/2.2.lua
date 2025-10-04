@@ -21,5 +21,6 @@ end
 pushenv("CONDA_DEFAULT_ENV", "deepmd-kit-gpu-2.2.11-py39")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/deepmd-kit-gpu/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/deepmd-kit-gpu/envs/deepmd-kit-gpu-2.2.11-py39/bin")
+setenv("LAMMPS_PLUGIN_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/deepmd-kit-gpu/envs/deepmd-kit-gpu-2.2.11-py39/lib/deepmd_lmp/")
 
 family("python")

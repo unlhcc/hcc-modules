@@ -30,4 +30,5 @@ if mode() == "load" then
   end
 end
 
+execute{cmd="unset -f which", modeA={"load"}}
 setenv("APPTAINER_CACHEDIR", pathJoin(os.getenv("WORK"),".apptainer"))

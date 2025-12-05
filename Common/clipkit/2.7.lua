@@ -1,3 +1,6 @@
+help(
+[[
+This module loads Clipkit.
 Version 2.7.0
 ]]
 )

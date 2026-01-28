@@ -4,7 +4,7 @@ This module loads MLIP.
 Version 3.0
 ]]
 )
-whatis("Name: MLIP")
+whatis("Name: mlip")
 whatis("Version: 3.0")
 whatis("Category: Materials Science, Atomistic Simulation")
 whatis("Keywords: Computational Materials, Interatomic Potential")

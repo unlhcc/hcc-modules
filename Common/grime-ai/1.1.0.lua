@@ -14,3 +14,4 @@ whatis("Description: GRIME-AI is a tool that facilitates the entire data science
 pushenv("CONDA_DEFAULT_ENV", "grime-ai-1.1.0.0")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/grime-ai/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/grime-ai/envs/grime-ai-1.1.0.0/bin")
+family("python")

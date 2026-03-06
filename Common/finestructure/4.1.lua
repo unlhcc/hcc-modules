@@ -14,3 +14,6 @@ whatis("Description: fineSTRUCTURE is a fast and powerful algorithm for identify
 pushenv("CONDA_DEFAULT_ENV", "finestructure-4.1")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/finestructure/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/finestructure/envs/finestructure-4.1/bin")
+
+family("perl")
+family("R")

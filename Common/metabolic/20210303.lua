@@ -14,3 +14,5 @@ whatis("Description: A scalable high-throughput metabolic and biogeochemical fun
 pushenv("CONDA_DEFAULT_ENV", "metabolic-20210303")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metabolic/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/metabolic/envs/metabolic-20210303/bin")
+
+family("perl")

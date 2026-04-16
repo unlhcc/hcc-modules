@@ -1,5 +1,5 @@
 local help_message = [[
-MATLAB r2024b
+MATLAB r2025b
 ]]
 
 help(help_message,"\n")

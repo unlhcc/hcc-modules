@@ -32,9 +32,12 @@ end
 -- prepend_path("PATH", "/util/opt/anaconda/25.3.1/condabin")
 prepend_path("PATH", "/util/opt/anaconda/25.3/condabin")
 execute{cmd="source /util/opt/anaconda/25.3/etc/profile.d/conda."..myShellType()..">& /dev/null",modeA={"load"}}
+execute{cmd="source /util/opt/anaconda/25.3/etc/profile.d/mamba."..myShellType()..">& /dev/null",modeA={"load"}}
 execute{cmd="unset -f conda __add_sys_prefix_to_path __conda_activate __conda_hashr __conda_reactivate",modeA={"unload"}}
+execute{cmd="unset -f mamba __mamba_exe __mamba_hashr __mamba_wrap __mamba_xctivate",modeA={"unload"}}
 if (myShellType() == "csh") then
   execute{cmd="unalias conda",modeA={"unload"}}
+  execute{cmd="unalias mamba",modeA={"unload"}}
   execute{cmd="unsetenv CONDA_PYTHON_EXE CONDA_EXE _CONDA_ROOT _CONDA_EXE CONDA_SHLVL",modeA={"unload"}}
 end
 if (mode() == "unload") then

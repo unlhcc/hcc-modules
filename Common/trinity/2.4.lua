@@ -23,3 +23,7 @@ load("bowtie/2.2")
 pushenv("CONDA_DEFAULT_ENV","trinity-2.4.0")
 prepend_path{"PATH","/util/opt/anaconda/deployed-conda-envs/packages/trinity/envs/trinity-2.4.0/bin",priority=100}
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/trinity/envs")
+prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/trinity/envs/trinity-2.4.0/opt/trinity-2.4.0/util/")
+prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/trinity/envs/trinity-2.4.0/opt/trinity-2.4.0/util/misc/")
+
+family("perl")

@@ -22,3 +22,7 @@ whatis("Description: Trinity RNA-Seq de novo transcriptome assembly")
 pushenv("CONDA_DEFAULT_ENV", "trinity-2.13.2")
 append_path("CONDA_ENVS_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/trinity/envs")
 prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/trinity/envs/trinity-2.13.2/bin")
+prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/trinity/envs/trinity-2.13.2/opt/trinity-2.13.2/util/")
+prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/trinity/envs/trinity-2.13.2/opt/trinity-2.13.2/util/misc/")
+
+family("perl")

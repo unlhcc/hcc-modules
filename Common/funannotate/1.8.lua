@@ -25,7 +25,7 @@ prepend_path("PATH", "/util/opt/anaconda/deployed-conda-envs/packages/funannotat
 
 setenv("FUNANNOTATE_DB", "/work/HCC/BCRF/app_specific/funannotate/1.8.17")
 setenv("AUGUSTUS_CONFIG_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/funannotate/envs/funannotate-1.8.17/config")
-setenv("EVM_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/funannotate/envs/funannotate-1.8.17/opt/evidencemodeler-2.1.0")
+setenv("EVM_HOME", "/util/opt/anaconda/deployed-conda-envs/packages/funannotate/envs/funannotate-1.8.17/opt/evidencemodeler-1.1.1")
 setenv("GENEMARK_PATH", "/util/opt/anaconda/deployed-conda-envs/packages/funannotate/envs/funannotate-1.8.17/bin")
 setenv("GM_KEY", "/util/opt/anaconda/deployed-conda-envs/packages/funannotate/envs/funannotate-1.8.17/bin/gm_key")
 

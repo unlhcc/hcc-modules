@@ -13,7 +13,6 @@ whatis("Description: BEAST 2 is a cross-platform program for Bayesian phylogenet
 whatis("URL: http://www.beast2.org")
 
 load("beagle-lib/4.0")
-load("java/17")
 
 prepend_path{"PATH"		,"/util/opt/anaconda/deployed-conda-envs/packages/beast2/envs/beast2-2.6.3/bin",priority=100}
 pushenv("CONDA_DEFAULT_ENV"	,"beast2-2.6.3")

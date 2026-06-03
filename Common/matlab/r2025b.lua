@@ -7,7 +7,8 @@ help(help_message,"\n")
 whatis("Name: MATLAB r2025b")
 whatis("Keywords: Application, Engineering, Math")
 
-setenv("MATLAB_PREFDIR", "/tmp/matlab." .. os.getenv("USER") .. "/prefs")
+local HOME = os.getenv("HOME")
+setenv("MATLAB_PREFDIR", HOME .. "/.matlab/R2025b/prefs")
 setenv("TZ", "America/Chicago") --fix the TimeZone warning message
 
 prepend_path("PATH","/util/opt/matlab/r2025b/bin")

@@ -20,5 +20,5 @@ if (found) then
 
     family("gaussian")
 else
-   LmodError("You do not have permission to run Gaussian. To request access, please email hcc-support@unl.edu.")
+   LmodError("You do not have permission to run Gaussian. This module is accessible only by Creighton affiliates and to request access, please email hcc-support@unl.edu.")
 end

@@ -14,11 +14,11 @@ whatis("Description: QIIME 2 is a powerful, extensible, and decentralized microb
 
 pushenv("CONDA_DEFAULT_ENV", "qiime2-2026.7")
 
-prepend_path(
+prepend_path{
     "PATH",
     "/util/opt/anaconda/deployed-conda-envs/packages/qiime2/envs/qiime2-2026.7/bin",
-    100
-)
+    priority=100
+}
 
 setenv("MPLBACKEND", "Agg")
 

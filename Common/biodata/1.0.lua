@@ -85,14 +85,12 @@ $FAIDX_MAIZE
 There are some shortcuts that point directly to BACTERIAL and ARCHAE genomic resources from NCBI. They
 are as follows (with $GENOME_* pointing to the FASTA file):
 
-$BLAST_BACTERIAL, $BWA_BACTERIAL, $BOWTIE2_BACTERIAL, 
-		$GENOME_BACTERIAL, $FAIDX_BACTERIAL	All _complete_ bacterial genomes
-$BLAST_BACTERIAL_ALL, $BWA_BACTERIAL_ALL, $BOWTIE2_BACTERIAL_ALL, 
-		$GENOME_BACTERIAL_ALL, $FAIDX_BACTERIAL_ALL	All bacterial genomes (incl. incomplete)
+$BLAST_BACTERIAL, 
+		$GENOME_BACTERIAL, $FAIDX_BACTERIAL	refseq_bacterial_genomic RefSeq bacterial genomes
 $BLAST_ARCHAEA, $BWA_ARCHAEA, $BOWTIE2_ARCHAEA, 
-		$GENOME_ARCHAEA, $FAIDX_ARCHAEA	All _complete_ archaea genomes
-$BLAST_ARCHAEA_ALL, $BWA_ARCHAEA_ALL, $BOWTIE2_ARCHAEA_ALL, 
-		$GENOME_ARCHAEA_ALL, $FAIDX_ARCHAEA_ALL	All archaea genomes (incl. incomplete)
+		$GENOME_ARCHAEA, $FAIDX_ARCHAEA	refseq_archael_genomic RefSeq archaea genomes
+$BLAST_VIRAL, $BWA_VIRAL, $BOWTIE2_VIRAL,
+		$VIRAL_ARCHAEA, $VIRAL_ARCHAEA	refseq_archael_genomic RefSeq archaea genomes
 
 ######################################################################
                  INSTALLLED SPECIES	(COMMON NAME/SHORTCUT)
@@ -993,27 +991,28 @@ pushenv ("BOWTIE2_ZEA_MAYS_ENSEMBL_AGPV4", pathJoin(bowtie2, "Zea_mays", "Ensemb
 pushenv ("BWA_ZEA_MAYS_ENSEMBL_AGPV4", pathJoin(bwa, "Zea_mays", "Ensembl", "AGPv4", _bwa))
 pushenv ("PICARD_ZEA_MAYS_ENSEMBL_AGPV4", pathJoin(genomes, "Zea_mays", "Ensembl", "AGPv4", _w, _p))
 pushenv ("FAIDX_ZEA_MAYS_ENSEMBL_AGPV4", pathJoin(genomes, "Zea_mays", "Ensembl", "AGPv4", _w, _s))
-pushenv("GENOME_BACTERIAL", pathJoin(genomes, "all_complete_bacterial_genome.fasta"))
-pushenv("BOWTIE2_BACTERIAL", pathJoin(bowtie2, "all_complete_bacterial_genome"))
-pushenv("BWA_BACTERIAL", pathJoin(bwa, "all_complete_bacterial_genome"))
-pushenv("FAIDX_BACTERIAL", pathJoin(genomes, "all_complete_bacterial_genome.fasta.fai"))
-pushenv("BLAST_BACTERIAL", pathJoin(blast_v4, "genomic_bacterial_complete_only"))
 
--- Same for all bacteria, incl. incomplete. Please note there are no bowtie or bwa
+-- RefSeq bacteria genomes. Please note there are no bowtie or bwa
 -- indices for these due to the sheer size.
-pushenv("GENOME_BACTERIAL_ALL", pathJoin(genomes, "all_bacterial_genomes.fasta"))
-pushenv("FAIDX_BACTERIAL_ALL", pathJoin(genomes, "all_bacterial_genomes.fasta.fai"))
-pushenv("BLAST_BACTERIAL_ALL", pathJoin(blast_v4, "genomic_bacterial"))
-pushenv("GENOME_ARCHAEA", pathJoin(genomes, "all_complete_archaea_genome.fasta"))
-pushenv("BOWTIE2_ARCHAEA", pathJoin(bowtie2, "all_complete_archaea_genome"))
-pushenv("BWA_ARCHAEA", pathJoin(bwa, "all_complete_archaea_genome"))
-pushenv("FAIDX_ARCHAEA", pathJoin(genomes, "all_complete_archaea_genome.fasta.fai"))
-pushenv("BLAST_ARCHAEA", pathJoin(blast_v4, "genomic_archaea_complete_only"))
-pushenv("GENOME_ARCHAEA_ALL", pathJoin(genomes, "all_archaea_genome.fasta"))
-pushenv("BOWTIE2_ARCHAEA_ALL", pathJoin(bowtie2, "all_archaea_genome"))
-pushenv("BWA_ARCHAEA_ALL", pathJoin(bwa, "all_archaea_genome"))
-pushenv("FAIDX_ARCHAEA_ALL", pathJoin(genomes, "all_archaea_genome.fasta.fai"))
-pushenv("BLAST_ARCHAEA_ALL", pathJoin(blast_v4, "genomic_archaea"))
+pushenv("GENOME_BACTERIAL", pathJoin(genomes, "refseq_bacterial_genomic.fasta"))
+pushenv("BOWTIE2_BACTERIAL", pathJoin(bowtie2, "refseq_bacterial_genomic"))
+pushenv("BWA_BACTERIAL", pathJoin(bwa, "refseq_bacterial_genomic"))
+pushenv("FAIDX_BACTERIAL", pathJoin(genomes, "refseq_bacterial_genomic.fasta.fai"))
+pushenv("BLAST_BACTERIAL", pathJoin(blast, "refseq_bacterial_genomic"))
+
+-- RefSeq archae genomes.
+pushenv("GENOME_ARCHAEA", pathJoin(genomes, "refseq_archaeal_genomic.fasta"))
+pushenv("BOWTIE2_ARCHAEA", pathJoin(bowtie2, "refseq_archaeal_genomic"))
+pushenv("BWA_ARCHAEA", pathJoin(bwa, "refseq_archaeal_genomic"))
+pushenv("FAIDX_ARCHAEA", pathJoin(genomes, "refseq_archaeal_genomic.fasta.fai"))
+pushenv("BLAST_ARCHAEA", pathJoin(blast, "refseq_archaeal_genomic.fasta"))
+
+-- RefSeq viral genomes.
+pushenv("GENOME_VIRAL", pathJoin(genomes, "refseq_viral_genomic.fasta"))
+pushenv("BOWTIE2_VIRAL", pathJoin(bowtie2, "refseq_viral_genomic"))
+pushenv("BWA_VIRAL", pathJoin(bwa, "refseq_viral_genomic"))
+pushenv("FAIDX_VIRAL", pathJoin(genomes, "refseq_viral_genomic.fasta.fai"))
+pushenv("BLAST_VIRAL", pathJoin(blast, "refseq_viral_genomic.fasta"))
 pushenv("HISAT2_MOUSE_GRCM38", pathJoin(indices, "hisat2/Mus_musculus/Ensembl/GRCm38/"))
 
 if (mode() == "load") then

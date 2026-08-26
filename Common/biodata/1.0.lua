@@ -1020,5 +1020,6 @@ if (mode() == "load") then
         LmodMessage("     Contact the Bioinformatics Core Research Facility (bcrf-support@unl.edu) for questions/support.")
         LmodMessage("     NOTE: use $BLAST_V4 for access to blast databases when using NCBI blast <= 2.9")
         LmodMessage("     NOTE 2: $BLAST_V4 databases will not be updated going forward.")
+	LmodMessage("     NOTE 3: use blast/2.12 and up for current $BLAST V5 databases.")
 end
 

@@ -13,3 +13,4 @@ hide-version schrodinger/2020.4
 hide-version schrodinger/2021.1
 hide-version schrodinger/2022.1
 hide-version nix/2.3
+hide-version blast/2.10

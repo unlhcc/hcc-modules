@@ -17,6 +17,7 @@ $TCIA_PANCREAS_CT              TCIA PANCREAS_CT Collection (most recent version)
 $TCIA_PANCREATIC_CT_CBCT_SEG   TCIA PANCREATIC_CT_CBCT_SEG Collection (most recent version)
 $OLLAMA_MODELS                 Ollama models retrieved September 2025
 $ESM_MODELS                    ESM models retrieved October 2025
+$EVO2_MODELS                   EVO2 models retrieved September 2026
 
 You can alsways check what's available with, e.g.,
 
@@ -47,6 +48,7 @@ local tcia_pancreas_ct = pathJoin(tcia_latest, "Pancreas-CT")
 local tcia_pancreatic_ct_cbct_seg = pathJoin(tcia_latest, "Pancreatic-CT-CBCT-SEG")
 local ollama_models = pathJoin(data_root, "ollama_models")
 local esm_models = pathJoin(data_root, "esm")
+local evo2_models = pathJoin(data_root, "evo2")
 
 setenv("MLDATA", data_root)
 setenv("IMAGENET", imagenet_latest)
@@ -61,6 +63,7 @@ setenv("TCIA_PANCREAS_CT", tcia_pancreas_ct)
 setenv("TCIA_PANCREATIC_CT_CBCT_SEG", tcia_pancreatic_ct_cbct_seg)
 setenv("OLLAMA_MODELS", ollama_models)
 setenv("ESM_MODELS", esm_models)
+setenv("EVO2_MODELS", evo2_models)
 
 if (mode() == "load") then
         LmodMessage("Static data resources for machine learning/AI 1.0.")

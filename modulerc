@@ -14,3 +14,10 @@ hide-version schrodinger/2021.1
 hide-version schrodinger/2022.1
 hide-version nix/2.3
 hide-version blast/2.10
+hide-version git/2.17
+hide-version git/2.22
+hide-version git/2.29
+hide-version git/2.30
+hide-version git/2.35
+hide-version git/2.39
+hide-version git/2.40

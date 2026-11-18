@@ -16,6 +16,10 @@ if mode() == "load" then
   LmodMessage("To find the location of IonQuant.jar, please use the variable IONQUANT_JAR, e.g.,:")
   LmodMessage("echo ${IONQUANT_JAR}")
   LmodMessage("----------------------------------------------------------------------------------------")
+  LmodMessage("To run FragPipe in CLI mode, please use:")
+  LmodMessage("fragpipe --msfragger_key ${MSFRAGGER_KEY} --ionquant_key ${IONQUANT_KEY} \\")
+  LmodMessage("    --headless --config-tools-folder ${FP_TOOLS_FOLDER}")
+  LmodMessage("----------------------------------------------------------------------------------------")
   LmodMessage("To run FragPipe in GUI mode, please use the Open OnDemand Virtual Desktop.")
   LmodMessage("----------------------------------------------------------------------------------------")
 end
@@ -40,5 +44,6 @@ setenv("CONDA_PREFIX", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe
 
 setenv("MSFRAGGER_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-24.0/share/msfragger-4.4.1-0/MSFragger-4.4.1/MSFragger-4.4.1.jar")
 setenv("IONQUANT_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-24.0/share/ionquant-1.11.20-0/IonQuant.jar")
+setenv("FP_TOOLS_FOLDER", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-24.0/share/")
 
 family("java")

@@ -18,7 +18,7 @@ if mode() == "load" then
   LmodMessage("----------------------------------------------------------------------------------------")
   LmodMessage("To run FragPipe in CLI mode, please use:")
   LmodMessage("fragpipe --msfragger_key ${MSFRAGGER_KEY} --ionquant_key ${IONQUANT_KEY} \\")
-  LmodMessage("    --headless --config-tools-folder ${FP_TOOLS_FOLDER}")
+  LmodMessage("    --headless --config-tools-folder ${FP_TOOLS_FOLDER} --config-python `which python`")
   LmodMessage("----------------------------------------------------------------------------------------")
   LmodMessage("To run FragPipe in GUI mode, please use the Open OnDemand Virtual Desktop.")
   LmodMessage("----------------------------------------------------------------------------------------")
@@ -47,3 +47,4 @@ setenv("IONQUANT_JAR", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe
 setenv("FP_TOOLS_FOLDER", "/util/opt/anaconda/deployed-conda-envs/packages/fragpipe/envs/fragpipe-24.0/share/")
 
 family("java")
+family("python")
